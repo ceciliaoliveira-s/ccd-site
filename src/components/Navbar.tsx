@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from '../assets/Logo navbar.png';
 
 export default function Navbar() {
@@ -13,10 +14,10 @@ export default function Navbar() {
         </div>
         <ul className="flex space-x-8">
           <li>
-            <a href="#inicio" className="text-[#E22E5B] hover:text-[#db6d89]">Início</a>
+            <Link to="/" className="text-[#E22E5B] hover:text-[#db6d89]">Início</Link>
           </li>
           <li>
-            <a href="#quem-somos" className="text-[#E22E5B] hover:text-[#db6d89]">Quem somos</a>
+            <Link to="/quem-somos" className="text-[#E22E5B] hover:text-[#db6d89]">Quem somos</Link>
           </li>
           <li
             className="relative"
@@ -29,16 +30,16 @@ export default function Navbar() {
             {showDropdown && (
               <ul className="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg">
                 <li>
-                  <a href="#produtos" className="block px-4 py-2 text-[#E22E5B] hover:text-[#db6d89]">Produtos</a>
+                  <Link to="/nossas-solucoes/produtos" className="block px-4 py-2 text-[#E22E5B] hover:text-[#db6d89]">Produtos</Link>
                 </li>
                 <li>
-                  <a href="#servicos" className="block px-4 py-2 text-[#E22E5B] hover:text-[#db6d89]">Serviços</a>
+                  <Link to="/nossas-solucoes/servicos" className="block px-4 py-2 text-[#E22E5B] hover:text-[#db6d89]">Serviços</Link>
                 </li>
               </ul>
             )}
           </li>
           <li>
-            <a href="#privacidade" className="text-[#E22E5B] hover:text-[#db6d89]">Política de privacidade</a>
+            <Link to="/politica-de-privacidade" className="text-[#E22E5B] hover:text-[#db6d89]">Política de privacidade</Link>
           </li>
         </ul>
       </div>

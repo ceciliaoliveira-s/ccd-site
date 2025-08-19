@@ -86,11 +86,11 @@ function Telainicio() {
             {/* Formulário */}
             <form className="flex-1 flex flex-col gap-4" autoComplete="off" onSubmit={e => { e.preventDefault(); }}>
               <span className="text-[#E22E5B] font-bold text-lg mb-2">Formulário</span>
-              <input required type="text" name="nome" placeholder="Nome" className="border rounded px-3 py-2 focus:outline-[#E22E5B]" />
-              <input required type="email" name="email" placeholder="E-mail" className="border rounded px-3 py-2 focus:outline-[#E22E5B]" />
-              <input required type="tel" name="telefone" placeholder="Telefone" className="border rounded px-3 py-2 focus:outline-[#E22E5B]" />
-              <input required type="text" name="empresa" placeholder="Nome da Empresa" className="border rounded px-3 py-2 focus:outline-[#E22E5B]" />
-              <textarea required name="necessidade" placeholder="Descreva a necessidade" className="border rounded px-3 py-2 min-h-[96px] focus:outline-[#E22E5B]" />
+              <input required type="text" name="nome" placeholder="Nome" className="border rounded px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
+              <input required type="email" name="email" placeholder="E-mail" className="border rounded px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
+              <input required type="tel" name="telefone" placeholder="Telefone" className="border rounded px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
+              <input required type="text" name="empresa" placeholder="Nome da Empresa" className="border rounded px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
+              <textarea required name="necessidade" placeholder="Descreva a necessidade" className="border rounded px-3 py-2 min-h-[96px] focus:outline-[#E22E5B] text-[#222]" />
               <button type="submit" className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-2 px-8 rounded-lg shadow mt-2 w-32">Enviar</button>
             </form>
             {/* Contatos rápidos */}

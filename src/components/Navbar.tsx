@@ -1,9 +1,18 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import logo from '../assets/Logo navbar.png';
 
 export default function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
+  const dropdownTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const handleDropdownEnter = () => {
+    if (dropdownTimeout.current) clearTimeout(dropdownTimeout.current);
+    setShowDropdown(true);
+  };
+  const handleDropdownLeave = () => {
+    dropdownTimeout.current = setTimeout(() => setShowDropdown(false), 200);
+  };
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-white shadow z-50">
@@ -21,14 +30,18 @@ export default function Navbar() {
           </li>
           <li
             className="relative"
-            onMouseEnter={() => setShowDropdown(true)}
-            onMouseLeave={() => setShowDropdown(false)}
+            onMouseEnter={handleDropdownEnter}
+            onMouseLeave={handleDropdownLeave}
           >
             <span className="cursor-pointer text-[#E22E5B] hover:text-[#db6d89] select-none">
               Nossas soluções
             </span>
             {showDropdown && (
-              <ul className="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg">
+              <ul
+                className="absolute left-5 mt-2 w-48 bg-white border rounded shadow-lg"
+                onMouseEnter={handleDropdownEnter}
+                onMouseLeave={handleDropdownLeave}
+              >
                 <li>
                   <Link to="/nossas-solucoes/produtos" className="block px-4 py-2 text-[#E22E5B] hover:text-[#db6d89]">Produtos</Link>
                 </li>

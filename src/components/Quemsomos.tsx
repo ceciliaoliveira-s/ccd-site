@@ -4,28 +4,28 @@ function QuemSomos() {
   return (
     <div className="w-full min-h-screen flex flex-col">
       {/* Primeira section conforme protótipo */}
-      <section className="flex flex-col md:flex-row items-center justify-between w-full px-6 md:px-16 py-12 gap-8 bg-white">
-        <div className="flex-1 flex flex-col items-start justify-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-[#E22E5B] mb-6 leading-tight" style={{fontFamily: 'Poppins, sans-serif'}}>
+      <section className="flex flex-col items-start w-full pl-1">
+        <div className="flex-1 flex flex-col items-start">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-[#E22E5B] mb-6 leading-tight text-left" style={{fontFamily: 'Poppins, sans-serif'}}>
             Produtos de tecnologia e<br />plataforma de telessaúde
           </h1>
-          <p className="text-base md:text-lg text-[#9B6B6B] max-w-xl">
-            O <span className="font-bold text-[#E22E5B]">Centro de Cuidado Digital</span> é uma empresa que tem o propósito de integrar ferramentas tecnológicas e de telessaúde ao mercado, criando soluções de alta performance, com amplas camadas de segurança, suporte e escalabilidade que transformam o negócio e a estrutura das empresas parceiras.
+          <p className="text-base md:text-lg text-[#9B6B6B] max-w-xl text-left">
+            O <span className="font-bold text-[#E22E5B]">Centro de Cuidado Digital</span> é uma empresa que tem o propósito de integrar ferramentas tecnológicas e de telessaúde ao mercado, criando soluções de alta performance com amplas camadas de segurança, suporte e escalabilidade que transformam o negócio das empresas parceiras.
           </p>
         </div>
 
       </section>
       {/* Seção Missão */}
-      <section className="w-full py-12 flex flex-col items-center bg-[#FFF9F5]">
-        <h2 className="text-4xl font-extrabold text-[#E22E5B] mb-6">Missão</h2>
-        <div className="bg-white rounded-2xl shadow-lg p-8 max-w-3xl w-full flex flex-col md:flex-row items-start gap-6">
+      <section className="w-full py-12 flex flex-col bg-[#FFF9F5]">
+        <h2 className="text-4xl font-extrabold text-[#E22E5B] mb-6l leading-tight text-left">Missão</h2>
+        <div className="bg-white rounded-2xl shadow-lg p-6 max-w-3xl mx-auto flex flex-col md:flex-row items-start gap-6">
           {/* Ícone Missão */}
-          <div className="flex-shrink-0 flex flex-col items-start justify-start -mt-2 md:-mt-3">
+          <div className="flex-shrink-0 flex flex-col items-start justify-start -mt-2 md:-mt-0">
             <svg className="w-10 h-10 text-[#E22E5B] mb-2" fill="none" stroke="currentColor" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" strokeWidth="4"/><path d="M24 14v10l7 7" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </div>
           <div className="flex-1 flex flex-col gap-4">
-            <p className="text-lg text-[#9B6B6B]">Nossa missão é cuidar e atender os nossos clientes de maneira ágil e acessível com o objetivo de gerar valor ao seu negócio e de construir um relacionamento estratégico em atendimento e suporte de maneira eficiente.</p>
-            <p className="text-lg text-[#9B6B6B]">Nosso produto de telessaúde e o portfólio de serviços e suporte são ofertados com este compromisso e eficiência.</p>
+            <p className="text-lg text-left text-[#9B6B6B]">Nossa missão é cuidar e atender os nossos clientes de maneira ágil e acessível com o objetivo de gerar valor ao seu negócio e de construir um relacionamento estratégico em atendimento e suporte de maneira eficiente.</p>
+            <p className="text-lg text-left text-[#9B6B6B]">Nosso produto de telessaúde e o portfólio de serviços e suporte são ofertados com este compromisso e eficiência.</p>
             <div className="flex justify-end mt-2">
               <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-3 px-8 rounded-lg shadow transition">Quero Contratar</button>
             </div>

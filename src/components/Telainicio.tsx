@@ -6,7 +6,7 @@ function Telainicio() {
     <div className="flex flex-col gap-16 w-full">
       {/* Primeira seção: já implementada na Home */}
       <section className="flex flex-col items-start w-full pl-1">
-        <h1 className="text-5xl font-extrabold text-[#E22E5B] leading-tight mb-6 text-left" style={{ fontFamily: "'Poppins', 'bold'" }}>
+        <h1 className="text-5xl font-extrabold text-[#E22E5B] leading-tight mb-6 text-left" style={{ fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'" }}>
           Tecnologia e telessaúde<br />
           integrados promovendo<br />
           impacto de negócio.
@@ -23,8 +23,8 @@ function Telainicio() {
         <div className="flex flex-row items-start w-full px-8 py-8 gap-8">
           {/* Texto lateral */}
           <div className="flex-1 max-w-md flex flex-col justify-center">
-            <h1 className="text-4xl font-extrabold text-[#E22E5B] mb-4">Nossas soluções</h1>
-            <p className="text-base text-[#9B6B6B]">
+            <h1 className="text-4xl font-extrabold text-left text-[#E22E5B] mb-4">Nossas soluções</h1>
+            <p className="text-base text-left text-[#9B6B6B]">
               Disponibilizamos um portfólio de serviços de tecnologia e produtos de telessaúde para empresas, operadoras de saúde e governo com suporte integral e consultoria.
             </p>
           </div>
@@ -64,7 +64,7 @@ function Telainicio() {
       {/* Seção Parceiros */}
       <section className="w-full py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-extrabold text-[#E22E5B] mb-8">Parceiros</h2>
+          <h2 className="text-3xl font-extrabold text-[#E22E5B] mb-8 text-left">Parceiros</h2>
           <div className="flex items-center justify-center gap-12">
             {/* Seta esquerda */}
             <span className="text-[#E22E5B] text-3xl cursor-pointer select-none">&#60;</span>
@@ -80,12 +80,12 @@ function Telainicio() {
       {/* Seção Contato */}
       <section className="w-full py-16 bg-[#FFF9F5]">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-extrabold text-[#E22E5B] mb-2">Contato</h2>
-          <p className="text-[#9B6B6B] mb-8">Entre em contato conosco através do formulário abaixo ou diretamente pelo número comercial.</p>
+          <h2 className="text-3xl font-extrabold text-[#E22E5B] mb-8 text-left">Contato</h2>
+          <p className="text-[#9B6B6B] mb-8 text-left">Entre em contato conosco através do formulário abaixo ou diretamente pelo número comercial.</p>
           <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col md:flex-row gap-8">
             {/* Formulário */}
             <form className="flex-1 flex flex-col gap-4" autoComplete="off" onSubmit={e => { e.preventDefault(); }}>
-              <span className="text-[#E22E5B] font-bold text-lg mb-2">Formulário</span>
+              <span className="text-[#E22E5B] font-bold text-lg mb-3">Formulário</span>
               <input required type="text" name="nome" placeholder="Nome" className="border rounded px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
               <input required type="email" name="email" placeholder="E-mail" className="border rounded px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
               <input required type="tel" name="telefone" placeholder="Telefone" className="border rounded px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
@@ -94,7 +94,7 @@ function Telainicio() {
               <button type="submit" className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-2 px-8 rounded-lg shadow mt-2 w-32">Enviar</button>
             </form>
             {/* Contatos rápidos */}
-            <div className="flex-1 flex flex-col gap-4 justify-center">
+            <div className="flex-1 flex flex-col gap-6 justify-center">
               <div className="flex items-center gap-3 text-[#E22E5B]">
                 <span className="text-xl">{/* WhatsApp ícone */} <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' className='w-6 h-6 inline'><path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M16.72 13.06a6.5 6.5 0 10-2.72 2.72l2.85.71a1 1 0 001.21-1.21l-.71-2.85z' /></svg></span>
                 <span className="font-bold">(81)9-9999-9999</span>

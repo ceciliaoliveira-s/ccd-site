@@ -5,13 +5,13 @@ function Telainicio() {
   return (
     <div className="flex flex-col gap-16 w-full">
       {/* Primeira seção: já implementada na Home */}
-      <section className="flex flex-col items-start w-full pl-1">
+      <section className="flex flex-col items-start w-full py-25 pl-1">
         <h1 className="text-5xl font-extrabold text-[#E22E5B] leading-tight mb-6 text-left" style={{ fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'" }}>
           Tecnologia e telessaúde<br />
           integrados promovendo<br />
           impacto de negócio.
         </h1>
-        <p className="text-lg text-[#9B6B6B] mb-10 text-left" style={{ fontFamily: "'Open Sans', 'Montserrat', 'Poppins', sans-serif" }}>
+        <p className="text-xl text-[#9B6B6B] mb-10 text-left" style={{ fontFamily: "'Open Sans', 'Montserrat', 'Poppins', sans-serif" }}>
           Soluções em serviços de tecnologia e plataformas de telessaúde com recurso escalável, <br/> seguro e acessível proporcionando crescimento de negócio aos nossos parceiros.
         </p>
         <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white text-lg font-bold py-3 px-10 rounded-lg shadow-md transition">
@@ -19,12 +19,12 @@ function Telainicio() {
         </button>
       </section>
       {/* Seção Nossas Soluções com título e cards lado a lado */}
-      <section className="w-full" style={{ background: '#FFF9F5' }}>
+      <section className="w-full" style={{ background: '#F8EFEA' }}>
         <div className="flex flex-row items-start w-full px-8 py-8 gap-8">
           {/* Texto lateral */}
           <div className="flex-1 max-w-md flex flex-col justify-center">
-            <h1 className="text-4xl font-extrabold text-left text-[#E22E5B] mb-4">Nossas soluções</h1>
-            <p className="text-base text-left text-[#9B6B6B]">
+            <h1 className="text-4xl font-extrabold text-left text-[#E22E5B] mb-6">Nossas soluções</h1>
+            <p className="text-base text-xl text-left text-[#9B6B6B]">
               Disponibilizamos um portfólio de serviços de tecnologia e produtos de telessaúde para empresas, operadoras de saúde e governo com suporte integral e consultoria.
             </p>
           </div>
@@ -64,7 +64,7 @@ function Telainicio() {
       {/* Seção Parceiros */}
       <section className="w-full py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-extrabold text-[#E22E5B] mb-8 text-left">Parceiros</h2>
+          <h2 className="text-4xl font-extrabold text-[#E22E5B] mb-8 text-left">Parceiros</h2>
           <div className="flex items-center justify-center gap-12">
             {/* Seta esquerda */}
             <span className="text-[#E22E5B] text-3xl cursor-pointer select-none">&#60;</span>
@@ -80,12 +80,12 @@ function Telainicio() {
       {/* Seção Contato */}
       <section className="w-full py-16 bg-[#FFF9F5]">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-extrabold text-[#E22E5B] mb-8 text-left">Contato</h2>
-          <p className="text-[#9B6B6B] mb-8 text-left">Entre em contato conosco através do formulário abaixo ou diretamente pelo número comercial.</p>
+          <h2 className="text-4xl font-extrabold text-[#E22E5B] mb-8 text-left">Contato</h2>
+          <p className="text-[#9B6B6B] mb-8 text-2xl text-left">Entre em contato conosco através do formulário abaixo ou diretamente pelo número comercial.</p>
           <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col md:flex-row gap-8">
             {/* Formulário */}
             <form className="flex-1 flex flex-col gap-4" autoComplete="off" onSubmit={e => { e.preventDefault(); }}>
-              <span className="text-[#E22E5B] font-bold text-lg mb-3">Formulário</span>
+              <span className="text-[#E22E5B] font-bold text-lg mb-3">Preencha o formulário abaixo </span>
               <input required type="text" name="nome" placeholder="Nome" className="border rounded px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
               <input required type="email" name="email" placeholder="E-mail" className="border rounded px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
               <input required type="tel" name="telefone" placeholder="Telefone" className="border rounded px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
@@ -99,14 +99,29 @@ function Telainicio() {
                 <span className="text-xl">{/* WhatsApp ícone */} <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' className='w-6 h-6 inline'><path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M16.72 13.06a6.5 6.5 0 10-2.72 2.72l2.85.71a1 1 0 001.21-1.21l-.71-2.85z' /></svg></span>
                 <span className="font-bold">(81)9-9999-9999</span>
               </div>
+              {/* Instagram - comentado temporariamente
               <div className="flex items-center gap-3 text-[#E22E5B]">
-                <span className="text-xl">{/* Instagram ícone */} <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' className='w-6 h-6 inline'><rect width='20' height='20' x='2' y='2' rx='5' /><circle cx='12' cy='12' r='5' /><circle cx='17' cy='7' r='1.5' /></svg></span>
+                <span className="text-xl">
+                  <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' className='w-6 h-6 inline'>
+                    <rect width='20' height='20' x='2' y='2' rx='5' />
+                    <circle cx='12' cy='12' r='5' />
+                    <circle cx='17' cy='7' r='1.5' />
+                  </svg>
+                </span>
                 <span className="font-bold">@centrodecuidadodigital</span>
               </div>
+              
+              LinkedIn - comentado temporariamente
               <div className="flex items-center gap-3 text-[#E22E5B]">
-                <span className="text-xl">{/* LinkedIn ícone */} <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' className='w-6 h-6 inline'><rect width='20' height='20' x='2' y='2' rx='5' /><path d='M8 11v5M8 8v.01M12 11v5m0-5a2 2 0 114 0v5' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round'/></svg></span>
-                <span className="font-bold">www.linkedin/in/centrodecuidadodigital/</span>
+                <span className="text-xl">
+                  <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' className='w-6 h-6 inline'>
+                    <rect width='20' height='20' x='2' y='2' rx='5' />
+                    <path d='M8 11v5M8 8v.01M12 11v5m0-5a2 2 0 114 0v5' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round'/>
+                  </svg>
+                </span>
+                <span className="font-bold">www.linkedin/in/centrodecuidadodigital/</span> 
               </div>
+              */}
             </div>
           </div>
         </div>

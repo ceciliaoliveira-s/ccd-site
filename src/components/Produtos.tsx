@@ -4,36 +4,146 @@ function Produtos() {
   return (
     <div className="w-full min-h-screen flex flex-col bg-white">
       {/* Seção Plataforma de Telessaúde */}
-      <section className="w-full flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-14 gap-10 bg-white">
+      <section className="w-full flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-25 gap-10 bg-white">
         <div className="flex-1 flex flex-col items-start justify-center">
           <h1 className="text-4xl md:text-5xl font-extrabold text-[#E22E5B] mb-12 leading-tight">Plataforma de telessaúde</h1>
-          <p className="text-base md:text-lg text-left text-[#9B6B6B] mb-2">
+          <p className="text-base text-left text-[#9B6B6B] mb-2">
             Somos parceiros da <span className="font-bold text-[#E22E5B]">Mediquo</span>, uma empresa com mais de 15 anos no
-            mercado brasileiro e europeu com amplo impacto e democratização do acesso à saúde através da plataforma de telessaúde.
+            mercado  brasileiro e europeu com amplo impacto e democratização do acesso à saúde através da plataforma de telessaúde.
           </p>
           <p className="text-base md:text-lg text-[#9B6B6B] mb-2">
             Sua disponibilização ocorre de forma mobile para os sistemas Android e IOS.
           </p>
-          <p className="text-base md:text-lg text-[#E22E5B] font-semibold mt-2">Saiba mais sobre a nossa plataforma de telessaúde abaixo.</p>
+          <p className="text-base md:text-lg text-[#E22E5B] font-semibold mt-6">Saiba mais sobre a nossa plataforma de telessaúde abaixo.</p>
         </div>
       </section>
       {/* Seção Especialidades Disponíveis */}
-      <section className="w-full py-14 px-6 md:px-16 bg-[#FFF9F5] flex flex-col items-start">
-        <h2 className="text-4xl font-extrabold text-[#E22E5B] mb-12">Especialidades disponíveis</h2>
-        <p className="text-base text-lg text-[#9B6B6B] max-w-3xl mb-8">
-          A <span className="font-bold text-[#E22E5B]">Mediquo</span> oferece uma solução completa de telemedicina, reunindo múltiplas especialidades médicas em um só lugar. É o único app do segmento que inclui profissionais de educação física, promovendo um cuidado realmente integral e alinhado ao bem-estar físico e mental.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-2 mb-8 w-full max-w-3xl">
-          <span className="font-bold text-[#E22E5B]">Clínico Geral 24h</span>
-          <span className="font-bold text-[#E22E5B]">Ginecologista</span>
-          <span className="font-bold text-[#E22E5B]">Dermatologista</span>
-          <span className="font-bold text-[#E22E5B]">Psicólogo</span>
-          <span className="font-bold text-[#E22E5B]">Nutricionista</span>
-          <span className="font-bold text-[#E22E5B]">Pediatra</span>
-          <span className="font-bold text-[#E22E5B]">Treinador físico</span>
-          <span className="font-bold text-[#E22E5B]">Médico Veterinário para cães e gatos</span>
+      <section className="w-full py-14 px-6 md:px-16 bg-[#FFF9F5]">
+        <div className="max-w-7xl mx-auto">
+          {/* Header da seção */}
+          <div className="text-left mb-12">
+            <h2 className="text-4xl md:text-4xl font-bold text-[#E95470] mb-10">
+              Especialidades disponíveis
+            </h2>
+            <p className="text-base text-left text-[#A35E57] max-w-6xl mb-16">
+              A <span className="font-bold text-[#A35E57]">Mediquo</span> oferece uma solução completa de telemedicina, reunindo múltiplas especialidades médicas em um só lugar. É o único app do segmento que inclui profissionais de educação física, promovendo um cuidado realmente integral e alinhado ao bem-estar físico e mental.
+            </p>
+          </div>
+
+          {/* Lista de especialidades em duas colunas */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-4 mb-12 max-w-6xl">
+            {/* Coluna Esquerda */}
+            <div className="space-y-6">
+              {/* Clínico Geral 24h */}
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-[#E95470] rounded-full flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
+                <span className="font-bold text-[#A35E57]">Clínico Geral 24h</span>
+              </div>
+              
+              {/* Dermatologista */}
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-[#E95470] rounded-full flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                </div>
+                <span className="font-bold text-[#A35E57]">Dermatologista</span>
+              </div>
+              
+              {/* Nutricionista */}
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-[#E95470] rounded-full flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8.1 13.34l2.83-2.83L3.91 3.5c-1.56 1.56-1.56 4.09 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z"/>
+                  </svg>
+                </div>
+                <span className="font-bold text-[#A35E57]">Nutricionista</span>
+              </div>
+              
+              {/* Treinador físico */}
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-[#E95470] rounded-full flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13.49 5.48c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm-3.6 13.9l1-4.4 2.1 2v6h2v-7.5l-2.1-2 .6-3c1.3 1.5 3.3 2.5 5.5 2.5v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1l-5.2 2.2v4.7h2v-3.4l1.8-.7-1.6 8.1-4.9-1-.4 2 7 1.4z"/>
+                  </svg>
+                </div>
+                <span className="font-bold text-[#A35E57]">Treinador físico</span>
+              </div>
+            </div>
+            
+            {/* Coluna Direita */}
+            <div className="space-y-4">
+              {/* Ginecologista */}
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-[#E95470] rounded-full flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                </div>
+                <span className="font-bold text-[#A35E57]">Ginecologista</span>
+              </div>
+              
+              {/* Psicólogo */}
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-[#E95470] rounded-full flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
+                <span className="font-bold text-[#A35E57]">Psicólogo</span>
+              </div>
+              
+              {/* Pediatra */}
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-[#E95470] rounded-full flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                </div>
+                <span className="font-bold text-[#A35E57]">Pediatra</span>
+              </div>
+              
+              {/* Médico Veterinário */}
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-[#E95470] rounded-full flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M4.34 17h9.32c-.84-.58-2.87-1.25-4.66-1.25s-3.82.67-4.66 1.25zm9.32-6c-.84-.58-2.87-1.25-4.66-1.25s-3.82.67-4.66 1.25h9.32zM4.34 5h9.32c-.84-.58-2.87-1.25-4.66-1.25s-3.82.67-4.66 1.25z"/>
+                  </svg>
+                </div>
+                <span className="font-bold text-[#A35E57]">Médico Veterinário para cães e gatos</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Card Informações importantes */}
+          <div className="max-w-5xl mx-auto">
+            <div className="bg-white rounded-lg shadow-md p-8 border border-gray-400">
+              <h3 className="text-xl text-left font-bold text-[#E95470] mb-4">Informações importantes!</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-2">
+                  <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
+                  <span className="text-gray-700">
+                    A <span className="font-bold text-[#A35E57]">Mediquo</span> possui um corpo clínico próprio regulamentado via <span className="font-bold text-[#A35E57]">CFM</span>.
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
+                  <span className="text-gray-700">São profissionais com no mínimo 5 anos de experiÊncia no mercado.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
+                  <span className="text-gray-700">
+                    A plataforma tem como propósito reduzir o <span className="font-bold text-[#A35E57]">absenteísmo</span> através de um crivo criterioso para fornecer <span className="font-bold text-[#A35E57]">atestado médico</span>.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-3 px-8 rounded-lg shadow transition">Quero Contratar</button>
       </section>
       <section className="w-full py-16 px-6 md:px-16 bg-[#FFFFFF] flex flex-col items-start">
         <h2 className="text-4xl font-extrabold text-[#E22E5B] mb-20">Programa de cashback e benefícios exclusivos</h2>
@@ -73,8 +183,8 @@ function Produtos() {
                 </ul>
               </div>
               
-              <div className="flex justify-end mt-6">
-                <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-3 px-3 rounded-lg shadow transition">Consulte nossas condições</button>
+              <div className="flex justify-start mt-2">
+                <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-2 px-2 rounded-lg shadow transition">Consulte nossas condições</button>
               </div>
             </div>
           </div>
@@ -200,7 +310,7 @@ function Produtos() {
 
           {/* Card Operadoras de Saúde */}
           <div className="bg-[#FFF9F5] rounded-xl p-6 border border-[#9B6B6B]">
-            <h3 className="text-xl font-bold text-[#E22E5B] mb-6">Operadoras de saúde</h3>
+            <h3 className="text-xl font-bold text-[#E22E5B] mb-6">Telecom</h3>
             <ul className="space-y-6">
               <li className="flex items-start gap-2">
                 <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
@@ -208,11 +318,11 @@ function Produtos() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                <span className="text-[#9B6B6B]">Extensão de cobertura</span>
+                <span className="text-[#9B6B6B] text-left  "> Benefício de saúde corporativa  </span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                <span className="text-[#9B6B6B]">Redução da sinistralidade</span>
+                <span className="text-[#9B6B6B]">Inclusão de dependentes </span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>

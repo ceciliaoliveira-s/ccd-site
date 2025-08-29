@@ -1,53 +1,66 @@
 import servicosIcon from '../assets/Servicos icon.png';
+import platsaude from '../assets/Platsaude.png';
 import Footer from '../components/Footer';
+import capatelainicio1 from '../assets/capatelainicio1.png';
+import logomediquo from '../assets/logomediquo.png';  
+import logoparlacom from  '../assets/logoparlacom.png';
 
 function Telainicio() {
   return (
     <div className="flex flex-col gap-16 w-full">
-      {/* Primeira seção: já implementada na Home */}
-      <section className="flex flex-col items-start w-full py-25 pl-1">
-        <h1 className="text-5xl font-extrabold text-[#E22E5B] leading-tight mb-6 text-left" style={{ fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'" }}>
-          Tecnologia e telessaúde<br />
-          integrados promovendo<br />
-          impacto de negócio.
-        </h1>
-        <p className="text-xl text-[#9B6B6B] mb-10 text-left" style={{ fontFamily: "'Open Sans', 'Montserrat', 'Poppins', sans-serif" }}>
-          Soluções em serviços de tecnologia e plataformas de telessaúde com recurso escalável, <br/> seguro e acessível proporcionando crescimento de negócio aos nossos parceiros.
-        </p>
-        <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white text-lg font-bold py-3 px-10 rounded-lg shadow-md transition">
-          Quero Contratar
-        </button>
+      {/* Primeira seção: texto à esquerda, imagem à direita */}
+      <section className="flex flex-col md:flex-row items-center w-full py-10 px-4 bg-white">
+        {/* LADO ESQUERDO: Título, subtítulo e botão */}
+        <div className="flex-1 flex flex-col items-start justify-center max-w-2xl">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-[#E22E5B] leading-tight mb-4 md:mb-8 text-left" style={{ fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'" }}>
+            Tecnologia e telessaúde
+            integrados gerando valor
+            estratégico de negócio.
+          </h1>
+          <p className="text-base md:text-lg text-[#9B6B6B] mb-6 md:mb-16 text-left" style={{ fontFamily: "'Open Sans', 'Montserrat', 'Poppins', sans-serif" }}>
+            Proporcionamos soluções em tecnologia e plataforma de telessaúde com recursos escaláveis, seguros e acessíveis, que impulsionam o crescimento das empresas parceiras.
+          </p>
+          <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white text-base md:text-xl font-bold py-3 px-8 md:px-11 rounded-lg shadow-md transition">
+            Quero Contratar
+          </button>
+        </div>
+        {/* LADO DIREITO: imagem responsiva */}
+        <div className="flex justify-center mt-10 md:mt-0 w-full md:w-auto">
+          <img
+            src={capatelainicio1}
+            alt="Tecnologia e Telessaúde"
+            className="w-full max-w-[320px] md:max-w-[650px] h-auto"
+          />
+        </div>
       </section>
-      {/* Seção Nossas Soluções com título e cards lado a lado */}
-      <section className="w-full" style={{ background: '#F8EFEA' }}>
-        <div className="flex flex-row items-start w-full px-8 py-8 gap-8">
-          {/* Texto lateral */}
-          <div className="flex-1 max-w-md flex flex-col justify-center">
-            <h1 className="text-4xl font-extrabold text-left text-[#E22E5B] mb-6">Nossas soluções</h1>
-            <p className="text-base text-xl text-left text-[#9B6B6B]">
-              Disponibilizamos um portfólio de serviços de tecnologia e produtos de telessaúde para empresas, operadoras de saúde e governo com suporte integral e consultoria.
-            </p>
-          </div>
-          {/* Cards lado a lado */}
-          <div className="flex flex-row gap-8 flex-1 justify-start flex-nowrap">
+      {/* Seção Nossas Soluções conforme protótipo */}
+      <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-10">
+        <div className="max-w-6xl mx-auto px-2 md:px-4">
+          <h1 className="text-2xl md:text-4xl font-bold text-left text-[#E22E5B] mb-4 md:mb-6" style={{ fontFamily: "'Open Sans', 'Montserrat', 'Poppins', sans-serif" }}>
+            Nossas soluções
+          </h1>
+          <p className="text-[#9B6B6B] mb-4 md:mb-16 text-lg md:text-lg text-left">
+            Disponibilizamos um portfólio de serviços de tecnologia e produto de telessaúde para empresas, operadoras de saúde e governo.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 justify-center">
             {/* Card Plataforma de Telessaúde */}
-            <div className="bg-[#FFF6F6] rounded-xl shadow-lg p-8 w-80 flex flex-col items-center text-center">
-              <span className="text-5xl mb-4">❤️</span>
-              <h2 className="text-2xl font-bold text-[#E22E5B] mb-4">Plataforma de Telessaúde</h2>
-              <p className="text-base text-[#9B6B6B] mb-4">
-                Plataforma de telessaúde integral disponível de forma mobile para os sistemas Android e iOS.<br /><br />
-                Possui um portfólio abrangente de especialidades para titulares e dependentes, com profissionais regulados pelo <b>CFM</b> (Conselho Federal de Medicina).
+            <div className="bg-#F8EFEA rounded-2xl shadow-lg p-8 flex flex-col items-center text-center max-w-sm w-full mx-auto">
+              <img src={platsaude} alt="Plataforma de Telessaúde" className="h-12 w-12 mb-4" />
+              <h2 className="text-2xl font-bold text-[#E22E5B] mb-4">Plataforma de <br /> Telessaúde</h2>
+              <p className="text-base text-[#9B6B6B] mb-6">
+                Plataforma de telessaúde integral em parceria com a <b>Mediquo,</b>disponível de forma mobile para os sistemas Android e iOS.<br /><br />
+                Possui um corpo clínico abrangente de especialidades para titulares e dependentes, com profissionais regulados pelo <b>CFM</b> (Conselho Federal de Medicina).
               </p>
               <a href="/nossas-solucoes/produtos">
                 <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-2 px-6 rounded-lg shadow transition">Saiba mais</button>
               </a>
             </div>
             {/* Card Serviços */}
-            <div className="bg-[#FFF6F6] rounded-xl shadow-lg p-8 w-80 flex flex-col items-center text-center">
-              <img src={servicosIcon} alt="Serviços" className="h-16 w-16 mb-4" />
-              <h2 className="text-2xl font-bold text-[#E22E5B] mb-7">Serviços</h2>
-              <ul className="text-base text-[#9B6B6B] text-left mb-11 list-disc list-inside">
-                <li>Outsourcing de TI</li>
+            <div className="bg-#F8EFEA rounded-2xl shadow-lg p-8 flex flex-col items-center text-center max-w-sm w-full mx-auto">
+              <img src={servicosIcon} alt="Serviços" className="h-12 w-12 mb-4" />
+              <h2 className="text-2xl font-bold text-[#E22E5B] mb-8">Serviços</h2>
+              <ul className=" text-[#9B6B6B] text-left mb-10 list-disc list-inside space-y-3">
+                <li>Terceirização de TI</li>
                 <li>Identidade visual e branding</li>
                 <li>Desenvolvimento de sites e plataformas</li>
                 <li>Infraestrutura de câmeras <b>(CFTV)</b></li>
@@ -62,43 +75,42 @@ function Telainicio() {
         </div>
       </section>
       {/* Seção Parceiros */}
-      <section className="w-full py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-4xl font-extrabold text-[#E22E5B] mb-8 text-left">Parceiros</h2>
-          <div className="flex items-center justify-center gap-12">
+      <section className="w-full py-1 md:py-8 bg-white">
+        <div className="w-full px-0 md:px-1">
+          <h2 className="text-2xl md:text-4xl font-extrabold text-[#E22E5B] mb-8 md:mb-14 text-left px-4 md:px-8"  style={{ fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'" }}>
+            Parceiros
+          </h2>
+          <div className="flex flex-wrap items-center justify-between gap-4 md:gap-12 w-full px-4 md:px-8">
             {/* Seta esquerda */}
-            <span className="text-[#E22E5B] text-3xl cursor-pointer select-none">&#60;</span>
+            <span className="text-[#E22E5B] text-2xl md:text-3xl cursor-pointer select-none">&#60;</span>
             {/* Logos dos parceiros */}
-            <img src="/parceiros/algar.png" alt="Algar" className="h-12 object-contain" />
-            <img src="/parceiros/parlacom.png" alt="Parlacom" className="h-12 object-contain" />
-            <img src="/parceiros/mediquo.png" alt="MediQuo" className="h-12 object-contain" />
+            <img src={logomediquo} alt="Algar" className="h-12 md:h-16 object-contain" />
+            <img src={logoparlacom} alt="Parlacom" className="h-12 md:h-16 object-contain" />
+            <img src={logomediquo} alt="MediQuo" className="h-12 md:h-16 object-contain" />
             {/* Seta direita */}
-            <span className="text-[#E22E5B] text-3xl cursor-pointer select-none">&#62;</span>
+            <span className="text-[#E22E5B] text-2xl md:text-3xl cursor-pointer select-none">&#62;</span>
           </div>
         </div>
       </section>
       {/* Seção Contato */}
-      <section className="w-full py-16 bg-[#FFF9F5]">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-4xl font-extrabold text-[#E22E5B] mb-8 text-left">Contato</h2>
-          <p className="text-[#9B6B6B] mb-8 text-2xl text-left">Entre em contato conosco através do formulário abaixo ou diretamente pelo número comercial.</p>
-          <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col md:flex-row gap-8">
+      <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-10">
+        <div className="max-w-6xl mx-auto px-2 md:px-4">
+          <h2 className="text-2xl md:text-4xl font-extrabold text-[#E22E5B] mb-4 md:mb-8 text-left" style={{ fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'" }} >Contato</h2>
+          <p className="text-[#9B6B6B] mb-4 md:mb-8 text-lg md:text-xl text-left">Entre em contato conosco através do formulário abaixo ou diretamente pelo número comercial.</p>
+          <div className="bg-[#F5F5F5] rounded-xl shadow-lg p-4 md:p-8 flex flex-col md:flex-row gap-6 md:gap-8">
             {/* Formulário */}
             <form className="flex-1 flex flex-col gap-4" autoComplete="off" onSubmit={e => { e.preventDefault(); }}>
-              <span className="text-[#E22E5B] font-bold text-lg mb-3">Preencha o formulário abaixo </span>
-              <input required type="text" name="nome" placeholder="Nome" className="border rounded px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
-              <input required type="email" name="email" placeholder="E-mail" className="border rounded px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
-              <input required type="tel" name="telefone" placeholder="Telefone" className="border rounded px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
-              <input required type="text" name="empresa" placeholder="Nome da Empresa" className="border rounded px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
-              <textarea required name="necessidade" placeholder="Descreva a necessidade" className="border rounded px-3 py-2 min-h-[96px] focus:outline-[#E22E5B] text-[#222]" />
+              <span className="text-[#E22E5B] font-bold text-base md:text-lg mb-3">Preencha o formulário abaixo </span>
+              <input required type="text" name="nome" placeholder="Nome" className="border-2 rounded border-[#] px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
+              <input required type="email" name="email" placeholder="E-mail" className="border-2 rounded px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
+              <input required type="tel" name="telefone" placeholder="Telefone" className="border-2 rounded px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
+              <input required type="text" name="empresa" placeholder="Nome da Empresa" className="border-2 rounded px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
+              <textarea required name="necessidade" placeholder="Descreva a necessidade" className="border-2 rounded px-3 py-2 min-h-[96px] focus:outline-[#E22E5B] text-[#222]" />
               <button type="submit" className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-2 px-8 rounded-lg shadow mt-2 w-32">Enviar</button>
             </form>
             {/* Contatos rápidos */}
             <div className="flex-1 flex flex-col gap-6 justify-center">
-              <div className="flex items-center gap-3 text-[#E22E5B]">
-                <span className="text-xl">{/* WhatsApp ícone */} <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' className='w-6 h-6 inline'><path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M16.72 13.06a6.5 6.5 0 10-2.72 2.72l2.85.71a1 1 0 001.21-1.21l-.71-2.85z' /></svg></span>
-                <span className="font-bold">(81)9-9999-9999</span>
-              </div>
+          
               {/* Instagram - comentado temporariamente
               <div className="flex items-center gap-3 text-[#E22E5B]">
                 <span className="text-xl">

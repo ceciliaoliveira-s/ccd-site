@@ -13,7 +13,7 @@ function QuemSomos() {
   return (
     <div className="w-full min-h-screen flex flex-col">
       {/* Primeira section conforme protótipo */}
-      <section className="flex flex-col md:flex-row items-start w-full pl-1 py-15 px-4 bg-white">
+      <section className="flex flex-col md:flex-row items-start w-full pl-1 py-15 px-0 bg-white">
         <div className="flex-1 flex flex-col items-start justify-center max-w-2x1">
           <h1 
             className="text-4xl md:text-5xl font-extrabold text-[#E22E5B] mb-12 leading-tight text-left" 
@@ -21,16 +21,20 @@ function QuemSomos() {
           >
             Produtos de tecnologia e<br />plataforma de telessaúde
           </h1>
-          <p className="text-base md:text-lg text-[#9B6B6B] max-w-xl text-left">
+          <p className="text-base md:text-lg text-[#9B6B6B] max-w-xl text-left mb-16">
             O <span className="font-bold text-[#E22E5B]">Centro de Cuidado Digital</span> é uma empresa que tem o propósito de integrar ferramentas tecnológicas e de telessaúde ao mercado, criando soluções de alta performance com amplas camadas de segurança, suporte e escalabilidade que transformam o negócio das empresas parceiras.
           </p>
+          <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white text-base md:text-xl  mb-16 font-bold py-3 px-8 md:px-11 rounded-lg shadow-md transition">
+            Quero Contratar
+          </button>
+
         </div>
         {/* Imagem conforme protótipo */}
         <div className="flex-1 flex justify-center items-center mt-10 md:mt-0">
           <img
             src={capaquemsomos}
             alt="Produtos de tecnologia e plataforma de telessaúde"
-            className="w-full max-w-[420px] h-auto"
+            className="w-full max-w-[550px] h-auto"
           />
         </div>
       </section>
@@ -45,25 +49,24 @@ function QuemSomos() {
     <div className="rounded-2xl shadow-lg p-10 flex flex-col md:flex-row items-start gap-4 bg-white">
       {/* Ícone */}
       <div className="flex-shrink-0 flex items-start justify-start -mt-2 md:mt-0">
-        <img src={alvomissao} alt="missão" className="w-20 h-20 object-contain" />
+        <img src={alvomissao} alt="missão" className="w-22 h-22 object-contain" />
       </div>
 
       {/* Texto */}
              <div className="flex-1 flex flex-col gap-8">
-         <p className="text-2xl text-left text-[#A35E57]">
-           Nossa missão é cuidar e atender os nossos clientes de maneira ágil e acessível
-           com o objetivo de gerar valor ao seu negócio e de construir um relacionamento
-           estratégico em atendimento e suporte de maneira eficiente.
+         <p className="text-xl text-left text-[#A35E57]">
+           Nossa missão é cuidar e atender os nossos parceiros de maneira ágil e com qualidade, promovendo geração de valor
+           ao seu negócio e construindo um relacionamento de confiança e excelência. Estamos sempre alinhados as melhores práticas de mercado e com produtos e tecnologia de ponta pra gerar valor estratégico aos nossos parceiros.
          </p>
-         <p className="text-2xl text-left text-[#A35E57]">
-           Nosso produto de telessaúde e o portfólio de serviços e suporte são oferecidos
-           com este compromisso e eficiência.
+         <p className="text-xl text-left text-[#A35E57]">
+           Agregado a nossa <b>missão,</b>  impulsionamos a plataforma de telessaúde <b>Mediquo</b>  com pronto atendimento 24h e multiplas especialidades com a finalidade de cuidarmos dos nossos parceiros e dependentes.
+          
+         </p>
+         <p className="text-xl text-left text-[#A35E57]">
+           E por fim, demais serviços que disponibilizamos, estão alinhados a nossa missão de gerar valor e crescimento ao mercado de maneira séria e responsável.
          </p>
 
         <div className="flex justify-end mt-0">
-          <button className="bg-[#E22E5B] hover:bg-[#bd6d89] text-white font-bold py-3 px-8 rounded-lg shadow transition">
-            Quero Contratar
-          </button>
         </div>
       </div>
     </div>
@@ -107,7 +110,7 @@ function QuemSomos() {
        {/* Valor 4 */}
        <div className="flex flex-col items-center text-center gap-10">
            <img src={Securityicon} alt="Acessibilidade" className="w-16 h-16 object-contain" />
-         <span className="font-bold text-lg text-[#A35E57]">
+         <span className="font-bold text-lg text-[#A35E57] mb-20">
            Responsabilidade e <br /> privacidade
          </span>
        </div>

@@ -1,20 +1,33 @@
 import Footer from './Footer';
+import capaproduto3 from '../assets/capaproduto3.png';
 
 function Produtos() {
   return (
     <div className="w-full min-h-screen flex flex-col bg-white">
       {/* Seção Plataforma de Telessaúde */}
-      <section className="w-full flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-25 gap-10 bg-white">
+      <section className="w-full flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-10 gap-10 bg-white">
         <div className="flex-1 flex flex-col items-start justify-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-[#E22E5B] mb-12 leading-tight">Plataforma de telessaúde</h1>
-          <p className="text-base text-left text-[#9B6B6B] mb-2">
-            Somos parceiros da <span className="font-bold text-[#E22E5B]">Mediquo</span>, uma empresa com mais de 15 anos no
-            mercado  brasileiro e europeu com amplo impacto e democratização do acesso à saúde através da plataforma de telessaúde.
+          <h1 className="text-4xl md:text-5xl font-extrabold text-[#E22E5B] mb-8 leading-tight text-left" style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}>Plataforma de telessaúde <br /> para cuidado integral <br />Mediquo</h1>
+          <p className="text-base text-left text-[#9B6B6B] mb-4">
+            Somos parceiros da <span className="font-bold text-[#E22E5B]">Mediquo</span>, uma empresa com mais de <b>15 anos</b> no
+            mercado <br />  brasileiro e europeu com amplo impacto e democratização do acesso à saúde <br /> através da plataforma de telessaúde.
           </p>
-          <p className="text-base md:text-lg text-[#9B6B6B] mb-2">
-            Sua disponibilização ocorre de forma mobile para os sistemas Android e IOS.
+          <p className="text-base md:text-base text-[#9B6B6B] mb-4">
+            Sua disponibilização ocorre de forma mobile para os sistemas  <b> Android e IOS.</b>
           </p>
-          <p className="text-base md:text-lg text-[#E22E5B] font-semibold mt-6">Saiba mais sobre a nossa plataforma de telessaúde abaixo.</p>
+          <p className="text-base md:text-lg text-[#E22E5B] font-semibold mt-2 mb-12">Saiba mais sobre a plataforma de telessaúde abaixo.</p>
+          <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white text-base md:text-xl  mb-4 font-bold py-3 px-8 md:px-11 rounded-lg shadow-md transition">
+            Quero Contratar
+          </button>
+        </div>
+      
+          {/* LADO DIREITO: imagem responsiva */}
+        <div className="flex justify-center mt-10 md:mt-0 w-full md:w-auto">
+          <img
+            src={capaproduto3}
+            alt="Tecnologia e Telessaúde"
+            className="w-full max-w-[500px] md:max-w-[360px] h-auto"
+          />
         </div>
       </section>
       {/* Seção Especialidades Disponíveis */}
@@ -22,7 +35,7 @@ function Produtos() {
         <div className="max-w-7xl mx-auto">
           {/* Header da seção */}
           <div className="text-left mb-12">
-            <h2 className="text-4xl md:text-4xl font-bold text-[#E95470] mb-10">
+            <h2 className="text-4xl md:text-4xl font-bold text-[#E95470] mb-10" style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}>
               Especialidades disponíveis
             </h2>
             <p className="text-base text-left text-[#A35E57] max-w-6xl mb-16">
@@ -146,7 +159,7 @@ function Produtos() {
         </div>
       </section>
       <section className="w-full py-16 px-6 md:px-16 bg-[#FFFFFF] flex flex-col items-start">
-        <h2 className="text-4xl font-extrabold text-[#E22E5B] mb-20">Programa de cashback e benefícios exclusivos</h2>
+        <h2 className="text-4xl font-extrabold text-[#E22E5B] mb-20" style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}>Programa de cashback e benefícios exclusivos</h2>
         <div className="bg-white rounded-2xl shadow-lg p-12 max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row items-start gap-6">
             {/* Ícone do cashback */}
@@ -264,7 +277,7 @@ function Produtos() {
 
       {/* Seção Benefícios por Segmento */}
       <section className="w-full py-16 px-6 md:px-16 bg-[#FFF9F5] flex flex-col items-start">
-        <h2 className="text-4xl font-extrabold text-[#E22E5B] mb-10">Benefícios por segmento</h2>
+        <h2 className="text-4xl font-extrabold text-[#E22E5B] mb-10" style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}>Benefícios por segmento</h2>
         <p className="text-base text-[#9B6B6B] max-w-6xl text-left mb-16">
           A plataforma <b>Mediquo</b> é um app de telemedicina e telessaúde multiprofissional que utiliza a tecnologia para facilitar o acesso rápido, prático e seguro aos cuidados de saúde em todo o Brasil e na Europa, e que alcança diversos segmentos.
         </p>

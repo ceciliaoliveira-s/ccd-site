@@ -1,5 +1,16 @@
 import Footer from './Footer';
 import capaproduto3 from '../assets/capaproduto3.png';
+import cashbackicon from '../assets/cashbackicon.png';
+import clinicogeralicon from '../assets/clinicogeralicon.png'; 
+import dermatologistaicon from '../assets/dermatologistaicon.png';
+import ginecologistaicon from '../assets/ginecologistaicon.png';
+import psicologoicon from '../assets/psicologoicon.png';
+import pediatriaicon from '../assets/pediatriaicon.png';
+
+
+
+
+
 
 function Produtos() {
   return (
@@ -7,7 +18,7 @@ function Produtos() {
       {/* Seção Plataforma de Telessaúde */}
       <section className="w-full flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-10 gap-10 bg-white">
         <div className="flex-1 flex flex-col items-start justify-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-[#E22E5B] mb-8 leading-tight text-left" style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}>Plataforma de telessaúde <br /> para cuidado integral <br />Mediquo</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-[#E22E5B] mb-8 leading-tight text-left" style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}>Plataforma de telessaúde <br /> para cuidado integral</h1>
           <p className="text-base text-left text-[#9B6B6B] mb-4">
             Somos parceiros da <span className="font-bold text-[#E22E5B]">Mediquo</span>, uma empresa com mais de <b>15 anos</b> no
             mercado <br />  brasileiro e europeu com amplo impacto e democratização do acesso à saúde <br /> através da plataforma de telessaúde.
@@ -49,28 +60,25 @@ function Produtos() {
             <div className="space-y-6">
               {/* Clínico Geral 24h */}
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-[#E95470] rounded-full flex items-center justify-center">
-                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                  </svg>
+                <div className="w-16 h-16 flex items-center justify-center rounded-xl">
+                  <img src={clinicogeralicon} alt="Clínico Geral 24h" className="w-24 h-24 object-contain" />
                 </div>
-                <span className="font-bold text-[#A35E57]">Clínico Geral 24h</span>
+                <span className="font-bold text-[#A35E57]">Pronto Atendimento 24h</span>
               </div>
               
               {/* Dermatologista */}
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-[#E95470] rounded-full flex items-center justify-center">
-                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                  </svg>
+                <div className="w-16 h-16 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  <img src={dermatologistaicon} alt="Dermatologista" className="w-24 h-24 object-contain" />
                 </div>
                 <span className="font-bold text-[#A35E57]">Dermatologista</span>
               </div>
               
               {/* Nutricionista */}
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-[#E95470] rounded-full flex items-center justify-center">
-                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <div className="w-12 h-12 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  {/* Substitua pelo ícone de nutricionista se houver */}
+                  <svg className="w-6 h-6 text-[#fff]" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M8.1 13.34l2.83-2.83L3.91 3.5c-1.56 1.56-1.56 4.09 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z"/>
                   </svg>
                 </div>
@@ -79,10 +87,8 @@ function Produtos() {
               
               {/* Treinador físico */}
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-[#E95470] rounded-full flex items-center justify-center">
-                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M13.49 5.48c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm-3.6 13.9l1-4.4 2.1 2v6h2v-7.5l-2.1-2 .6-3c1.3 1.5 3.3 2.5 5.5 2.5v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1l-5.2 2.2v4.7h2v-3.4l1.8-.7-1.6 8.1-4.9-1-.4 2 7 1.4z"/>
-                  </svg>
+                <div className="w-16 h-16 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  {/* Substitua pelo ícone de treinador físico se houver */}
                 </div>
                 <span className="font-bold text-[#A35E57]">Treinador físico</span>
               </div>
@@ -92,42 +98,37 @@ function Produtos() {
             <div className="space-y-4">
               {/* Ginecologista */}
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-[#E95470] rounded-full flex items-center justify-center">
-                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                  </svg>
+                <div className="w-16 h-16 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  <img src={ginecologistaicon} alt="Ginecologista" className="w-24 h-24 object-contain" />
                 </div>
                 <span className="font-bold text-[#A35E57]">Ginecologista</span>
               </div>
               
               {/* Psicólogo */}
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-[#E95470] rounded-full flex items-center justify-center">
-                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                  </svg>
+                <div className="w-16 h-16 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  <img src={psicologoicon} alt="Psicólogo" className="w-24 h-24 object-contain" />
                 </div>
                 <span className="font-bold text-[#A35E57]">Psicólogo</span>
               </div>
               
               {/* Pediatra */}
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-[#E95470] rounded-full flex items-center justify-center">
-                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                  </svg>
+                <div className="w-16 h-16 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  <img src={pediatriaicon} alt="Pediatra" className="w-24 h-24 object-contain" />
                 </div>
                 <span className="font-bold text-[#A35E57]">Pediatra</span>
               </div>
               
               {/* Médico Veterinário */}
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-[#E95470] rounded-full flex items-center justify-center">
-                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <div className="w-12 h-12 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  {/* Substitua pelo ícone de veterinário se houver */}
+                  <svg className="w-6 h-6 text-[#fff]" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M4.34 17h9.32c-.84-.58-2.87-1.25-4.66-1.25s-3.82.67-4.66 1.25zm9.32-6c-.84-.58-2.87-1.25-4.66-1.25s-3.82.67-4.66 1.25h9.32zM4.34 5h9.32c-.84-.58-2.87-1.25-4.66-1.25s-3.82.67-4.66 1.25z"/>
                   </svg>
                 </div>
-                <span className="font-bold text-[#A35E57]">Médico Veterinário para cães e gatos</span>
+                <span className="font-bold text-[#A35E57]">Médicos Veterinários</span>
               </div>
             </div>
           </div>
@@ -164,9 +165,11 @@ function Produtos() {
           <div className="flex flex-col md:flex-row items-start gap-6">
             {/* Ícone do cashback */}
             <div className="flex-shrink-0">
-              <div className="w-12 h-12 bg-green-100 border-2 border-green-300 border-dashed rounded-full flex items-center justify-center">
-                <span className="text-green-600 font-bold text-xl">$</span>
-              </div>
+              <img
+                src={cashbackicon}
+                alt="Cashback"
+                className="w-12 h-12 object-contain"
+              />
             </div>
             <div className="flex-1 flex flex-col gap-4">
               <div>

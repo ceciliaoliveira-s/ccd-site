@@ -6,17 +6,18 @@ import dermatologistaicon from '../assets/dermatologistaicon.png';
 import ginecologistaicon from '../assets/ginecologistaicon.png';
 import psicologoicon from '../assets/psicologoicon.png';
 import pediatriaicon from '../assets/pediatriaicon.png';
-
-
-
-
-
+import appicon from '../assets/appicon.png';
+import infinitoicon from '../assets/infinitoicon.png';
+import vintequatrohrsicon from '../assets/24hrsicon.png';
+import nullicon from '../assets/nullicon.png';
+import familyicon from '../assets/familyicon.png';
+import aceitacaoicon from '../assets/aceitacaoicon.png';
 
 function Produtos() {
   return (
     <div className="w-full min-h-screen flex flex-col bg-white">
       {/* Seção Plataforma de Telessaúde */}
-      <section className="w-full flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-10 gap-10 bg-white">
+      <section className="w-full flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-4 gap-10 bg-white">
         <div className="flex-1 flex flex-col items-start justify-center">
           <h1 className="text-4xl md:text-5xl font-extrabold text-[#E22E5B] mb-8 leading-tight text-left" style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}>Plataforma de telessaúde <br /> para cuidado integral</h1>
           <p className="text-base text-left text-[#9B6B6B] mb-4">
@@ -42,7 +43,7 @@ function Produtos() {
         </div>
       </section>
       {/* Seção Especialidades Disponíveis */}
-      <section className="w-full py-14 px-6 md:px-16 bg-[#FFF9F5]">
+      <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-14">
         <div className="max-w-7xl mx-auto">
           {/* Header da seção */}
           <div className="text-left mb-12">
@@ -55,7 +56,7 @@ function Produtos() {
           </div>
 
           {/* Lista de especialidades em duas colunas */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-4 mb-12 max-w-6xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-4 mb-12 max-w-10xl">
             {/* Coluna Esquerda */}
             <div className="space-y-6">
               {/* Clínico Geral 24h */}
@@ -209,72 +210,40 @@ function Produtos() {
         {/* Grid de Benefícios */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl mt-20">
           {/* Benefício 1 - 100% seguro */}
-          <div className="flex flex-col items-center text-center gap-3">
-            <div className="w-12 h-12 bg-[#E22E5B] rounded-full flex items-center justify-center">
-              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                <path d="M9 12l2 2 4-4" stroke="white" strokeWidth="2" fill="none"/>
-              </svg>
-            </div>
-            <span className="font-semibold text-[#9B6B6B]">100% seguro</span>
+          <div className="flex flex-col items-center">
+            <img src={appicon} alt="100% seguro" className="w-12 h-12 object-contain mb-6" />
+            <span className="font-bold text-[#A35E57] mb-20">100% Seguro</span>
           </div>
 
           {/* Benefício 2 - Acesso ilimitado */}
-          <div className="flex flex-col items-center text-center gap-3">
-            <div className="w-12 h-12 bg-[#E22E5B] rounded-full flex items-center justify-center">
-              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
-              </svg>
-            </div>
-            <span className="font-semibold text-[#9B6B6B]">Acesso ilimitado</span>
+          <div className="flex flex-col items-center">
+            <img src={infinitoicon} alt="Acesso ilimitado" className="w-12 h-12 object-contain mb-2" />
+            <span className="font-bold text-[#A35E57]">Acesso ilimitado</span>
           </div>
 
           {/* Benefício 3 - Atendimento 24h */}
-          <div className="flex flex-col items-center text-center gap-3">
-            <div className="w-12 h-12 bg-[#E22E5B] rounded-full flex items-center justify-center">
-              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M12 6v6l4 2"/>
-              </svg>
-            </div>
-            <span className="font-semibold text-[#9B6B6B]">Atendimento 24h</span>
+          <div className="flex flex-col items-center">
+            <img src={vintequatrohrsicon} alt="Atendimento 24h" className="w-12 h-12 object-contain mb-2" />
+            <span className="font-bold text-[#A35E57]">Atendimento 24h</span>
           </div>
 
           {/* Benefício 4 - 90% de resolução de casos */}
           <div className="flex flex-col items-center text-center gap-3">
-            <div className="w-12 h-12 bg-[#E22E5B] rounded-full flex items-center justify-center">
-              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M9 12l2 2 4-4"/>
-              </svg>
-            </div>
+            <img src={aceitacaoicon} alt="90% de resolução de casos" className="w-12 h-12 object-contain mb-2" />
             <span className="font-semibold text-[#9B6B6B]">90% de resolução de casos</span>
           </div>
 
           {/* Benefício 5 - Inclusão de dependentes */}
           <div className="flex flex-col items-center text-center gap-3">
-            <div className="w-12 h-12 bg-[#E22E5B] rounded-full flex items-center justify-center">
-              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-              </svg>
-            </div>
+            <img src={familyicon} alt="Inclusão de dependentes" className="w-12 h-12 object-contain mb-2" />
             <span className="font-semibold text-[#9B6B6B]">Inclusão de dependentes</span>
           </div>
 
           {/* Benefício 6 - Sem custos adicionais */}
-          <div className="flex flex-col items-center text-center gap-3">
-            <div className="w-12 h-12 bg-[#E22E5B] rounded-full flex items-center justify-center">
-              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M15 9l-6 6"/>
-                <path d="M9 9l6 6"/>
-              </svg>
+              <div className="flex flex-col items-center">
+                <img src={nullicon} alt="Sem custos adicionais" className="w-12 h-12 object-contain mb-2" />
+                <span className="font-bold text-[#A35E57]">Sem custos adicionais</span>
             </div>
-            <span className="font-semibold text-[#9B6B6B]">Sem custos adicionais</span>
-          </div>
         </div>
       </section>
 

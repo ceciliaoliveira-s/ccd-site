@@ -5,8 +5,36 @@ import capatelainicio2 from '../assets/capatelainicio2.png';
 import logomediquo from '../assets/logomediquo.png';  
 import logoparlacom from  '../assets/logoparlacom.png';
 import { motion } from 'framer-motion';
+import React, { useState } from 'react';
+
+const parceirosLogos = [logomediquo, logoparlacom, logomediquo, logomediquo, logoparlacom, logomediquo];
 
 function Telainicio() {
+  const [startIndex, setStartIndex] = useState(0);
+  const visibleCount = 4; 
+
+  const handlePrev = () => {
+    setStartIndex((prev) => (prev - 1 + parceirosLogos.length) % parceirosLogos.length);
+  };
+
+  const handleNext = () => {
+    setStartIndex((prev) => (prev + 1) % parceirosLogos.length);
+  };
+
+  // Gera os logos visíveis com rotação circular
+  const visibleLogos = Array.from({ length: visibleCount }).map((_, idx) => {
+    const logoIndex = (startIndex + idx) % parceirosLogos.length;
+    return (
+      <motion.img
+        key={logoIndex}
+        src={parceirosLogos[logoIndex]}
+        alt={`Parceiro-${logoIndex}`}
+        className="h-12 md:h-16 object-contain cursor-pointer"
+        whileHover={{ scale: 1.1, boxShadow: "0px 4px 15px rgba(0,0,0,0.15)" }}
+      />
+    );
+  });
+
   return (
     <div className="flex flex-col gap-16 w-full">
       {/* Primeira seção: texto à esquerda, imagem à direita */}
@@ -35,7 +63,7 @@ function Telainicio() {
         </div>
       </section>
 
-      {/* Seção Nossas Soluções conforme protótipo */}
+      {/* Seção Nossas Soluções*/}
       <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-10">
         <div className="max-w-6xl mx-auto px-2 md:px-4">
           <h1
@@ -135,20 +163,45 @@ function Telainicio() {
         </div>
       </section>
       {/* Seção Parceiros */}
-      <section className="w-full py-1 md:py-8 bg-white">
+      <section className="w-full py-10 bg-white overflow-hidden">
         <div className="w-full px-0 md:px-1">
-          <h2 className="text-2xl md:text-4xl font-extrabold text-[#E22E5B] mb-8 md:mb-14 text-left px-4 md:px-8"  style={{ fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'" }}>
+          {/* Título com fade-in */}
+          <motion.h2
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-2xl md:text-4xl font-extrabold text-[#E22E5B] mb-8 md:mb-14 text-left px-4 md:px-8"
+            style={{
+              fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'",
+            }}
+          >
             Parceiros
-          </h2>
-          <div className="flex flex-wrap items-center justify-between gap-4 md:gap-12 w-full px-4 md:px-8">
+          </motion.h2>
+
+          <div className="relative flex items-center w-full overflow-hidden">
             {/* Seta esquerda */}
-            <span className="text-[#E22E5B] text-2xl md:text-3xl cursor-pointer select-none">&#60;</span>
-            {/* Logos dos parceiros */}
-            <img src={logomediquo} alt="Algar" className="h-12 md:h-16 object-contain" />
-            <img src={logoparlacom} alt="Parlacom" className="h-12 md:h-16 object-contain" />
-            <img src={logomediquo} alt="MediQuo" className="h-12 md:h-16 object-contain" />
+            <motion.span
+              whileHover={{ scale: 1.2, x: -3 }}
+              className="absolute left-2 z-10 text-[#E22E5B] text-2xl md:text-3xl cursor-pointer select-none"
+              onClick={handlePrev}
+            >
+              &#60;
+            </motion.span>
+
+            {/* Carrossel controlado */}
+            <div className="flex gap-12 md:gap-16 px-16 transition-all duration-300">
+              {visibleLogos}
+            </div>
+
             {/* Seta direita */}
-            <span className="text-[#E22E5B] text-2xl md:text-3xl cursor-pointer select-none">&#62;</span>
+            <motion.span
+              whileHover={{ scale: 1.2, x: 3 }}
+              className="absolute right-2 z-10 text-[#E22E5B] text-2xl md:text-3xl cursor-pointer select-none"
+              onClick={handleNext}
+            >
+              &#62;
+            </motion.span>
           </div>
         </div>
       </section>

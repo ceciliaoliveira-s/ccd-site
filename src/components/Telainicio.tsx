@@ -1,9 +1,10 @@
 import servicosIcon from '../assets/Servicos icon.png';
 import platsaude from '../assets/Platsaude.png';
 import Footer from '../components/Footer';
-import capatelainicio1 from '../assets/capatelainicio1.png';
+import capatelainicio2 from '../assets/capatelainicio2.png';
 import logomediquo from '../assets/logomediquo.png';  
 import logoparlacom from  '../assets/logoparlacom.png';
+import { motion } from 'framer-motion';
 
 function Telainicio() {
   return (
@@ -27,53 +28,112 @@ function Telainicio() {
         {/* LADO DIREITO: imagem responsiva */}
         <div className="flex justify-center mt-10 md:mt-0 w-full md:w-auto">
           <img
-            src={capatelainicio1}
+            src={capatelainicio2}
             alt="Tecnologia e Telessaúde"
             className="w-full max-w-[320px] md:max-w-[650px] h-auto"
           />
         </div>
       </section>
-      {/* Seção Nossas Soluções conforme protótipo */}
-      <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-10">
-        <div className="max-w-6xl mx-auto px-2 md:px-4">
-          <h1 className="text-2xl md:text-4xl font-bold text-left text-[#E22E5B] mb-4 md:mb-6" style={{ fontFamily: "'Open Sans', 'Montserrat', 'Poppins', sans-serif" }}>
-            Nossas soluções
-          </h1>
-          <p className="text-[#9B6B6B] mb-4 md:mb-16 text-lg md:text-lg text-left">
-            Disponibilizamos um portfólio de serviços de tecnologia e produto de telessaúde para empresas, operadoras de saúde e governo.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 justify-center">
-            {/* Card Plataforma de Telessaúde */}
-            <div className="bg-#F8EFEA rounded-2xl shadow-lg p-8 flex flex-col items-center text-center max-w-sm w-full mx-auto">
-              <img src={platsaude} alt="Plataforma de Telessaúde" className="h-12 w-12 mb-4" />
-              <h2 className="text-2xl font-bold text-[#E22E5B] mb-4">Plataforma de <br /> Telessaúde</h2>
-              <p className="text-base text-[#9B6B6B] mb-6">
-                Plataforma de telessaúde integral em parceria com a <b>Mediquo,</b>disponível de forma mobile para os sistemas Android e iOS.<br /><br />
-                Possui um corpo clínico abrangente de especialidades para titulares e dependentes, com profissionais regulados pelo <b>CFM</b> (Conselho Federal de Medicina).
-              </p>
-              <a href="/nossas-solucoes/produtos">
-                <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-2 px-6 rounded-lg shadow transition">Saiba mais</button>
-              </a>
-            </div>
-            {/* Card Serviços */}
-            <div className="bg-#F8EFEA rounded-2xl shadow-lg p-8 flex flex-col items-center text-center max-w-sm w-full mx-auto">
-              <img src={servicosIcon} alt="Serviços" className="h-12 w-12 mb-4" />
-              <h2 className="text-2xl font-bold text-[#E22E5B] mb-8">Serviços</h2>
-              <ul className=" text-[#9B6B6B] text-left mb-10 list-disc list-inside space-y-3">
-                <li>Terceirização de TI</li>
-                <li>Identidade visual e branding</li>
-                <li>Desenvolvimento de sites e plataformas</li>
-                <li>Infraestrutura de câmeras <b>(CFTV)</b></li>
-                <li>Infraestrutura de redes</li>
-                <li>Análise de dados</li>
-              </ul>
-              <a href="/nossas-solucoes/servicos">
-                <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-2 px-6 rounded-lg shadow transition">Saiba mais</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+
+{/* Seção Nossas Soluções conforme protótipo */}
+<section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-10">
+  <div className="max-w-6xl mx-auto px-2 md:px-4">
+    <h1
+      className="text-2xl md:text-4xl font-bold text-left text-[#E22E5B] mb-4 md:mb-6"
+      style={{ fontFamily: "'Open Sans', 'Montserrat', 'Poppins', sans-serif" }}
+    >
+      Nossas soluções
+    </h1>
+    <p className="text-[#9B6B6B] mb-4 md:mb-16 text-lg md:text-lg text-left">
+      Disponibilizamos um portfólio de serviços de tecnologia e produto de telessaúde para empresas, operadoras de saúde e governo.
+    </p>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-6">
+      {/* Card Plataforma de Telessaúde */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        whileHover={{ scale: 1.05 }}
+        className="bg-[#F8EFEA] rounded-2xl shadow-lg p-5 flex flex-col items-center text-center max-w-xs w-full mx-auto"
+      >
+        <motion.img
+          src={platsaude}
+          alt="Plataforma de Telessaúde"
+          className="h-10 w-10 mb-3"
+          whileHover={{ scale: 1.2 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        />
+        <h2
+          className="text-lg font-bold text-[#E22E5B] mb-2"
+          style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
+        >
+          Plataforma de <br /> Telessaúde
+        </h2>
+        <p
+          className="text-sm text-[#9B6B6B] mb-4"
+          style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
+        >
+          Plataforma de telessaúde integral em parceria com a <b>Mediquo,</b>{" "}
+          disponível de forma mobile para os sistemas Android e iOS.
+          <br />
+          <br />
+          Possui um corpo clínico abrangente de especialidades para titulares e
+          dependentes, com profissionais regulados pelo <b>CFM</b> (Conselho
+          Federal de Medicina).
+        </p>
+        <a href="/nossas-solucoes/produtos">
+          <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-2 px-6 rounded-lg shadow transition text-sm">
+            Saiba mais
+          </button>
+        </a>
+      </motion.div>
+
+      {/* Card Serviços */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        viewport={{ once: true }}
+        whileHover={{ scale: 1.05 }}
+        className="bg-[#F8EFEA] rounded-2xl shadow-lg p-5 flex flex-col items-center text-center max-w-xs w-full mx-auto"
+      >
+        <motion.img
+          src={servicosIcon}
+          alt="Serviços"
+          className="h-10 w-10 mb-3"
+          whileHover={{ scale: 1.2 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        />
+        <h2
+          className="text-lg font-bold text-[#E22E5B] mb-4"
+          style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
+        >
+          Serviços
+        </h2>
+        <ul
+          className="text-[#9B6B6B] text-left mb-4 list-disc list-inside space-y-4 text-sm"
+          style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
+        >
+          <li>Terceirização de TI</li>
+          <li>Identidade visual e branding</li>
+          <li>Desenvolvimento de sites e plataformas</li>
+          <li>
+            Infraestrutura de câmeras <b>(CFTV)</b>
+          </li>
+          <li>Infraestrutura de redes</li>
+          <li>Análise de dados</li>
+        </ul>
+        <a href="/nossas-solucoes/servicos">
+          <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-2  px-6 rounded-lg shadow transition text-sm">
+            Saiba mais
+          </button>
+        </a>
+      </motion.div>
+    </div>
+  </div>
+</section>
       {/* Seção Parceiros */}
       <section className="w-full py-1 md:py-8 bg-white">
         <div className="w-full px-0 md:px-1">

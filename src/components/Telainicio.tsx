@@ -1,7 +1,7 @@
 import servicosIcon from '../assets/Servicos icon.png';
 import platsaude from '../assets/Platsaude.png';
 import Footer from '../components/Footer';
-import capatelainicio2 from '../assets/capatelainicio2.png';
+import capatelainicio4 from '../assets/capatelainicio4.png';
 import logomediquo from '../assets/logomediquo.png';  
 import logoparlacom from  '../assets/logoparlacom.png';
 import { motion } from 'framer-motion';
@@ -56,7 +56,7 @@ function Telainicio() {
         {/* LADO DIREITO: imagem responsiva */}
         <div className="flex justify-center mt-10 md:mt-0 w-full md:w-auto">
           <img
-            src={capatelainicio2}
+            src={capatelainicio4}
             alt="Tecnologia e Telessaúde"
             className="w-full max-w-[320px] md:max-w-[650px] h-auto"
           />

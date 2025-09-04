@@ -1,5 +1,5 @@
 import Footer from './Footer';
-import capaproduto3 from '../assets/capaproduto3.png';
+import capaproduto4 from '../assets/capaproduto4.png';
 import cashbackicon from '../assets/cashbackicon.png';
 import clinicogeralicon from '../assets/clinicogeralicon.png'; 
 import dermatologistaicon from '../assets/dermatologistaicon.png';
@@ -12,36 +12,88 @@ import vintequatrohrsicon from '../assets/24hrsicon.png';
 import nullicon from '../assets/nullicon.png';
 import familyicon from '../assets/familyicon.png';
 import aceitacaoicon from '../assets/aceitacaoicon.png';
+import {motion} from 'framer-motion';
 
 function Produtos() {
   return (
     <div className="w-full min-h-screen flex flex-col bg-white">
       {/* Seção Plataforma de Telessaúde */}
       <section className="w-full flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-4 gap-10 bg-white">
-        <div className="flex-1 flex flex-col items-start justify-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-[#E22E5B] mb-8 leading-tight text-left" style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}>Plataforma de telessaúde <br /> para cuidado integral</h1>
-          <p className="text-base text-left text-[#9B6B6B] mb-4">
-            Somos parceiros da <span className="font-bold text-[#E22E5B]">Mediquo</span>, uma empresa com mais de <b>15 anos</b> no
-            mercado <br />  brasileiro e europeu com amplo impacto e democratização do acesso à saúde <br /> através da plataforma de telessaúde.
-          </p>
-          <p className="text-base md:text-base text-[#9B6B6B] mb-4">
-            Sua disponibilização ocorre de forma mobile para os sistemas  <b> Android e IOS.</b>
-          </p>
-          <p className="text-base md:text-lg text-[#E22E5B] font-semibold mt-2 mb-12">Saiba mais sobre a plataforma de telessaúde abaixo.</p>
-          <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white text-base md:text-xl  mb-4 font-bold py-3 px-8 md:px-11 rounded-lg shadow-md transition">
-            Quero Contratar
-          </button>
-        </div>
-      
-          {/* LADO DIREITO: imagem responsiva */}
-        <div className="flex justify-center mt-10 md:mt-0 w-full md:w-auto">
-          <img
-            src={capaproduto3}
-            alt="Tecnologia e Telessaúde"
-            className="w-full max-w-[500px] md:max-w-[360px] h-auto"
-          />
-        </div>
-      </section>
+  <div className="flex-1 flex flex-col items-start justify-center">
+
+    {/* Título animado */}
+    <motion.h1
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="text-4xl md:text-5xl font-extrabold text-[#E22E5B] mb-8 leading-tight text-left"
+      style={{ fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'" }}
+    >
+      Plataforma de telessaúde <br /> para cuidado integral
+    </motion.h1>
+
+    {/* Parágrafo 1 */}
+    <motion.p
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.2, duration: 0.6 }}
+      className="text-base text-left text-[#9B6B6B] mb-4"
+    >
+      Somos parceiros da <span className="font-bold text-[#E22E5B]">Mediquo</span>, uma empresa com mais de <b>15 anos</b> no
+      mercado <br /> brasileiro e europeu com amplo impacto e democratização do acesso à saúde <br /> através da plataforma de telessaúde.
+    </motion.p>
+
+    {/* Parágrafo 2 */}
+    <motion.p
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.4, duration: 0.6 }}
+      className="text-base md:text-base text-[#9B6B6B] mb-4"
+    >
+      Sua disponibilização ocorre de forma mobile para os sistemas <b> Android e IOS.</b>
+    </motion.p>
+
+    {/* Destaque */}
+    <motion.p
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.6, duration: 0.6 }}
+      className="text-base md:text-lg text-[#E22E5B] font-semibold mt-2 mb-12"
+    >
+      Saiba mais sobre a plataforma de telessaúde abaixo.
+    </motion.p>
+
+    {/* Botão animado */}
+    <motion.button
+      initial={{ scale: 0.9, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      transition={{ delay: 0.8, duration: 0.6 }}
+      whileHover={{
+        scale: 1.05,
+        backgroundColor: "#ff4c73",
+        boxShadow: "0px 6px 20px rgba(226,46,91,0.3)",
+      }}
+      className="bg-[#E22E5B] text-white text-base md:text-xl mb-4 font-bold py-3 px-8 md:px-11 rounded-lg shadow-md transition"
+    >
+      Quero Contratar
+    </motion.button>
+  </div>
+
+  {/* LADO DIREITO: imagem responsiva com animação */}
+  <motion.div
+    initial={{ opacity: 0, x: 50 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.8 }}
+    className="flex justify-center mt-10 md:mt-0 w-full md:w-auto"
+  >
+    <img
+      src={capaproduto4}
+      alt="Tecnologia e Telessaúde"
+      className="w-full max-w-[500px] md:max-w-[360px] h-auto drop-shadow-lg rounded-lg"
+    />
+  </motion.div>
+</section>
       {/* Seção Especialidades Disponíveis */}
       <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-14">
         <div className="max-w-7xl mx-auto">

@@ -35,105 +35,105 @@ function Telainicio() {
         </div>
       </section>
 
-{/* Seção Nossas Soluções conforme protótipo */}
-<section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-10">
-  <div className="max-w-6xl mx-auto px-2 md:px-4">
-    <h1
-      className="text-2xl md:text-4xl font-bold text-left text-[#E22E5B] mb-4 md:mb-6"
-      style={{ fontFamily: "'Open Sans', 'Montserrat', 'Poppins', sans-serif" }}
-    >
-      Nossas soluções
-    </h1>
-    <p className="text-[#9B6B6B] mb-4 md:mb-16 text-lg md:text-lg text-left">
-      Disponibilizamos um portfólio de serviços de tecnologia e produto de telessaúde para empresas, operadoras de saúde e governo.
-    </p>
+      {/* Seção Nossas Soluções conforme protótipo */}
+      <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-10">
+        <div className="max-w-6xl mx-auto px-2 md:px-4">
+          <h1
+            className="text-2xl md:text-4xl font-bold text-left text-[#E22E5B] mb-4 md:mb-6"
+            style={{ fontFamily: "'Open Sans', 'Montserrat', 'Poppins', sans-serif" }}
+          >
+            Nossas soluções
+          </h1>
+          <p className="text-[#9B6B6B] mb-4 md:mb-16 text-lg md:text-lg text-left">
+            Disponibilizamos um portfólio de serviços de tecnologia e produto de telessaúde para empresas, operadoras de saúde e governo.
+          </p>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-6">
-      {/* Card Plataforma de Telessaúde */}
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        whileHover={{ scale: 1.05 }}
-        className="bg-[#F8EFEA] rounded-2xl shadow-lg p-5 flex flex-col items-center text-center max-w-xs w-full mx-auto"
-      >
-        <motion.img
-          src={platsaude}
-          alt="Plataforma de Telessaúde"
-          className="h-10 w-10 mb-3"
-          whileHover={{ scale: 1.2 }}
-          transition={{ type: "spring", stiffness: 300 }}
-        />
-        <h2
-          className="text-lg font-bold text-[#E22E5B] mb-2"
-          style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
-        >
-          Plataforma de <br /> Telessaúde
-        </h2>
-        <p
-          className="text-sm text-[#9B6B6B] mb-4"
-          style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
-        >
-          Plataforma de telessaúde integral em parceria com a <b>Mediquo,</b>{" "}
-          disponível de forma mobile para os sistemas Android e iOS.
-          <br />
-          <br />
-          Possui um corpo clínico abrangente de especialidades para titulares e
-          dependentes, com profissionais regulados pelo <b>CFM</b> (Conselho
-          Federal de Medicina).
-        </p>
-        <a href="/nossas-solucoes/produtos">
-          <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-2 px-6 rounded-lg shadow transition text-sm">
-            Saiba mais
-          </button>
-        </a>
-      </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-6">
+            {/* Card Plataforma de Telessaúde */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.05 }}
+              className="bg-[#F8EFEA] rounded-2xl shadow-lg p-5 flex flex-col items-center text-center max-w-xs w-full mx-auto"
+            >
+              <motion.img
+                src={platsaude}
+                alt="Plataforma de Telessaúde"
+                className="h-10 w-10 mb-3"
+                whileHover={{ scale: 1.2 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              />
+              <h2
+                className="text-lg font-bold text-[#E22E5B] mb-2"
+                style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
+              >
+                Plataforma de <br /> Telessaúde
+              </h2>
+              <p
+                className="text-sm text-[#9B6B6B] mb-4"
+                style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
+              >
+                Plataforma de telessaúde integral em parceria com a <b>Mediquo,</b>{" "}
+                disponível de forma mobile para os sistemas Android e iOS.
+                <br />
+                <br />
+                Possui um corpo clínico abrangente de especialidades para titulares e
+                dependentes, com profissionais regulados pelo <b>CFM</b> (Conselho
+                Federal de Medicina).
+              </p>
+              <a href="/nossas-solucoes/produtos">
+                <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-2 px-6 rounded-lg shadow transition text-sm">
+                  Saiba mais
+                </button>
+              </a>
+            </motion.div>
 
-      {/* Card Serviços */}
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true }}
-        whileHover={{ scale: 1.05 }}
-        className="bg-[#F8EFEA] rounded-2xl shadow-lg p-5 flex flex-col items-center text-center max-w-xs w-full mx-auto"
-      >
-        <motion.img
-          src={servicosIcon}
-          alt="Serviços"
-          className="h-10 w-10 mb-3"
-          whileHover={{ scale: 1.2 }}
-          transition={{ type: "spring", stiffness: 300 }}
-        />
-        <h2
-          className="text-lg font-bold text-[#E22E5B] mb-4"
-          style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
-        >
-          Serviços
-        </h2>
-        <ul
-          className="text-[#9B6B6B] text-left mb-4 list-disc list-inside space-y-4 text-sm"
-          style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
-        >
-          <li>Terceirização de TI</li>
-          <li>Identidade visual e branding</li>
-          <li>Desenvolvimento de sites e plataformas</li>
-          <li>
-            Infraestrutura de câmeras <b>(CFTV)</b>
-          </li>
-          <li>Infraestrutura de redes</li>
-          <li>Análise de dados</li>
-        </ul>
-        <a href="/nossas-solucoes/servicos">
-          <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-2  px-6 rounded-lg shadow transition text-sm">
-            Saiba mais
-          </button>
-        </a>
-      </motion.div>
-    </div>
-  </div>
-</section>
+            {/* Card Serviços */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.05 }}
+              className="bg-[#F8EFEA] rounded-2xl shadow-lg p-5 flex flex-col items-center text-center max-w-xs w-full mx-auto"
+            >
+              <motion.img
+                src={servicosIcon}
+                alt="Serviços"
+                className="h-10 w-10 mb-3"
+                whileHover={{ scale: 1.2 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              />
+              <h2
+                className="text-lg font-bold text-[#E22E5B] mb-4"
+                style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
+              >
+                Serviços
+              </h2>
+              <ul
+                className="text-[#9B6B6B] text-left mb-10 list-disc list-inside space-y-4 text-sm"
+                style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
+              >
+                <li>Terceirização de TI</li>
+                <li>Identidade visual e branding</li>
+                <li>Desenvolvimento de sites e plataformas</li>
+                <li>
+                  Infraestrutura de câmeras <b>(CFTV)</b>
+                </li>
+                <li>Infraestrutura de redes</li>
+                <li>Análise de dados</li>
+              </ul>
+              <a href="/nossas-solucoes/servicos">
+                <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-2  px-6 rounded-lg shadow transition text-sm">
+                  Saiba mais
+                </button>
+              </a>
+            </motion.div>
+          </div>
+        </div>
+      </section>
       {/* Seção Parceiros */}
       <section className="w-full py-1 md:py-8 bg-white">
         <div className="w-full px-0 md:px-1">
@@ -152,50 +152,108 @@ function Telainicio() {
           </div>
         </div>
       </section>
+
       {/* Seção Contato */}
       <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-10">
         <div className="max-w-6xl mx-auto px-2 md:px-4">
-          <h2 className="text-2xl md:text-4xl font-extrabold text-[#E22E5B] mb-4 md:mb-8 text-left" style={{ fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'" }} >Contato</h2>
-          <p className="text-[#9B6B6B] mb-4 md:mb-8 text-lg md:text-xl text-left">Entre em contato conosco através do formulário abaixo ou diretamente pelo número comercial.</p>
-          <div className="bg-[#F5F5F5] rounded-xl shadow-lg p-4 md:p-8 flex flex-col md:flex-row gap-6 md:gap-8">
+          <motion.h2
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-2xl md:text-4xl font-extrabold text-[#E22E5B] mb-4 md:mb-8 text-left"
+            style={{ fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'" }}
+          >
+            Contato
+          </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="text-[#9B6B6B] mb-4 md:mb-8 text-lg md:text-xl text-left"
+          >
+            Entre em contato conosco através do formulário abaixo ou diretamente pelo número comercial.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, x: -60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="bg-[#F5F5F5] rounded-xl shadow-lg p-4 md:p-8 flex flex-col md:flex-row gap-6 md:gap-8"
+          >
             {/* Formulário */}
-            <form className="flex-1 flex flex-col gap-4" autoComplete="off" onSubmit={e => { e.preventDefault(); }}>
-              <span className="text-[#E22E5B] font-bold text-base md:text-lg mb-3">Preencha o formulário abaixo </span>
-              <input required type="text" name="nome" placeholder="Nome" className="border-2 rounded border-[#] px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
-              <input required type="email" name="email" placeholder="E-mail" className="border-2 rounded px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
-              <input required type="tel" name="telefone" placeholder="Telefone" className="border-2 rounded px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
-              <input required type="text" name="empresa" placeholder="Nome da Empresa" className="border-2 rounded px-3 py-2 focus:outline-[#E22E5B] text-[#222]" />
-              <textarea required name="necessidade" placeholder="Descreva a necessidade" className="border-2 rounded px-3 py-2 min-h-[96px] focus:outline-[#E22E5B] text-[#222]" />
-              <button type="submit" className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-2 px-8 rounded-lg shadow mt-2 w-32">Enviar</button>
+            <form
+              className="flex-1 flex flex-col gap-4"
+              autoComplete="off"
+              onSubmit={(e) => {
+                e.preventDefault();
+              }}
+            >
+              <span className="text-[#E22E5B] font-bold text-base md:text-lg mb-3">
+                Preencha o formulário abaixo
+              </span>
+              <input
+                required
+                type="text"
+                name="nome"
+                placeholder="Nome"
+                className="border-2 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#E22E5B] text-[#222]"
+              />
+              <input
+                required
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                className="border-2 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#E22E5B] text-[#222]"
+              />
+              <input
+                required
+                type="tel"
+                name="telefone"
+                placeholder="Telefone"
+                className="border-2 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#E22E5B] text-[#222]"
+              />
+              <input
+                required
+                type="text"
+                name="empresa"
+                placeholder="Nome da Empresa"
+                className="border-2 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#E22E5B] text-[#222]"
+              />
+              <textarea
+                required
+                name="necessidade"
+                placeholder="Descreva a necessidade"
+                className="border-2 rounded px-3 py-2 min-h-[96px] focus:outline-none focus:ring-2 focus:ring-[#E22E5B] text-[#222]"
+              />
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                type="submit"
+                className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-2 px-8 rounded-lg shadow mt-2 w-32"
+              >
+                Enviar
+              </motion.button>
             </form>
-            {/* Contatos rápidos */}
-            <div className="flex-1 flex flex-col gap-6 justify-center">
-          
-              {/* Instagram - comentado temporariamente
-              <div className="flex items-center gap-3 text-[#E22E5B]">
-                <span className="text-xl">
-                  <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' className='w-6 h-6 inline'>
-                    <rect width='20' height='20' x='2' y='2' rx='5' />
-                    <circle cx='12' cy='12' r='5' />
-                    <circle cx='17' cy='7' r='1.5' />
-                  </svg>
-                </span>
-                <span className="font-bold">@centrodecuidadodigital</span>
-              </div>
-              
-              LinkedIn - comentado temporariamente
-              <div className="flex items-center gap-3 text-[#E22E5B]">
-                <span className="text-xl">
-                  <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' className='w-6 h-6 inline'>
-                    <rect width='20' height='20' x='2' y='2' rx='5' />
-                    <path d='M8 11v5M8 8v.01M12 11v5m0-5a2 2 0 114 0v5' strokeWidth={2} strokeLinecap='round' strokeLinejoin='round'/>
-                  </svg>
-                </span>
-                <span className="font-bold">www.linkedin/in/centrodecuidadodigital/</span> 
-              </div>
-              */}
-            </div>
-          </div>
+
+            {/* Espaço para imagem vetorial */}
+            <motion.div
+              initial={{ opacity: 0, x: 60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="flex-1 flex items-center justify-center"
+            >
+              <img
+                src="/contato-ilustracao.svg"
+                alt="Pessoa atendendo via computador e smartphone, com ícones de chat, telefone e e-mail"
+                className="max-w-xs md:max-w-sm lg:max-w-md"
+              />
+            </motion.div>
+          </motion.div>
         </div>
       </section>
       <Footer />

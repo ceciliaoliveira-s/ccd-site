@@ -1,7 +1,7 @@
 import servicosIcon from '../assets/Servicos icon.png';
 import platsaude from '../assets/Platsaude.png';
 import Footer from '../components/Footer';
-import capatelainicio4 from '../assets/capatelainicio4.png';
+import capatelainicio14 from '../assets/capatelainicio14.png';
 import logomediquo from '../assets/logomediquo.png';  
 import logoparlacom from  '../assets/logoparlacom.png';
 import { motion } from 'framer-motion';
@@ -38,31 +38,100 @@ function Telainicio() {
   return (
     <div className="flex flex-col gap-16 w-full">
       {/* Primeira seção: texto à esquerda, imagem à direita */}
-      <section className="flex flex-col md:flex-row items-center w-full py-10 px-4 bg-white">
+      <section className="flex flex-col md:flex-row items-center w-full py-10 px-4 bg-white overflow-hidden">
         {/* LADO ESQUERDO: Título, subtítulo e botão */}
-        <div className="flex-1 flex flex-col items-start justify-center max-w-2xl">
-          <h1 className="text-3xl md:text-5xl font-extrabold text-[#E22E5B] leading-tight mb-4 md:mb-8 text-left" style={{ fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'" }}>
+        <motion.div
+          className="flex-1 flex flex-col items-start justify-center max-w-2xl"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {},
+            visible: {
+              transition: { staggerChildren: 0.3 }
+            }
+          }}
+        >
+          {/* Título */}
+          <motion.h1
+            className="text-3xl md:text-5xl font-extrabold text-[#E22E5B] leading-tight mb-4 md:mb-8 text-left"
+            style={{ fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'" }}
+            variants={{
+              hidden: { opacity: 0, y: 40, letterSpacing: "0.1em" },
+              visible: {
+                opacity: 1,
+                y: 0,
+                letterSpacing: "0em",
+                transition: { duration: 0.8, ease: "easeOut" }
+              }
+            }}
+          >
             Tecnologia e telessaúde
             integrados gerando valor
             estratégico de negócio.
-          </h1>
-          <p className="text-base md:text-lg text-[#9B6B6B] mb-6 md:mb-16 text-left" style={{ fontFamily: "'Open Sans', 'Montserrat', 'Poppins', sans-serif" }}>
-            Proporcionamos soluções em tecnologia e plataforma de telessaúde com recursos escaláveis, seguros e acessíveis, que impulsionam o crescimento das empresas parceiras.
-          </p>
-          <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white text-base md:text-xl font-bold py-3 px-8 md:px-11 rounded-lg shadow-md transition">
-            Quero Contratar
-          </button>
-        </div>
-        {/* LADO DIREITO: imagem responsiva */}
-        <div className="flex justify-center mt-10 md:mt-0 w-full md:w-auto">
-          <img
-            src={capatelainicio4}
-            alt="Tecnologia e Telessaúde"
-            className="w-full max-w-[320px] md:max-w-[650px] h-auto"
-          />
-        </div>
-      </section>
+          </motion.h1>
 
+          {/* Subtítulo */}
+          <motion.p
+            className="text-base md:text-lg text-[#9B6B6B] mb-6 md:mb-16 text-left"
+            style={{ fontFamily: "'Open Sans', 'Montserrat', 'Poppins', sans-serif" }}
+            variants={{
+              hidden: { opacity: 0, y: 20, filter: "blur(4px)" },
+              visible: {
+                opacity: 1,
+                y: 0,
+                filter: "blur(0px)",
+                transition: { duration: 0.7, ease: "easeOut" }
+              }
+            }}
+          >
+            Proporcionamos soluções em tecnologia e plataforma de telessaúde com
+            recursos escaláveis, seguros e acessíveis, que impulsionam o
+            crescimento das empresas parceiras.
+          </motion.p>
+
+          {/* Botão */}
+          <motion.button
+            className="bg-[#E22E5B] hover:bg-[#db6d89] text-white text-base md:text-xl font-bold py-3 px-8 md:px-11 rounded-lg shadow-md flex items-center gap-2"
+            variants={{
+              hidden: { opacity: 0, scale: 0.9 },
+              visible: {
+                opacity: 1,
+                scale: 1,
+                transition: { duration: 0.6, ease: "easeOut" }
+              }
+            }}
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0px 8px 25px rgba(226, 46, 91, 0.3)"
+            }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Quero Contratar
+            <motion.span
+              initial={{ x: -10, opacity: 0 }}
+              whileHover={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.3 }}
+            >
+              ➝
+            </motion.span>
+          </motion.button>
+        </motion.div>
+
+        {/* LADO DIREITO: imagem responsiva */}
+        <motion.div
+          className="flex justify-center mt-10 md:mt-0 w-full md:w-auto"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
+          whileHover={{ scale: 1.02, rotate: 1 }}
+        >
+          <img
+            src={capatelainicio14}
+            alt="Tecnologia e Telessaúde"
+            className="w-full max-w-[320px] md:max-w-[660px] h-auto"
+          />
+        </motion.div>
+      </section>
       {/* Seção Nossas Soluções*/}
       <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-10">
         <div className="max-w-6xl mx-auto px-2 md:px-4">

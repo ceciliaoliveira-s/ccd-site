@@ -172,65 +172,75 @@ function QuemSomos() {
 </section>
 
       {/* Seção Valores – full bleed */}
-      <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-4">
-        <div className="max-w-6xl mx-auto px-6 flex flex-col">
-          <h2 className="text-4xl font-extrabold text-left text-[#E22E5B] mb-12" style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}>
-            Valores
-          </h2>
+<section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-16">
+  <div className="max-w-6xl mx-auto px-6 flex flex-col">
+    
+    {/* Título */}
+    <motion.h2
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="text-4xl font-extrabold text-left text-[#E22E5B] mb-6"
+      style={{ fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'" }}
+    >
+      Valores
+    </motion.h2>
 
-               <p className="text-xl text-[#9B6B6B] text-left mb-20">
-         O Centro de Cuidado Digital possui valores sólidos para ofertar e atender nossos parceiros de forma dedicada e ágil, prezando qualidade e eficiência nos serviços e produtos que ofertamos.
-       </p>
+    {/* Parágrafo */}
+    <motion.p
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: 0.2 }}
+      viewport={{ once: true }}
+      className="text-xl text-[#9B6B6B] text-left mb-20"
+    >
+      O Centro de Cuidado Digital possui valores sólidos para ofertar e atender nossos parceiros de forma dedicada e ágil, prezando qualidade e eficiência nos serviços e produtos que ofertamos.
+    </motion.p>
 
-               <div className="grid grid-cols-1 md:grid-cols-3 gap-48  gap-y-24 max-w-6xl mx-auto">
-             {/* Valor 1 */}
-             <div className="flex flex-col items-center text-center gap-10">
-               <img src={clientenocentroicon} alt="Cliente no centro" className="w-14 h-14 object-contain" />
-               <span className="font-bold text-lg text-[#A35E57]">Cliente no centro</span>
-             </div>
-
-             {/* Valor 2 */}
-             <div className="flex flex-col items-center text-center gap-10">
-               <img src={estrelavalores} alt="Excelência no atendimento" className="w-14 h-14 object-contain" />
-               <span className="font-bold text-lg text-[#A35E57]">
-                 Excelência no <br /> atendimento
-               </span>
-             </div>
-
-             {/* Valor 3 */}
-             <div className="flex flex-col items-center text-center gap-10">
-                <img src={acessibilidadeicon} alt="Acessibilidade" className="w-14 h-14 object-contain" />
-               <span className="font-bold text-lg text-[#A35E57]">
-                 Acessibilidade de forma escalável
-               </span>
-             </div>
-
-             {/* Valor 4 */}
-             <div className="flex flex-col items-center text-center gap-10">
-                 <img src={Securityicon} alt="Acessibilidade" className="w-14 h-14 object-contain" />
-               <span className="font-bold text-lg text-[#A35E57] mb-20">
-                 Responsabilidade e <br /> privacidade
-               </span>
-             </div>
-
-             {/* Valor 5 */}
-             <div className="flex flex-col items-center text-center gap-10">
-               <CheckCircle className="w-14 h-14 text-[#E22E5B]" />
-               <span className="font-bold text-lg text-[#A35E57]">
-                 Confiabilidade e <br /> transparência
-               </span>
-             </div>
-
-             {/* Valor 6 */}
-             <div className="flex flex-col items-center text-center gap-10">
-               <ShieldCheck className="w-14 h-14 text-[#E22E5B]" />
-               <span className="font-bold text-lg text-[#A35E57]">
-                 Pilares em tecnologia <br /> e segurança
-               </span>
-             </div>
-           </div>
-        </div>
-      </section>
+    {/* Grid de valores */}
+    <motion.div
+      className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-y-20 gap-x-0 md:gap-x-8 lg:gap-x-16 max-w-5xl mx-auto"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={{
+        hidden: { opacity: 0 },
+        visible: {
+          opacity: 1,
+          transition: {
+            staggerChildren: 0.2,
+          },
+        },
+      }}
+    >
+      {[
+        { icon: <img src={clientenocentroicon} alt="Cliente no centro" className="w-14 h-14 object-contain" />, text: "Cliente no centro" },
+        { icon: <img src={estrelavalores} alt="Excelência no atendimento" className="w-14 h-14 object-contain" />, text: <>Excelência no <br /> atendimento</> },
+        { icon: <img src={acessibilidadeicon} alt="Acessibilidade" className="w-14 h-14 object-contain" />, text: <>Acessibilidade<br />de forma escalável</> },
+        { icon: <img src={Securityicon} alt="Responsabilidade e privacidade" className="w-14 h-14 object-contain" />, text: <>Conformidade com a Lei Geral de Proteção de Dados</> },
+        { icon: <CheckCircle className="w-14 h-14 text-[#E22E5B]" />, text: <>Confiabilidade e <br /> transparência</> },
+        { icon: <ShieldCheck className="w-14 h-14 text-[#E22E5B]" />, text: <>Pilares em tecnologia e <br /> segurança</> },
+      ].map((item, index) => (
+        <motion.div
+          key={index}
+          className="flex flex-col items-center text-center gap-4 px-2"
+          variants={{
+            hidden: { opacity: 0, scale: 0.8, y: 20 },
+            visible: { opacity: 1, scale: 1, y: 0 },
+          }}
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.4 }}
+        >
+          <div>
+            {item.icon}
+          </div>
+          <span className="font-bold text-lg text-[#A35E57]">{item.text}</span>
+        </motion.div>
+      ))}
+    </motion.div>
+  </div>
+</section>
 
       <Footer />
     </div>

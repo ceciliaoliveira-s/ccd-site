@@ -1,9 +1,13 @@
 import servicosIcon from '../assets/Servicos icon.png';
 import platsaude from '../assets/Platsaude.png';
 import Footer from '../components/Footer';
-import capatelainicio14 from '../assets/capatelainicio14.png';
+import capatelainicio1 from '../assets/capatelainicio1.png';
 import logomediquo from '../assets/logomediquo.png';  
 import logoparlacom from  '../assets/logoparlacom.png';
+import locationicon from '../assets/locationicon.png';
+import wppicon from '../assets/wpp.png';
+import instagramicon from '../assets/instagramicon.png';
+import formularioimagem1 from '../assets/formularioimagem1.png';
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 
@@ -126,9 +130,9 @@ function Telainicio() {
           whileHover={{ scale: 1.02, rotate: 1 }}
         >
           <img
-            src={capatelainicio14}
+            src={capatelainicio1}
             alt="Tecnologia e Telessaúde"
-            className="w-full max-w-[320px] md:max-w-[660px] h-auto"
+            className="w-full max-w-[320px] md:max-w-[640px] h-auto"
           />
         </motion.div>
       </section>
@@ -296,7 +300,7 @@ function Telainicio() {
             viewport={{ once: true }}
             className="text-[#9B6B6B] mb-4 md:mb-8 text-lg md:text-xl text-left"
           >
-            Entre em contato conosco através do formulário abaixo ou diretamente pelo número comercial.
+            Entre em contato conosco através do formulário ou pelos meios de contato abaixo.
           </motion.p>
 
           <motion.div
@@ -314,9 +318,6 @@ function Telainicio() {
                 e.preventDefault();
               }}
             >
-              <span className="text-[#E22E5B] font-bold text-base md:text-lg mb-3">
-                Preencha o formulário abaixo
-              </span>
               <input
                 required
                 type="text"
@@ -361,20 +362,36 @@ function Telainicio() {
               </motion.button>
             </form>
 
-            {/* Espaço para imagem vetorial */}
-            <motion.div
-              initial={{ opacity: 0, x: 60 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="flex-1 flex items-center justify-center"
-            >
+            {/* Informações de contato conforme protótipo */}
+            <div className="flex-1 flex flex-col justify-start items-start pl-0 md:pl-10 pt-2 relative">
+              <div className="flex items-center gap-8 mb-9">
+                <img src={locationicon} alt="Localização" className="w-8 h-8" />
+                <span className="text-[#E22E5B] font-extrabold text-xl md:text-2xl" style={{fontFamily: "'Montserrat', 'Poppins', sans-serif"}}>Estamos em Recife!</span>
+              </div>
+              <div className="mt-1 mb-8 w-full">
+                <span className="text-[#E22E5B] font-bold text-sm text-left block">
+                  <span className="font-extrabold">Endereço:</span> Rua Dona Maria Cesar, nº 170 sala 0203 <br /> cxpostal 1196
+                  Recife/PE CEP: 50.030-140
+                </span>
+              </div>
+              <div className="flex flex-col gap-7  w-full">
+                <div className="flex items-center gap-5">
+                  <img src={wppicon} alt="WhatsApp" className="w-5 h-5" />
+                  <span className="text-[#E22E5B] font-bold text-sm md:text-base">(81)99194–5061</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <img src={instagramicon} alt="Instagram" className="w-6 h-6" />
+                  <span className="text-[#E22E5B] font-bold text-sm md:text-base">@centrodecuidadodigital</span>
+                </div>
+              </div>
+              {/* Imagem decorativa conforme protótipo */}
               <img
-                src="/contato-ilustracao.svg"
-                alt="Pessoa atendendo via computador e smartphone, com ícones de chat, telefone e e-mail"
-                className="max-w-xs md:max-w-sm lg:max-w-md"
+                src={formularioimagem1}
+                alt="Ilustração formulário"
+                className="absolute right-0 bottom-0 w-70 md:w-62 lg:w-66"
+                style={{ pointerEvents: 'none' }}
               />
-            </motion.div>
+            </div>
           </motion.div>
         </div>
       </section>

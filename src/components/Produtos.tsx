@@ -263,109 +263,113 @@ function Produtos() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl mt-20">
           {/* Benefício 1 - 100% seguro */}
           <div className="flex flex-col items-center">
-            <img src={appicon} alt="100% seguro" className="w-12 h-12 object-contain mb-6" />
+            <img src={appicon} alt="100% seguro" className="w-13 h-13 object-contain mb-8" />
             <span className="font-bold text-[#A35E57] mb-20">100% Seguro</span>
           </div>
 
           {/* Benefício 2 - Acesso ilimitado */}
           <div className="flex flex-col items-center">
-            <img src={infinitoicon} alt="Acesso ilimitado" className="w-12 h-12 object-contain mb-2" />
+            <img src={infinitoicon} alt="Acesso ilimitado" className="w-16 h-16 object-contain mb-7" />
             <span className="font-bold text-[#A35E57]">Acesso ilimitado</span>
           </div>
 
           {/* Benefício 3 - Atendimento 24h */}
           <div className="flex flex-col items-center">
-            <img src={vintequatrohrsicon} alt="Atendimento 24h" className="w-12 h-12 object-contain mb-2" />
+            <img src={vintequatrohrsicon} alt="Atendimento 24h" className="w-14 h-14 object-contain mb-8" />
             <span className="font-bold text-[#A35E57]">Atendimento 24h</span>
           </div>
 
           {/* Benefício 4 - 90% de resolução de casos */}
           <div className="flex flex-col items-center text-center gap-3">
-            <img src={aceitacaoicon} alt="90% de resolução de casos" className="w-12 h-12 object-contain mb-2" />
-            <span className="font-semibold text-[#9B6B6B]">90% de resolução de casos</span>
+            <img src={aceitacaoicon} alt="90% de resolução de casos" className="w-13 h-13 object-contain mb-7" />
+            <span className="font-bold text-[#9B6B6B]">90% de resolução de casos</span>
           </div>
 
           {/* Benefício 5 - Inclusão de dependentes */}
           <div className="flex flex-col items-center text-center gap-3">
-            <img src={familyicon} alt="Inclusão de dependentes" className="w-12 h-12 object-contain mb-2" />
-            <span className="font-semibold text-[#9B6B6B]">Inclusão de dependentes</span>
+            <img src={familyicon} alt="Inclusão de dependentes" className="w-13 h-13 object-contain mb-7" />
+            <span className="font-bold text-[#9B6B6B]">Inclusão de dependentes</span>
           </div>
 
           {/* Benefício 6 - Sem custos adicionais */}
               <div className="flex flex-col items-center">
-                <img src={nullicon} alt="Sem custos adicionais" className="w-12 h-12 object-contain mb-2" />
+                <img src={nullicon} alt="Sem custos adicionais" className="w-13 h-13 object-contain mb-10" />
                 <span className="font-bold text-[#A35E57]">Sem custos adicionais</span>
             </div>
         </div>
       </section>
 
       {/* Seção Benefícios por Segmento */}
-      <section className="w-full py-16 px-6 md:px-16 bg-[#FFF9F5] flex flex-col items-start">
-        <h2 className="text-4xl font-extrabold text-[#E22E5B] mb-10" style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}>Benefícios por segmento</h2>
-        <p className="text-base text-[#9B6B6B] max-w-6xl text-left mb-16">
-          A plataforma <b>Mediquo</b> é um app de telemedicina e telessaúde multiprofissional que utiliza a tecnologia para facilitar o acesso rápido, prático e seguro aos cuidados de saúde em todo o Brasil e na Europa, e que alcança diversos segmentos.
-        </p>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-7xl">
-          {/* Card Para Empresas */}
-          <div className="bg-[#FFF9F5] rounded-xl p-6 border border-[#9B6B6B]">
-            <h3 className="text-xl font-bold text-[#E22E5B] mb-7">Para empresas</h3>
-            <ul className="space-y-6">
-              <li className="flex items-start  text-left gap-2">
-                <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                <span className="text-[#9B6B6B]">Promoção da saúde corporativa e individual</span>
-              </li>
-              <li className="flex items-start text-left gap-2">
-                <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                <span className="text-[#9B6B6B]">Mais engajamento de talentos</span>
-              </li>
-              <li className="flex items-start text-left gap-2">
-                <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                <span className="text-[#9B6B6B]">Redução de rotatividade dos colaboradores</span>
-              </li>
-            </ul>
-          </div>
+      <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-14">
+        <div className="max-w-7xl mx-auto flex flex-col">
+          <h2 className="text-4xl font-extrabold text-[#E22E5B] mb-6 text-left" style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}>
+            Benefícios por segmento
+          </h2>
+          <p className="text-base text-[#9B6B6B] max-w-7xl text-left mb-16">
+            A plataforma <b>Mediquo</b> é um app de telemedicina e telessaúde multiprofissional que utiliza a tecnologia para facilitar o acesso rápido, prático e seguro aos cuidados de saúde em todo o Brasil e na Europa, e que alcança diversos segmentos.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-5xl mx-auto justify-items-center">
+            {/* Card Para Empresas */}
+            <div className="bg-[#FFF9F5] rounded-xl p-6 border border-[#9B6B6B] w-full max-w-xs">
+              <h3 className="text-xl font-bold text-[#E22E5B] mb-7 text-center">Para empresas</h3>
+              <ul className="space-y-6">
+                <li className="flex items-start  text-left gap-2">
+                  <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
+                  <span className="text-[#9B6B6B]">Promoção da saúde corporativa e individual</span>
+                </li>
+                <li className="flex items-start text-left gap-2">
+                  <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
+                  <span className="text-[#9B6B6B]">Mais engajamento de talentos</span>
+                </li>
+                <li className="flex items-start text-left gap-2">
+                  <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
+                  <span className="text-[#9B6B6B]">Redução de rotatividade dos colaboradores</span>
+                </li>
+              </ul>
+            </div>
 
-          {/* Card Governo */}
-          <div className="bg-[#FFF9F5] rounded-xl p-6 border border-[#9B6B6B]">
-            <h3 className="text-xl font-bold text-[#E22E5B] mb-6">Governo</h3>
-            <ul className="space-y-6">
-              <li className="flex items-start text-left gap-2">
-                <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                <span className="text-[#9B6B6B]">Ampliação na cobertura e assistência médica</span>
-              </li>
-              <li className="flex items-start text-left gap-2">
-                <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                <span className="text-[#9B6B6B]">Redução de filas de atendimento em postos de saúde e plataformas de agendamento de consultas do <b>SUS</b>  </span>
-              </li>
-              <li className="flex items-start text-left gap-2">
-                <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                <span className="text-[#9B6B6B]">Enxugamento de despesas</span>
-              </li>
-            </ul>
-          </div>
+            {/* Card Governo */}
+            <div className="bg-[#FFF9F5] rounded-xl p-6 border border-[#9B6B6B] w-full max-w-xs">
+              <h3 className="text-xl font-bold text-[#E22E5B] mb-6 text-center">Governo</h3>
+              <ul className="space-y-6">
+                <li className="flex items-start text-left gap-2">
+                  <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
+                  <span className="text-[#9B6B6B]">Ampliação na cobertura e assistência médica</span>
+                </li>
+                <li className="flex items-start text-left gap-2">
+                  <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
+                  <span className="text-[#9B6B6B]">Redução de filas de atendimento em postos de saúde e plataformas de agendamento de consultas do <b>SUS</b>  </span>
+                </li>
+                <li className="flex items-start text-left gap-2">
+                  <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
+                  <span className="text-[#9B6B6B]">Enxugamento de despesas</span>
+                </li>
+              </ul>
+            </div>
 
-          {/* Card Operadoras de Saúde */}
-          <div className="bg-[#FFF9F5] rounded-xl p-6 border border-[#9B6B6B]">
-            <h3 className="text-xl font-bold text-[#E22E5B] mb-6">Telecom</h3>
-            <ul className="space-y-6">
-              <li className="flex items-start gap-2">
-                <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                <span className="text-[#9B6B6B]">Fidelização de clientes</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                <span className="text-[#9B6B6B] text-left  "> Benefício de saúde corporativa  </span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                <span className="text-[#9B6B6B]">Inclusão de dependentes </span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                <span className="text-[#9B6B6B]">Enxugamento de despesas</span>
-              </li>
-            </ul>
+            {/* Card Operadoras de Saúde */}
+            <div className="bg-[#FFF9F5] rounded-xl p-6 border border-[#9B6B6B] w-full max-w-xs">
+              <h3 className="text-xl font-bold text-[#E22E5B] mb-6 text-center">Telecom</h3>
+              <ul className="space-y-6">
+                <li className="flex items-start gap-2">
+                  <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
+                  <span className="text-[#9B6B6B]">Fidelização de clientes</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
+                  <span className="text-[#9B6B6B] text-left  "> Benefício de saúde corporativa  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
+                  <span className="text-[#9B6B6B]">Inclusão de dependentes </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
+                  <span className="text-[#9B6B6B]">Enxugamento de despesas</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

@@ -82,7 +82,7 @@ function QuemSomos() {
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="text-4xl font-extrabold text-[#E22E5B] mb-12 text-left relative inline-block w-full"
+      className="text-4xl font-extrabold text-[#E22E5B] mb-12 text-left relative inline-block w-full md:-ml-2"
       style={{ fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'" }}
     >
       Missão
@@ -181,7 +181,7 @@ function QuemSomos() {
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="text-4xl font-extrabold text-left text-[#E22E5B] mb-6"
+      className="text-4xl font-extrabold text-left text-[#E22E5B] mb-6 md:-ml-2"
       style={{ fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'" }}
     >
       Valores

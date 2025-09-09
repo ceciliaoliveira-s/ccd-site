@@ -95,7 +95,7 @@ function Telainicio() {
 
           {/* Botão */}
           <motion.button
-            className="bg-[#E22E5B] hover:bg-[#db6d89] text-white text-base md:text-xl font-bold py-3 px-8 md:px-11 rounded-lg shadow-md flex items-center gap-2"
+            className="bg-[#E22E5B] hover:bg-[#db6d89] text-white md:text-xl font-bold py-3 md:px-6 rounded-lg shadow-md flex items-center justify-center gap-2 text-center"
             variants={{
               hidden: { opacity: 0, scale: 0.9 },
               visible: {
@@ -110,7 +110,7 @@ function Telainicio() {
             }}
             whileTap={{ scale: 0.95 }}
           >
-            Quero Contratar
+            <span className="text-center">Quero Contratar</span>
             <motion.span
               initial={{ x: -10, opacity: 0 }}
               whileHover={{ x: 0, opacity: 1 }}
@@ -167,13 +167,13 @@ function Telainicio() {
                 transition={{ type: "spring", stiffness: 300 }}
               />
               <h2
-                className="text-lg font-bold text-[#E22E5B] mb-2"
+                className="text-lg font-bold text-[#E22E5B] mb-4"
                 style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
               >
                 Plataforma de <br /> Telessaúde
               </h2>
               <p
-                className="text-sm text-[#9B6B6B] mb-4"
+                className="text-sm text-[#9B6B6B] mb-9"
                 style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
               >
                 Plataforma de telessaúde integral em parceria com a <b>Mediquo,</b>{" "}
@@ -185,7 +185,7 @@ function Telainicio() {
                 Federal de Medicina).
               </p>
               <a href="/nossas-solucoes/produtos">
-                <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-2 px-6 rounded-lg shadow transition text-sm">
+                <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-1.5 px-5 rounded-lg shadow transition text-sm">
                   Saiba mais
                 </button>
               </a>
@@ -227,7 +227,7 @@ function Telainicio() {
                 <li>Análise de dados</li>
               </ul>
               <a href="/nossas-solucoes/servicos">
-                <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-2  px-6 rounded-lg shadow transition text-sm">
+                <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-1.5 px-5 rounded-lg shadow transition text-sm">
                   Saiba mais
                 </button>
               </a>

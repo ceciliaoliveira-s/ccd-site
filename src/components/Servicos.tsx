@@ -99,30 +99,32 @@ function Servicos() {
       <div className="max-w-7xl mx-auto">
         {/* Header da seção */}
         <motion.div
-          className="text-center mb-12"
+          className="mb-12"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2
-            className="text-3xl text-left font-bold text-[#E95470] mb-4"
-            style={{ fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'" }}
-          >
-            Soluções por segmentos
-          </h2>
-          <p
-            className="text-base text-left text-[#A35E57] max-w-4xl"
-            style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
-          >
-            Ofertamos tecnologia assertiva para impulsionar o negócio dos nossos
-            parceiros em diversos segmentos.
-          </p>
+          <div className="w-full md:w-2/3 pl-0 md:pl-16">
+            <h2
+              className="text-3xl font-bold text-[#E95470] mb-5 text-left"
+              style={{ fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'" }}
+            >
+              Soluções por segmentos
+            </h2>
+            <p
+              className="text-base text-[#A35E57] max-w-3xl text-left"
+              style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
+            >
+              Ofertamos tecnologia assertiva para impulsionar o negócio dos nossos
+              parceiros em diversos segmentos.
+            </p>
+          </div>
         </motion.div>
 
         {/* Grid de cards */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-12"
+          className="grid grid-cols-1 md:grid-cols-3 gap-16"
           variants={containerVariants}
           initial="hidden"
           whileInView="show"

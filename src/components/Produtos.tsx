@@ -199,7 +199,7 @@ function Produtos() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                  <span className="text-gray-700">São profissionais com no mínimo 5 anos de experiÊncia no mercado.</span>
+                  <span className="text-gray-700">São profissionais com no mínimo 5 anos de experiência no mercado.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
@@ -226,11 +226,11 @@ function Produtos() {
             </div>
             <div className="flex-1 flex flex-col gap-4">
               <div>
-                <p className="text-lg text-left text-[#9B6B6B] mb-3">
-                  <span className="font-bold text-[#9B6B6B]">Cashback exclusivo para empresas:</span> Invista no bem-estar da sua equipe e receba mais em troca.
+                <p className="text-2xl text-left text-[#9B6B6B] mb-8">
+                  <span className="font-bold text-[#9B6B6B]">Cashback exclusivo para empresas</span>
                 </p>
                 <p className="text-lg text-left text-[#9B6B6B]">
-                  Ofereça telemedicina de qualidade aos seus colaboradores e recupere parte do valor investido por meio do <span className="font-bold text-[#A35E57]">nosso programa de cashback para licenças contratadas</span>.
+                  Ofereça telemedicina de qualidade aos seus colaboradores, e a cada familiar que também obtiver uma licença, recupere parte do valor por meio do nosso <b>programa de cashback para licenças contratadas</b>.
                 </p>
               </div>
               
@@ -239,21 +239,21 @@ function Produtos() {
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
                     <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-lg text-[#9B6B6B]">Contrate nosso plano corporativo de telemedicina.</span>
+                    <span className="text-lg text-[#9B6B6B]">Contrate o nosso plano corporativo de telemedicina.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-lg text-[#9B6B6B]">Ative as licenças contratadas.</span>
+                    <span className="text-lg text-[#9B6B6B]">Ative as licenças contratadas junto aos colaboradores da empresa.</span>
                   </li>
-                  <li className="flex items-start gap-2">
+                  <li className="flex items-start text-left gap-2">
                     <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-lg text-[#9B6B6B]">Receba cashback proporcional a ativação das licenças direto na conta da empresa.</span>
+                    <span className="text-lg text-[#9B6B6B]"> Para cada licença adquirida por um familiar de um colaborador <b>já ativo,</b> a empresa recebe cashback creditado diretamente em sua conta.</span>
                   </li>
                 </ul>
               </div>
               
-              <div className="flex justify-start mt-2">
-                <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-2 px-2 rounded-lg shadow transition">Consulte nossas condições</button>
+              <div className="flex justify-end mt-2">
+                <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-3 px-4 rounded-lg shadow transition">Consulte nossas condições</button>
               </div>
             </div>
           </div>
@@ -302,29 +302,34 @@ function Produtos() {
       {/* Seção Benefícios por Segmento */}
       <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-14">
         <div className="max-w-7xl mx-auto flex flex-col">
-          <h2 className="text-4xl font-extrabold text-[#E22E5B] mb-6 text-left" style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}>
-            Benefícios por segmento
-          </h2>
-          <p className="text-base text-[#9B6B6B] max-w-7xl text-left mb-16">
-            A plataforma <b>Mediquo</b> é um app de telemedicina e telessaúde multiprofissional que utiliza a tecnologia para facilitar o acesso rápido, prático e seguro aos cuidados de saúde em todo o Brasil e na Europa, e que alcança diversos segmentos.
+          <div className="w-full md:w-1/3 md:ml-[8.333%]">
+            <h2 className="text-4xl font-extrabold text-[#E22E5B] mb-6 text-left" style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}>
+              Benefícios por segmento
+            </h2>
+          </div>
+          <p className="text-base text-[#9B6B6B] w-full text-left mb-16">
+            A plataforma <b>Mediquo</b> é um aplicativo de telemedicina e telessaúde que alcança diversos segmentos corporativos e público/privado, proporcionando acesso rápido, prático e seguro a múltiplos profissionais de saúde em todo o Brasil e na Europa. Abaixo, mais detalhes.
           </p>
-          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-5xl mx-auto justify-items-center">
             {/* Card Para Empresas */}
             <div className="bg-[#FFF9F5] rounded-xl p-6 border border-[#9B6B6B] w-full max-w-xs">
               <h3 className="text-xl font-bold text-[#E22E5B] mb-7 text-center">Para empresas</h3>
-              <ul className="space-y-6">
+              <ul className="space-y-4">
                 <li className="flex items-start  text-left gap-2">
                   <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                  <span className="text-[#9B6B6B]">Promoção da saúde corporativa e individual</span>
+                  <span className="text-[#9B6B6B]">Promoção da saúde corporativa e individual.</span>
                 </li>
                 <li className="flex items-start text-left gap-2">
                   <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                  <span className="text-[#9B6B6B]">Mais engajamento de talentos</span>
+                  <span className="text-[#9B6B6B]">Maior engajamento de talentos.</span>
                 </li>
                 <li className="flex items-start text-left gap-2">
                   <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                  <span className="text-[#9B6B6B]">Redução de rotatividade dos colaboradores</span>
+                  <span className="text-[#9B6B6B]">Redução de rotatividade dos colaboradores.</span>
+                </li>
+                 <li className="flex items-start text-left gap-2">
+                  <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
+                  <span className="text-[#9B6B6B]">Inclusão de dependentes e possibilidade de adesão para familiares.</span>
                 </li>
               </ul>
             </div>
@@ -332,18 +337,22 @@ function Produtos() {
             {/* Card Governo */}
             <div className="bg-[#FFF9F5] rounded-xl p-6 border border-[#9B6B6B] w-full max-w-xs">
               <h3 className="text-xl font-bold text-[#E22E5B] mb-6 text-center">Governo</h3>
-              <ul className="space-y-6">
+              <ul className="space-y-4">
                 <li className="flex items-start text-left gap-2">
                   <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                  <span className="text-[#9B6B6B]">Ampliação na cobertura e assistência médica</span>
+                  <span className="text-[#9B6B6B]">Ampliação em cobertura e assistência médica em estados e municípios.</span>
                 </li>
                 <li className="flex items-start text-left gap-2">
                   <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                  <span className="text-[#9B6B6B]">Redução de filas de atendimento em postos de saúde e plataformas de agendamento de consultas do <b>SUS</b>  </span>
+                  <span className="text-[#9B6B6B]">Redução de filas de atendimento em postos de saúde e plataformas de agendamento do <b>SUS.</b>  </span>
                 </li>
                 <li className="flex items-start text-left gap-2">
                   <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                  <span className="text-[#9B6B6B]">Enxugamento de despesas</span>
+                  <span className="text-[#9B6B6B]">Enxugamento de despesas.</span>
+                </li>
+                <li className="flex items-start text-left gap-2">
+                  <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
+                  <span className="text-[#9B6B6B]">Acessibilidade e inclusão social.</span>
                 </li>
               </ul>
             </div>
@@ -351,22 +360,22 @@ function Produtos() {
             {/* Card Operadoras de Saúde */}
             <div className="bg-[#FFF9F5] rounded-xl p-6 border border-[#9B6B6B] w-full max-w-xs">
               <h3 className="text-xl font-bold text-[#E22E5B] mb-6 text-center">Telecom</h3>
-              <ul className="space-y-6">
+              <ul className="space-y-4">
                 <li className="flex items-start gap-2">
                   <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                  <span className="text-[#9B6B6B]">Fidelização de clientes</span>
+                  <span className="text-[#9B6B6B]">Fidelização de clientes.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                  <span className="text-[#9B6B6B] text-left  "> Benefício de saúde corporativa  </span>
+                  <span className="text-[#9B6B6B] text-left  "> Benefício de saúde corporativa.  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                  <span className="text-[#9B6B6B]">Inclusão de dependentes </span>
+                  <span className="text-[#9B6B6B] text-left"> Inclusão de dependentes e possibilidade de adesão para familiares. </span>
                 </li>
-                <li className="flex items-start gap-2">
+                 <li className="flex items-start gap-2">
                   <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                  <span className="text-[#9B6B6B]">Enxugamento de despesas</span>
+                  <span className="text-[#9B6B6B] text-left">Atribuição de valor, com o diferencial frente à concorrência ao integrar saúde digital com conectividade.</span>
                 </li>
               </ul>
             </div>

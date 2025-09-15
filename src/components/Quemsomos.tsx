@@ -11,27 +11,53 @@ import { CheckCircle, ShieldCheck } from 'lucide-react';
 function Quemsomos() {
   return (
     <div className="w-full min-h-screen flex flex-col bg-white">
-      {/* Exemplo de seção principal */}
-      <section className="w-full flex flex-col items-center px-6 md:px-16 py-14 gap-10 bg-white relative">
-        <motion.h1
-          initial={{ opacity: 0, x: -50 }}
+      {/* Section principal ajustada conforme protótipo */}
+      <section className="w-full flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-20 gap-10 bg-white relative">
+        <div className="flex-1 flex flex-col items-start justify-center">
+          <motion.h1
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-3xl md:text-5xl font-extrabold text-[#E22E5B] mb-12 leading-tight text-left"
+            style={{ fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'" }}
+          >
+            Produtos de tecnologia e<br />plataforma de telessaúde
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            className="text-base md:text-lg text-left text-[#A35E57] mb-10 max-w-xl"
+          >
+            <span className="font-bold text-[#E22E5B]">O Centro de Cuidado Digital</span> é uma empresa que tem o propósito de integrar ferramentas tecnológicas e de telessaúde ao mercado, criando soluções de alta performance, com amplas camadas de segurança, suporte e escalabilidade que transformam o negócio e a estrutura das empresas parceiras.
+          </motion.p>
+          {/* Botão animado */}
+          <div className="w-full flex justify-start">
+            <motion.button
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 0.8, duration: 0.6 }}
+              whileHover={{
+                scale: 1.05,
+                backgroundColor: "#ff4c73",
+                boxShadow: "0px 6px 20px rgba(226,46,91,0.3)",
+              }}
+              className="bg-[#E22E5B] text-white text-base md:text-xl mb-5 font-bold py-3 px-6 md:px-11 rounded-lg shadow-md transition"
+            >
+              Quero Contratar
+            </motion.button>
+          </div>
+        </div>
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-4xl md:text-5xl font-extrabold text-[#E22E5B] text-center mb-6 leading-tight"
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="flex items-center justify-end w-full md:w-auto"
         >
-          Quem Somos
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.3 }}
-          className="text-base md:text-lg text-center text-[#A35E57] mb-4 max-w-2xl"
-        >
-          Somos uma empresa dedicada à inovação em saúde digital, conectando pessoas e soluções tecnológicas para transformar o cuidado.
-        </motion.p>
-        {/* ...outros elementos principais, troque whileInView por animate... */}
+          <img src={capaquemsomos} alt="Produtos e Telessaúde" className="w-111 h-auto object-contain" />
+        </motion.div>
       </section>
-      <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-20">
+      <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-15">
   <div className="max-w-6xl mx-auto px-6">
     
     {/* Título */}
@@ -39,7 +65,7 @@ function Quemsomos() {
       initial={{ opacity: 0, x: -50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8 }}
-      className="text-4xl font-extrabold text-[#E22E5B] mb-12 text-left relative inline-block w-full md:-ml-2"
+      className="text-4xl font-extrabold text-[#E22E5B] mb-12 text-left relative inline-block w-full md:-ml-1"
       style={{ fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'" }}
     >
       Missão

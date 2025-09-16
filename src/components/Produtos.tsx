@@ -1,11 +1,14 @@
 import Footer from './Footer';
 import capaproduto4 from '../assets/capaproduto4.png';
 import cashbackicon from '../assets/cashbackicon.png';
-import clinicogeralicon from '../assets/clinicogeralicon.png'; 
+import clinicogeralicon2 from '../assets/clinicogeralicon2.png'; 
 import dermatologistaicon from '../assets/dermatologistaicon.png';
 import ginecologistaicon from '../assets/ginecologistaicon.png';
 import psicologoicon from '../assets/psicologoicon.png';
+import treinadorfisicoicon from '../assets/treinadorfisicoicon.png';
+import nutricionistaicon from '../assets/nutricionistaicon.png';
 import pediatriaicon from '../assets/pediatriaicon.png';
+import medicoveterinarioicon from '../assets/medicoveterinarioicon.png';
 import appicon from '../assets/appicon.png';
 import infinitoicon from '../assets/infinitoicon.png';
 import vintequatrohrsicon from '../assets/24hrsicon.png';
@@ -107,80 +110,98 @@ function Produtos() {
           </div>
 
           {/* Lista de especialidades em duas colunas */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-4 mb-12 max-w-10xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-25 gap-y-4 mb-16 max-w-10xl">
             {/* Coluna Esquerda */}
-            <div className="space-y-6">
+            <div className="space-y-4">
               {/* Clínico Geral 24h */}
-              <div className="flex items-center gap-3">
-                <div className="w-16 h-16 flex items-center justify-center rounded-xl">
-                  <img src={clinicogeralicon} alt="Clínico Geral 24h" className="w-24 h-24 object-contain" />
+              <div className="flex items-center gap-8">
+                <div className="w-28 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  <img src={clinicogeralicon2} alt="Clínico Geral 24h" className="w-20 h-20 object-contain" />
                 </div>
-                <span className="font-bold text-[#A35E57]">Pronto Atendimento 24h</span>
+                <div className="flex flex-col items-start text-left">
+                  <span className="font-bold text-[#E95470] text-xl">Pronto Atendimento 24h</span>
+                  <p className="text-[#A35E57] text-base">Especialistas em medicina clínica geral disponíveis durante as 24h do dia, nos sete dias da semana.</p>
+                </div>
               </div>
               
               {/* Dermatologista */}
-              <div className="flex items-center gap-3">
-                <div className="w-16 h-16 flex items-center justify-center border border-[#E95470] rounded-xl">
-                  <img src={dermatologistaicon} alt="Dermatologista" className="w-24 h-24 object-contain" />
+              <div className="flex items-center gap-8">
+                <div className="w-28 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  <img src={dermatologistaicon} alt="Dermatologista" className="w-20 h-20 object-contain" />
                 </div>
-                <span className="font-bold text-[#A35E57]">Dermatologista</span>
+                <div className="flex flex-col items-start text-left">
+                  <span className="font-bold text-[#E95470] text-xl">Dermatologistas</span>
+                  <p className="text-[#A35E57] text-base">Especialistas médicos em dermatologia para cuidar da saúde da pele de forma personalizada.</p>
+                </div>
               </div>
               
               {/* Nutricionista */}
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 flex items-center justify-center border border-[#E95470] rounded-xl">
-                  {/* Substitua pelo ícone de nutricionista se houver */}
-                  <svg className="w-6 h-6 text-[#fff]" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8.1 13.34l2.83-2.83L3.91 3.5c-1.56 1.56-1.56 4.09 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z"/>
-                  </svg>
+              <div className="flex items-center gap-8">
+                <div className="w-28 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  <img src={nutricionistaicon} alt="Nutricionista" className="w-28 h-28 object-contain" />
                 </div>
-                <span className="font-bold text-[#A35E57]">Nutricionista</span>
+                <div className="flex flex-col items-start text-left">
+                  <span className="font-bold text-[#E95470] text-xl">Nutricionistas</span>
+                  <p className="text-[#A35E57] text-base">Acompanhamento personalizado feito por nutricionistas para alcançar qualquer objetivo em saúde.</p>
+                </div>
               </div>
               
               {/* Treinador físico */}
-              <div className="flex items-center gap-3">
-                <div className="w-16 h-16 flex items-center justify-center border border-[#E95470] rounded-xl">
-                  {/* Substitua pelo ícone de treinador físico se houver */}
+              <div className="flex items-center gap-8">
+                <div className="w-28 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  <img src={treinadorfisicoicon} alt="Treinador físico" className="w-28 h-28 object-contain" />
                 </div>
-                <span className="font-bold text-[#A35E57]">Treinador físico</span>
+                <div className="flex flex-col items-start text-left">
+                  <span className="font-bold text-[#E95470] text-xl">Treinadores físicos</span>
+                  <p className="text-[#A35E57] text-base">Treinadores físicos à disposição para cuidado integral da saúde do corpo e promoção do bem-estar.</p>
+                </div>
               </div>
             </div>
             
             {/* Coluna Direita */}
             <div className="space-y-4">
               {/* Ginecologista */}
-              <div className="flex items-center gap-3">
-                <div className="w-16 h-16 flex items-center justify-center border border-[#E95470] rounded-xl">
-                  <img src={ginecologistaicon} alt="Ginecologista" className="w-24 h-24 object-contain" />
+              <div className="flex items-center gap-8">
+                <div className="w-22 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  <img src={ginecologistaicon} alt="Ginecologista" className="w-18 h-18 object-contain" />
                 </div>
-                <span className="font-bold text-[#A35E57]">Ginecologista</span>
+                <div className="flex flex-col items-start text-left">
+                  <span className="font-bold text-[#E95470] text-xl">Ginecologistas</span>
+                  <p className="text-[#A35E57] text-base">Profissionais da saúde selecionados pelo MediQuo para cuidar da saúde feminina.</p>
+                </div>
               </div>
               
               {/* Psicólogo */}
-              <div className="flex items-center gap-3">
-                <div className="w-16 h-16 flex items-center justify-center border border-[#E95470] rounded-xl">
-                  <img src={psicologoicon} alt="Psicólogo" className="w-24 h-24 object-contain" />
+              <div className="flex items-center gap-8">
+                <div className="w-28 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  <img src={psicologoicon} alt="Psicólogo" className="w-20 h-20 object-contain" />
                 </div>
-                <span className="font-bold text-[#A35E57]">Psicólogo</span>
+                <div className="flex flex-col items-start text-left">
+                  <span className="font-bold text-[#E95470] text-xl">Psicólogos</span>
+                  <p className="text-[#A35E57] text-base">Psicólogos com formação nos variados campos da psicologia para um atendimento amplo da saúde da mente.</p>
+                </div>
               </div>
               
               {/* Pediatra */}
-              <div className="flex items-center gap-3">
-                <div className="w-16 h-16 flex items-center justify-center border border-[#E95470] rounded-xl">
-                  <img src={pediatriaicon} alt="Pediatra" className="w-24 h-24 object-contain" />
+              <div className="flex items-center gap-8">
+                <div className="w-25 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  <img src={pediatriaicon} alt="Pediatra" className="w-20 h-20 object-contain" />
                 </div>
-                <span className="font-bold text-[#A35E57]">Pediatra</span>
+                <div className="flex flex-col items-start text-left">
+                  <span className="font-bold text-[#E95470] text-xl">Pediatras</span>
+                  <p className="text-[#A35E57] text-base">Consultas com especialistas em pediatria para dependentes menores de idade sem custo adicional.</p>
+                </div>
               </div>
               
               {/* Médico Veterinário */}
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 flex items-center justify-center border border-[#E95470] rounded-xl">
-                  {/* Substitua pelo ícone de veterinário se houver */}
-                  <svg className="w-6 h-6 text-[#fff]" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M4.34 17h9.32c-.84-.58-2.87-1.25-4.66-1.25s-3.82.67-4.66 1.25zm9.32-6c-.84-.58-2.87-1.25-4.66-1.25s-3.82.67-4.66 1.25h9.32zM4.34 5h9.32c-.84-.58-2.87-1.25-4.66-1.25s-3.82.67-4.66 1.25z"/>
-                  </svg>
+              <div className="flex items-center gap-8">
+                <div className="w-28 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  <img src={medicoveterinarioicon} alt="Médico Veterinário" className="w-30 h-30 object-contain" />
                 </div>
-                <span className="font-bold text-[#A35E57]">Médicos Veterinários</span>
+                <div className="flex flex-col items-start text-left">
+                  <span className="font-bold text-[#E95470] text-xl">Médicos Veterinários</span>
+                  <p className="text-[#A35E57] text-base">Atendimento com especialistas em medicina veterinária para que cães e gatos também tenham a saúde em dia.</p>
+                </div>
               </div>
             </div>
           </div>

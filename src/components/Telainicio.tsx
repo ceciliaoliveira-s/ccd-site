@@ -184,7 +184,7 @@ function Telainicio() {
                 dependentes, com profissionais regulados pelo <b>CFM</b> (Conselho
                 Federal de Medicina).
               </p>
-              <a href="/nossas-solucoes/produtos">
+              <a href="/plataforma-telessaude">
                 <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-1.5 px-5 rounded-lg shadow transition text-sm">
                   Saiba mais
                 </button>
@@ -226,7 +226,7 @@ function Telainicio() {
                 <li>Infraestrutura de redes</li>
                 <li>Análise de dados</li>
               </ul>
-              <a href="/nossas-solucoes/servicos">
+              <a href="/servicos">
                 <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-1.5 px-5 rounded-lg shadow transition text-sm">
                   Saiba mais
                 </button>

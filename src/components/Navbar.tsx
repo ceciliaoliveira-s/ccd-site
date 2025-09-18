@@ -18,7 +18,7 @@ export default function Navbar() {
             <Link to="/quem-somos" className="text-[#E22E5B] hover:text-[#db6d89]">Quem Somos</Link>
           </li>
           <li>
-            <Link to="/produtos" className="text-[#E22E5B] hover:text-[#db6d89]">Plataforma de Telessaúde</Link>
+            <Link to="/plataforma-telessaude" className="text-[#E22E5B] hover:text-[#db6d89]">Plataforma de Telessaúde</Link>
           </li>
           <li>
             <Link to="/servicos" className="text-[#E22E5B] hover:text-[#db6d89]">Serviços</Link>

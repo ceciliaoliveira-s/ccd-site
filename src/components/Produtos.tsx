@@ -101,12 +101,12 @@ function Produtos() {
       <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-14">
         <div className="max-w-7xl mx-auto">
           {/* Header da seção */}
-          <div className="text-left mb-12">
+          <div className="text-left md:w-3/3 md:ml-[4.333%] mb-12">
             <h2 className="text-4xl md:text-4xl font-bold text-[#E95470] mb-10" style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}>
               Especialidades disponíveis
             </h2>
             <p className="text-base text-left text-[#A35E57] max-w-6xl mb-16">
-              A <span className="font-bold text-[#E95470]">Mediquo</span> oferece uma solução completa de telemedicina, reunindo múltiplas especialidades médicas em um só lugar. É o único app do segmento que inclui profissionais de educação física, promovendo um cuidado realmente integral e alinhado ao bem-estar físico e mental.
+              A <span className="font-bold text-[#E95470]">Mediquo</span> oferece uma solução completa de telemedicina, reunindo múltiplas especialidades médicas em um só lugar, sendo o único aplicativo do segmento que inclui profissionais de educação física, proporcionando cuidado realmente integral e alinhado ao bem-estar físico e mental.
             </p>
           </div>
 
@@ -121,7 +121,7 @@ function Produtos() {
                 </div>
                 <div className="flex flex-col items-start text-left">
                   <span className="font-bold text-[#E95470] text-xl">Pronto Atendimento 24h</span>
-                  <p className="text-[#A35E57] text-base">Especialistas em medicina clínica geral disponíveis <br /> durante as 24h do dia, nos sete dias da semana.</p>
+                  <p className="text-[#A35E57] text-base">Especialistas em medicina clínica geral disponíveis <br /> durante as <b>24h por dia, nos sete dias da semana.</b> </p>
                 </div>
               </div>
               
@@ -179,7 +179,7 @@ function Produtos() {
                 </div>
                 <div className="flex flex-col items-start text-left">
                   <span className="font-bold text-[#E95470] text-xl">Psicólogos</span>
-                  <p className="text-[#A35E57] text-base">Psicólogos com formação nos variados campos da psicologia <br /> para um atendimento amplo da saúde da mente.</p>
+                  <p className="text-[#A35E57] text-base">Psicólogos com formação nos variados campos da psicologia <br /> para um atendimento amplo de saúde mental.</p>
                 </div>
               </div>
               
@@ -261,19 +261,19 @@ function Produtos() {
               </div>
               
               <div className="mt-6">
-                <h3 className="text-xl font-bold text-left text-[#E22E5B] mb-8">Abaixo, um breve Como funciona o programa de Cashback?</h3>
+                <h3 className="text-xl font-bold text-left text-[#E22E5B] mb-8">Como funciona o nosso programa de Cashback?</h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-lg text-[#9B6B6B]">Contrate o nosso plano corporativo de telemedicina.</span>
+                    <span className="w-2 h-2 bg-[#E22E5B] rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-lg mb-3 text-[#9B6B6B]">Contrate o nosso plano corporativo de telemedicina.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-lg text-[#9B6B6B]">Ative as licenças contratadas junto aos colaboradores da empresa.</span>
+                    <span className="w-2 h-2 bg-[#E22E5B] rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-lg mb-3 text-[#9B6B6B]">Ative as licenças contratadas junto aos colaboradores da empresa.</span>
                   </li>
                   <li className="flex items-start text-left gap-2">
-                    <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                    <span className="text-lg text-[#9B6B6B]"> Para cada licença adquirida por um familiar de um colaborador <b>já ativo,</b> a empresa recebe cashback creditado diretamente em sua conta.</span>
+                    <span className="w-2 h-2 bg-[#E22E5B] rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="text-lg mb-4 text-[#9B6B6B]"> Para cada licença adquirida por um familiar de um colaborador <span className="font-bold text-[#E95470]">já ativo,</span> <br /> a empresa recebe cashback creditado diretamente em sua conta.</span>
                   </li>
                 </ul>
               </div>
@@ -333,8 +333,8 @@ function Produtos() {
               Benefícios por segmento
             </h2>
           </div>
-          <p className="text-base text-[#9B6B6B] w-full text-left mb-16">
-            A plataforma <b>Mediquo</b> é um aplicativo de telemedicina e telessaúde que alcança diversos segmentos corporativos e público/privado, proporcionando acesso rápido, prático e seguro a múltiplos profissionais de saúde em todo o Brasil e na Europa. Abaixo, mais detalhes.
+          <p className="text-base text-[#9B6B6B]  md:w-3/3 md:ml-[8.333%]  w-full text-left mb-12">
+            A plataforma <span className="font-bold text-[#E95470]">Mediquo</span> é um aplicativo de telemedicina e telessaúde que alcança diversos segmentos corporativos e público/privado, proporcionando acesso  <br /> rápido, prático e seguro a múltiplos profissionais de saúde em todo o <b>Brasil e na Europa.</b> Abaixo, mais detalhes.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-5xl mx-auto justify-items-center">
             {/* Card Para Empresas */}

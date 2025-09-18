@@ -1,14 +1,15 @@
 import Footer from './Footer';
+import pranchetaicon from '../assets/pranchetaicon.png';
 import capaproduto4 from '../assets/capaproduto4.png';
 import cashbackicon from '../assets/cashbackicon.png';
 import clinicogeralicon2 from '../assets/clinicogeralicon2.png'; 
 import dermatologistaicon from '../assets/dermatologistaicon.png';
-import ginecologistaicon from '../assets/ginecologistaicon.png';
-import psicologoicon from '../assets/psicologoicon.png';
-import treinadorfisicoicon from '../assets/treinadorfisicoicon.png';
+import ginecologistaicon2 from '../assets/ginecologistaicon2.png';
+import psicologoicon2 from '../assets/psicologoicon2.png';
+import treinadorfisicoicon3 from '../assets/treinadorfisicoicon3.png';
 import nutricionistaicon from '../assets/nutricionistaicon.png';
-import pediatriaicon from '../assets/pediatriaicon.png';
-import medicoveterinarioicon from '../assets/medicoveterinarioicon.png';
+import pediatriaicon2 from '../assets/pediatriaicon2.png';
+import medicoveterinarioicon3 from '../assets/medicoveterinarioicon3.png';
 import appicon from '../assets/appicon.png';
 import infinitoicon from '../assets/infinitoicon.png';
 import vintequatrohrsicon from '../assets/24hrsicon.png';
@@ -105,157 +106,162 @@ function Produtos() {
               Especialidades disponíveis
             </h2>
             <p className="text-base text-left text-[#A35E57] max-w-6xl mb-16">
-              A <span className="font-bold text-[#A35E57]">Mediquo</span> oferece uma solução completa de telemedicina, reunindo múltiplas especialidades médicas em um só lugar. É o único app do segmento que inclui profissionais de educação física, promovendo um cuidado realmente integral e alinhado ao bem-estar físico e mental.
+              A <span className="font-bold text-[#E95470]">Mediquo</span> oferece uma solução completa de telemedicina, reunindo múltiplas especialidades médicas em um só lugar. É o único app do segmento que inclui profissionais de educação física, promovendo um cuidado realmente integral e alinhado ao bem-estar físico e mental.
             </p>
           </div>
 
           {/* Lista de especialidades em duas colunas */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-25 gap-y-4 mb-16 max-w-10xl">
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-x-8 gap-y-4 mb-12 max-w-10xl">
             {/* Coluna Esquerda */}
-            <div className="space-y-4">
+            <div className="space-y-6 ml-16 md:ml-19">
               {/* Clínico Geral 24h */}
-              <div className="flex items-center gap-8">
-                <div className="w-28 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
-                  <img src={clinicogeralicon2} alt="Clínico Geral 24h" className="w-20 h-20 object-contain" />
+              <div className="flex items-center gap-6">
+                <div className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  <img src={clinicogeralicon2} alt="Clínico Geral 24h" className="w-22 h-22 object-contain" />
                 </div>
                 <div className="flex flex-col items-start text-left">
                   <span className="font-bold text-[#E95470] text-xl">Pronto Atendimento 24h</span>
-                  <p className="text-[#A35E57] text-base">Especialistas em medicina clínica geral disponíveis durante as 24h do dia, nos sete dias da semana.</p>
+                  <p className="text-[#A35E57] text-base">Especialistas em medicina clínica geral disponíveis <br /> durante as 24h do dia, nos sete dias da semana.</p>
                 </div>
               </div>
               
               {/* Dermatologista */}
-              <div className="flex items-center gap-8">
-                <div className="w-28 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
-                  <img src={dermatologistaicon} alt="Dermatologista" className="w-20 h-20 object-contain" />
+              <div className="flex items-center gap-6">
+                <div className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  <img src={dermatologistaicon} alt="Dermatologista" className="w-28 h-28 object-contain" />
                 </div>
                 <div className="flex flex-col items-start text-left">
                   <span className="font-bold text-[#E95470] text-xl">Dermatologistas</span>
-                  <p className="text-[#A35E57] text-base">Especialistas médicos em dermatologia para cuidar da saúde da pele de forma personalizada.</p>
+                  <p className="text-[#A35E57] text-base">Especialistas médicos em dermatologia para cuidar <br /> da saúde da pele de forma personalizada.</p>
                 </div>
               </div>
               
               {/* Nutricionista */}
-              <div className="flex items-center gap-8">
-                <div className="w-28 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+              <div className="flex items-center gap-6">
+                <div className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
                   <img src={nutricionistaicon} alt="Nutricionista" className="w-28 h-28 object-contain" />
                 </div>
                 <div className="flex flex-col items-start text-left">
                   <span className="font-bold text-[#E95470] text-xl">Nutricionistas</span>
-                  <p className="text-[#A35E57] text-base">Acompanhamento personalizado feito por nutricionistas para alcançar qualquer objetivo em saúde.</p>
+                  <p className="text-[#A35E57] text-base">Acompanhamento personalizado por nutricionistas <br /> para alcançar qualquer objetivo em saúde.</p>
                 </div>
               </div>
               
               {/* Treinador físico */}
-              <div className="flex items-center gap-8">
-                <div className="w-28 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
-                  <img src={treinadorfisicoicon} alt="Treinador físico" className="w-28 h-28 object-contain" />
+              <div className="flex items-center gap-6">
+                <div className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  <img src={treinadorfisicoicon3} alt="Treinador físico" className="w-36 h-36 object-contain" />
                 </div>
                 <div className="flex flex-col items-start text-left">
                   <span className="font-bold text-[#E95470] text-xl">Treinadores físicos</span>
-                  <p className="text-[#A35E57] text-base">Treinadores físicos à disposição para cuidado integral da saúde do corpo e promoção do bem-estar.</p>
+                  <p className="text-[#A35E57] text-base">Treinadores físicos à disposição para cuidado integral <br /> da saúde do corpo e promoção do bem-estar.</p>
                 </div>
               </div>
             </div>
             
             {/* Coluna Direita */}
-            <div className="space-y-4">
+            <div className="space-y-6 ml-8 ">
               {/* Ginecologista */}
-              <div className="flex items-center gap-8">
-                <div className="w-22 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
-                  <img src={ginecologistaicon} alt="Ginecologista" className="w-18 h-18 object-contain" />
+              <div className="flex items-center gap-6">
+                <div className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  <img src={ginecologistaicon2} alt="Ginecologista" className="w-28 h-28 object-contain" />
                 </div>
                 <div className="flex flex-col items-start text-left">
                   <span className="font-bold text-[#E95470] text-xl">Ginecologistas</span>
-                  <p className="text-[#A35E57] text-base">Profissionais da saúde selecionados pelo MediQuo para cuidar da saúde feminina.</p>
+                  <p className="text-[#A35E57] text-base">Profissionais da saúde selecionados pelo MediQuo <br /> para cuidar da saúde feminina.</p>
                 </div>
               </div>
               
               {/* Psicólogo */}
-              <div className="flex items-center gap-8">
-                <div className="w-28 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
-                  <img src={psicologoicon} alt="Psicólogo" className="w-20 h-20 object-contain" />
+              <div className="flex items-center gap-6">
+                <div className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  <img src={psicologoicon2} alt="Psicólogo" className="w-28 h-28 object-contain" />
                 </div>
                 <div className="flex flex-col items-start text-left">
                   <span className="font-bold text-[#E95470] text-xl">Psicólogos</span>
-                  <p className="text-[#A35E57] text-base">Psicólogos com formação nos variados campos da psicologia para um atendimento amplo da saúde da mente.</p>
+                  <p className="text-[#A35E57] text-base">Psicólogos com formação nos variados campos da psicologia <br /> para um atendimento amplo da saúde da mente.</p>
                 </div>
               </div>
               
               {/* Pediatra */}
-              <div className="flex items-center gap-8">
-                <div className="w-25 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
-                  <img src={pediatriaicon} alt="Pediatra" className="w-20 h-20 object-contain" />
+              <div className="flex items-center gap-6">
+                <div className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  <img src={pediatriaicon2} alt="Pediatra" className="w-28 h-28 object-contain" />
                 </div>
                 <div className="flex flex-col items-start text-left">
                   <span className="font-bold text-[#E95470] text-xl">Pediatras</span>
-                  <p className="text-[#A35E57] text-base">Consultas com especialistas em pediatria para dependentes menores de idade sem custo adicional.</p>
+                  <p className="text-[#A35E57] text-base">Consultas com especialistas em pediatria para dependentes <br /> menores de idade sem custo adicional.</p>
                 </div>
               </div>
               
               {/* Médico Veterinário */}
-              <div className="flex items-center gap-8">
-                <div className="w-28 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
-                  <img src={medicoveterinarioicon} alt="Médico Veterinário" className="w-30 h-30 object-contain" />
+              <div className="flex items-center gap-6">
+                <div className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                  <img src={medicoveterinarioicon3} alt="Médico Veterinário" className="w-28 h-28 object-contain" />
                 </div>
                 <div className="flex flex-col items-start text-left">
                   <span className="font-bold text-[#E95470] text-xl">Médicos Veterinários</span>
-                  <p className="text-[#A35E57] text-base">Atendimento com especialistas em medicina veterinária para que cães e gatos também tenham a saúde em dia.</p>
+                  <p className="text-[#A35E57] text-base">Atendimento com especialistas em medicina veterinária para <br /> que cães e gatos também tenham a saúde em dia.</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Card Informações importantes */}
-          <div className="max-w-5xl mx-auto">
-            <div className="bg-white rounded-lg shadow-md p-8 border border-gray-400">
-              <h3 className="text-xl text-left font-bold text-[#E95470] mb-4">Informações importantes!</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-2">
-                  <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                  <span className="text-gray-700">
-                    A <span className="font-bold text-[#A35E57]">Mediquo</span> possui um corpo clínico próprio regulamentado via <span className="font-bold text-[#A35E57]">CFM</span>.
-                  </span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                  <span className="text-gray-700">São profissionais com no mínimo 5 anos de experiência no mercado.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
-                  <span className="text-gray-700">
-                    A plataforma tem como propósito reduzir o <span className="font-bold text-[#A35E57]">absenteísmo</span> através de um crivo criterioso para fornecer <span className="font-bold text-[#A35E57]">atestado médico</span>.
-                  </span>
-                </li>
-              </ul>
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-[#F8EFEA] rounded-lg shadow-md p-8 border border-[#E95470]">
+              <div className="flex flex-row items-center justify-between">
+                <div>
+                  <h3 className="text-2xl text-left font-bold text-[#E95470] mb-6">Informações importantes!</h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 bg-[#E95470] rounded-full mt-2 flex-shrink-0"></span>
+                      <span className="text-[#A35E57]">
+                        A <span className="font-bold text-[#E95470]">Mediquo</span> possui um corpo clínico próprio regulamentado via <span className="font-bold text-[#E95470]">CFM</span>.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 bg-[#E95470] rounded-full mt-2 flex-shrink-0"></span>
+                      <span className="text-[#A35E57]">São profissionais com no mínimo 5 anos de experiência no mercado.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-2 h-2 bg-[#E95470] rounded-full mt-2 flex-shrink-0"></span>
+                      <span className="text-[#A35E57]">
+                        A plataforma tem como propósito reduzir o <span className="font-bold text-[#E95470]">absenteísmo</span> e possui um crivo criterioso para fornecer <span className="font-bold text-[#E95470]">atestado médico</span>.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <img src={pranchetaicon} alt="Prancheta" className="w-40 h-20 object-contain" />
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section className="w-full py-16 px-6 md:px-16 bg-[#FFFFFF] flex flex-col items-start">
-        <h2 className="text-4xl font-extrabold text-[#E22E5B] mb-20" style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}>Programa de cashback e benefícios exclusivos</h2>
-        <div className="bg-white rounded-2xl shadow-lg p-12 max-w-4xl mx-auto">
-          <div className="flex flex-col md:flex-row items-start gap-6">
+        <h2 className="text-4xl font-extrabold text-[#E22E5B] mb-16" style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}>Programa de cashback e benefícios exclusivos</h2>
+        <div className="bg-white border border-[#E22E5B] rounded-2xl shadow-lg p-12 max-w-4xl mx-auto">
+          <div className="flex flex-col md:flex-row items-start gap-8">
             {/* Ícone do cashback */}
             <div className="flex-shrink-0">
               <img
                 src={cashbackicon}
                 alt="Cashback"
-                className="w-12 h-12 object-contain"
+                className="w-20 h-20 object-contain"
               />
             </div>
             <div className="flex-1 flex flex-col gap-4">
               <div>
-                <p className="text-2xl text-left text-[#9B6B6B] mb-8">
-                  <span className="font-bold text-[#9B6B6B]">Cashback exclusivo para empresas</span>
+                <p className="text-2xl text-left text-[#9B6B6B] mb-6">
+                  <span className="font-bold text-[#E22E5B] mt-4 block">Cashback exclusivo para empresas</span>
                 </p>
                 <p className="text-lg text-left text-[#9B6B6B]">
-                  Ofereça telemedicina de qualidade aos seus colaboradores, e a cada familiar que também obtiver uma licença, recupere parte do valor por meio do nosso <b>programa de cashback para licenças contratadas</b>.
+                  Ofereça telemedicina de qualidade aos seus colaboradores, e a cada familiar que também obtiver uma licença, recupere parte do valor por meio do nosso <b><span style={{color: '#E22E5B'}}>programa de cashback para licenças contratadas</span></b>.
                 </p>
               </div>
               
               <div className="mt-6">
-                <h3 className="text-lg font-bold text-left text-[#9B6B6B] mb-8">Como funciona o programa de Cashback?</h3>
+                <h3 className="text-xl font-bold text-left text-[#E22E5B] mb-8">Abaixo, um breve Como funciona o programa de Cashback?</h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
                     <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>

@@ -101,14 +101,33 @@ function Produtos() {
       <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-14">
         <div className="max-w-7xl mx-auto">
           {/* Header da seção */}
-          <div className="text-left md:w-3/3 md:ml-[4.333%] mb-12">
-            <h2 className="text-4xl md:text-4xl font-bold text-[#E95470] mb-10" style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.7 }}
+            transition={{ duration: 0.7 }}
+            className="text-left md:w-3/3 md:ml-[4.333%] mb-12"
+          >
+            <motion.h2
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.7 }}
+              transition={{ duration: 0.7 }}
+              className="text-4xl md:text-4xl font-bold text-[#E95470] mb-10"
+              style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}
+            >
               Especialidades disponíveis
-            </h2>
-            <p className="text-base text-left text-[#A35E57] max-w-6xl mb-16">
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.7 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="text-base text-left text-[#A35E57] max-w-6xl mb-16"
+            >
               A <span className="font-bold text-[#E95470]">Mediquo</span> oferece uma solução completa de telemedicina, reunindo múltiplas especialidades médicas em um só lugar, sendo o único aplicativo do segmento que inclui profissionais de educação física, proporcionando cuidado realmente integral e alinhado ao bem-estar físico e mental.
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
 
           {/* Lista de especialidades em duas colunas */}
           <div className="grid grid-cols-2 md:grid-cols-2 gap-x-8 gap-y-4 mb-12 max-w-10xl">
@@ -116,9 +135,15 @@ function Produtos() {
             <div className="space-y-6 ml-16 md:ml-19">
               {/* Clínico Geral 24h */}
               <div className="flex items-center gap-6">
-                <div className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                <motion.div
+                  initial={{ opacity: 0, x: -40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, amount: 0.7 }}
+                  transition={{ duration: 0.7 }}
+                  className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl"
+                >
                   <img src={clinicogeralicon2} alt="Clínico Geral 24h" className="w-22 h-22 object-contain" />
-                </div>
+                </motion.div>
                 <div className="flex flex-col items-start text-left">
                   <span className="font-bold text-[#E95470] text-xl">Pronto Atendimento 24h</span>
                   <p className="text-[#A35E57] text-base">Especialistas em medicina clínica geral disponíveis <br /> durante as <b>24h por dia, nos sete dias da semana.</b> </p>
@@ -127,9 +152,15 @@ function Produtos() {
               
               {/* Dermatologista */}
               <div className="flex items-center gap-6">
-                <div className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                <motion.div
+                  initial={{ opacity: 0, x: -40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, amount: 0.7 }}
+                  transition={{ duration: 0.7, delay: 0.1 }}
+                  className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl"
+                >
                   <img src={dermatologistaicon} alt="Dermatologista" className="w-28 h-28 object-contain" />
-                </div>
+                </motion.div>
                 <div className="flex flex-col items-start text-left">
                   <span className="font-bold text-[#E95470] text-xl">Dermatologistas</span>
                   <p className="text-[#A35E57] text-base">Especialistas médicos em dermatologia para cuidar <br /> da saúde da pele de forma personalizada.</p>
@@ -138,9 +169,15 @@ function Produtos() {
               
               {/* Nutricionista */}
               <div className="flex items-center gap-6">
-                <div className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                <motion.div
+                  initial={{ opacity: 0, x: -40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, amount: 0.7 }}
+                  transition={{ duration: 0.7, delay: 0.2 }}
+                  className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl"
+                >
                   <img src={nutricionistaicon} alt="Nutricionista" className="w-28 h-28 object-contain" />
-                </div>
+                </motion.div>
                 <div className="flex flex-col items-start text-left">
                   <span className="font-bold text-[#E95470] text-xl">Nutricionistas</span>
                   <p className="text-[#A35E57] text-base">Acompanhamento personalizado por nutricionistas <br /> para alcançar qualquer objetivo em saúde.</p>
@@ -149,9 +186,15 @@ function Produtos() {
               
               {/* Treinador físico */}
               <div className="flex items-center gap-6">
-                <div className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                <motion.div
+                  initial={{ opacity: 0, x: -40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, amount: 0.7 }}
+                  transition={{ duration: 0.7, delay: 0.3 }}
+                  className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl"
+                >
                   <img src={treinadorfisicoicon3} alt="Treinador físico" className="w-36 h-36 object-contain" />
-                </div>
+                </motion.div>
                 <div className="flex flex-col items-start text-left">
                   <span className="font-bold text-[#E95470] text-xl">Treinadores físicos</span>
                   <p className="text-[#A35E57] text-base">Treinadores físicos à disposição para cuidado integral <br /> da saúde do corpo e promoção do bem-estar.</p>
@@ -163,9 +206,15 @@ function Produtos() {
             <div className="space-y-6 ml-8 ">
               {/* Ginecologista */}
               <div className="flex items-center gap-6">
-                <div className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                <motion.div
+                  initial={{ opacity: 0, x: 40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, amount: 0.7 }}
+                  transition={{ duration: 0.7 }}
+                  className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl"
+                >
                   <img src={ginecologistaicon2} alt="Ginecologista" className="w-28 h-28 object-contain" />
-                </div>
+                </motion.div>
                 <div className="flex flex-col items-start text-left">
                   <span className="font-bold text-[#E95470] text-xl">Ginecologistas</span>
                   <p className="text-[#A35E57] text-base">Profissionais da saúde selecionados pelo MediQuo <br /> para cuidar da saúde feminina.</p>
@@ -174,9 +223,15 @@ function Produtos() {
               
               {/* Psicólogo */}
               <div className="flex items-center gap-6">
-                <div className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                <motion.div
+                  initial={{ opacity: 0, x: 40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, amount: 0.7 }}
+                  transition={{ duration: 0.7, delay: 0.1 }}
+                  className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl"
+                >
                   <img src={psicologoicon2} alt="Psicólogo" className="w-28 h-28 object-contain" />
-                </div>
+                </motion.div>
                 <div className="flex flex-col items-start text-left">
                   <span className="font-bold text-[#E95470] text-xl">Psicólogos</span>
                   <p className="text-[#A35E57] text-base">Psicólogos com formação nos variados campos da psicologia <br /> para um atendimento amplo de saúde mental.</p>
@@ -185,9 +240,15 @@ function Produtos() {
               
               {/* Pediatra */}
               <div className="flex items-center gap-6">
-                <div className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                <motion.div
+                  initial={{ opacity: 0, x: 40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, amount: 0.7 }}
+                  transition={{ duration: 0.7, delay: 0.2 }}
+                  className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl"
+                >
                   <img src={pediatriaicon2} alt="Pediatra" className="w-28 h-28 object-contain" />
-                </div>
+                </motion.div>
                 <div className="flex flex-col items-start text-left">
                   <span className="font-bold text-[#E95470] text-xl">Pediatras</span>
                   <p className="text-[#A35E57] text-base">Consultas com especialistas em pediatria para dependentes <br /> menores de idade sem custo adicional.</p>
@@ -196,9 +257,15 @@ function Produtos() {
               
               {/* Médico Veterinário */}
               <div className="flex items-center gap-6">
-                <div className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl">
+                <motion.div
+                  initial={{ opacity: 0, x: 40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, amount: 0.7 }}
+                  transition={{ duration: 0.7, delay: 0.3 }}
+                  className="w-21 h-28 flex items-center justify-center border border-[#E95470] rounded-xl"
+                >
                   <img src={medicoveterinarioicon3} alt="Médico Veterinário" className="w-28 h-28 object-contain" />
-                </div>
+                </motion.div>
                 <div className="flex flex-col items-start text-left">
                   <span className="font-bold text-[#E95470] text-xl">Médicos Veterinários</span>
                   <p className="text-[#A35E57] text-base">Atendimento com especialistas em medicina veterinária para <br /> que cães e gatos também tenham a saúde em dia.</p>
@@ -239,28 +306,57 @@ function Produtos() {
         </div>
       </section>
       <section className="w-full py-16 px-6 md:px-16 bg-[#FFFFFF] flex flex-col items-start">
-        <h2 className="text-4xl font-extrabold text-[#E22E5B] mb-16" style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}>Programa de cashback e benefícios exclusivos</h2>
-        <div className="bg-white border border-[#E22E5B] rounded-2xl shadow-lg p-12 max-w-4xl mx-auto">
+        <motion.h2
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.7 }}
+          transition={{ duration: 0.7 }}
+          className="text-4xl font-extrabold text-[#E22E5B] mb-16"
+          style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}
+        >Programa de cashback e benefícios exclusivos</motion.h2>
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.7 }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+          className="bg-white border border-[#E22E5B] rounded-2xl shadow-lg p-12 max-w-4xl mx-auto"
+        >
           <div className="flex flex-col md:flex-row items-start gap-8">
-            {/* Ícone do cashback */}
-            <div className="flex-shrink-0">
+            {/* Ícone do cashback animado */}
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.7 }}
+              transition={{ duration: 0.7 }}
+              className="flex-shrink-0"
+            >
               <img
                 src={cashbackicon}
                 alt="Cashback"
                 className="w-20 h-20 object-contain"
               />
-            </div>
+            </motion.div>
             <div className="flex-1 flex flex-col gap-4">
-              <div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.7 }}
+                transition={{ duration: 0.7, delay: 0.1 }}
+              >
                 <p className="text-2xl text-left text-[#9B6B6B] mb-6">
                   <span className="font-bold text-[#E22E5B] mt-4 block">Cashback exclusivo para empresas</span>
                 </p>
                 <p className="text-lg text-left text-[#9B6B6B]">
                   Ofereça telemedicina de qualidade aos seus colaboradores, e a cada familiar que também obtiver uma licença, recupere parte do valor por meio do nosso <b><span style={{color: '#E22E5B'}}>programa de cashback para licenças contratadas</span></b>.
                 </p>
-              </div>
-              
-              <div className="mt-6">
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.7 }}
+                transition={{ duration: 0.7, delay: 0.2 }}
+                className="mt-6"
+              >
                 <h3 className="text-xl font-bold text-left text-[#E22E5B] mb-8">Como funciona o nosso programa de Cashback?</h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
@@ -276,70 +372,190 @@ function Produtos() {
                     <span className="text-lg mb-4 text-[#9B6B6B]"> Para cada licença adquirida por um familiar de um colaborador <span className="font-bold text-[#E95470]">já ativo,</span> <br /> a empresa recebe cashback creditado diretamente em sua conta.</span>
                   </li>
                 </ul>
-              </div>
-              
-              <div className="flex justify-end mt-2">
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.7 }}
+                transition={{ duration: 0.7, delay: 0.3 }}
+                className="flex justify-end mt-2"
+              >
                 <button className="bg-[#E22E5B] hover:bg-[#db6d89] text-white font-bold py-3 px-4 rounded-lg shadow transition">Consulte nossas condições</button>
-              </div>
+              </motion.div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Grid de Benefícios */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl mt-20">
           {/* Benefício 1 - 100% seguro */}
-          <div className="flex flex-col items-center">
-            <img src={appicon} alt="100% seguro" className="w-13 h-13 object-contain mb-8" />
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.7 }}
+            className="flex flex-col items-center"
+          >
+            <motion.img
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.7 }}
+              src={appicon}
+              alt="100% seguro"
+              className="w-13 h-13 object-contain mb-8"
+            />
             <span className="font-bold text-[#A35E57] mb-20">100% Seguro</span>
-          </div>
+          </motion.div>
 
           {/* Benefício 2 - Acesso ilimitado */}
-          <div className="flex flex-col items-center">
-            <img src={infinitoicon} alt="Acesso ilimitado" className="w-16 h-16 object-contain mb-7" />
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="flex flex-col items-center"
+          >
+            <motion.img
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.7 }}
+              src={infinitoicon}
+              alt="Acesso ilimitado"
+              className="w-16 h-16 object-contain mb-7"
+            />
             <span className="font-bold text-[#A35E57]">Acesso ilimitado</span>
-          </div>
+          </motion.div>
 
           {/* Benefício 3 - Atendimento 24h */}
-          <div className="flex flex-col items-center">
-            <img src={vintequatrohrsicon} alt="Atendimento 24h" className="w-14 h-14 object-contain mb-8" />
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="flex flex-col items-center"
+          >
+            <motion.img
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.7 }}
+              src={vintequatrohrsicon}
+              alt="Atendimento 24h"
+              className="w-14 h-14 object-contain mb-8"
+            />
             <span className="font-bold text-[#A35E57]">Atendimento 24h</span>
-          </div>
+          </motion.div>
 
           {/* Benefício 4 - 90% de resolução de casos */}
-          <div className="flex flex-col items-center text-center gap-3">
-            <img src={aceitacaoicon} alt="90% de resolução de casos" className="w-13 h-13 object-contain mb-7" />
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="flex flex-col items-center text-center gap-3"
+          >
+            <motion.img
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.7 }}
+              src={aceitacaoicon}
+              alt="90% de resolução de casos"
+              className="w-13 h-13 object-contain mb-7"
+            />
             <span className="font-bold text-[#9B6B6B]">90% de resolução de casos</span>
-          </div>
+          </motion.div>
 
           {/* Benefício 5 - Inclusão de dependentes */}
-          <div className="flex flex-col items-center text-center gap-3">
-            <img src={familyicon} alt="Inclusão de dependentes" className="w-13 h-13 object-contain mb-7" />
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.7, delay: 0.4 }}
+            className="flex flex-col items-center text-center gap-3"
+          >
+            <motion.img
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.7 }}
+              src={familyicon}
+              alt="Inclusão de dependentes"
+              className="w-13 h-13 object-contain mb-7"
+            />
             <span className="font-bold text-[#9B6B6B]">Inclusão de dependentes</span>
-          </div>
+          </motion.div>
 
           {/* Benefício 6 - Sem custos adicionais */}
-              <div className="flex flex-col items-center">
-                <img src={nullicon} alt="Sem custos adicionais" className="w-13 h-13 object-contain mb-10" />
-                <span className="font-bold text-[#A35E57]">Sem custos adicionais</span>
-            </div>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.7, delay: 0.5 }}
+            className="flex flex-col items-center"
+          >
+            <motion.img
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.7 }}
+              src={nullicon}
+              alt="Sem custos adicionais"
+              className="w-13 h-13 object-contain mb-10"
+            />
+            <span className="font-bold text-[#A35E57]">Sem custos adicionais</span>
+          </motion.div>
         </div>
       </section>
 
       {/* Seção Benefícios por Segmento */}
       <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-14">
         <div className="max-w-7xl mx-auto flex flex-col">
-          <div className="w-full md:w-1/3 md:ml-[8.333%]">
-            <h2 className="text-4xl font-extrabold text-[#E22E5B] mb-6 text-left" style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.7 }}
+            transition={{ duration: 0.7 }}
+            className="w-full md:w-1/3 md:ml-[8.333%]"
+          >
+            <motion.h2
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.7 }}
+              transition={{ duration: 0.7 }}
+              className="text-4xl font-extrabold text-[#E22E5B] mb-6 text-left"
+              style={{fontFamily:  "'Open Sans', 'Montserrat','Poppins', 'bold'"}}
+            >
               Benefícios por segmento
-            </h2>
-          </div>
-          <p className="text-base text-[#9B6B6B]  md:w-3/3 md:ml-[8.333%]  w-full text-left mb-12">
+            </motion.h2>
+          </motion.div>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.7 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="text-base text-[#9B6B6B]  md:w-3/3 md:ml-[8.333%]  w-full text-left mb-12"
+          >
             A plataforma <span className="font-bold text-[#E95470]">Mediquo</span> é um aplicativo de telemedicina e telessaúde que alcança diversos segmentos corporativos e público/privado, proporcionando acesso  <br /> rápido, prático e seguro a múltiplos profissionais de saúde em todo o <b>Brasil e na Europa.</b> Abaixo, mais detalhes.
-          </p>
+          </motion.p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-5xl mx-auto justify-items-center">
             {/* Card Para Empresas */}
-            <div className="bg-[#FFF9F5] rounded-xl p-6 border border-[#9B6B6B] w-full max-w-xs">
-              <h3 className="text-xl font-bold text-[#E22E5B] mb-7 text-center">Para empresas</h3>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.7 }}
+              className="bg-[#FFF9F5] rounded-xl p-6 border border-[#9B6B6B] w-full max-w-xs shadow-md"
+            >
+              <motion.h3
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.7, delay: 0.1 }}
+                className="text-xl font-bold text-[#E22E5B] mb-7 text-center"
+              >Para empresas</motion.h3>
               <ul className="space-y-4">
                 <li className="flex items-start  text-left gap-2">
                   <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
@@ -358,11 +574,23 @@ function Produtos() {
                   <span className="text-[#9B6B6B]">Inclusão de dependentes e possibilidade de adesão para familiares.</span>
                 </li>
               </ul>
-            </div>
+            </motion.div>
 
             {/* Card Governo */}
-            <div className="bg-[#FFF9F5] rounded-xl p-6 border border-[#9B6B6B] w-full max-w-xs">
-              <h3 className="text-xl font-bold text-[#E22E5B] mb-6 text-center">Governo</h3>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+              className="bg-[#FFF9F5] rounded-xl p-6 border border-[#9B6B6B] w-full max-w-xs shadow-md"
+            >
+              <motion.h3
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.7, delay: 0.2 }}
+                className="text-xl font-bold text-[#E22E5B] mb-6 text-center"
+              >Governo</motion.h3>
               <ul className="space-y-4">
                 <li className="flex items-start text-left gap-2">
                   <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
@@ -381,11 +609,23 @@ function Produtos() {
                   <span className="text-[#9B6B6B]">Acessibilidade e inclusão social.</span>
                 </li>
               </ul>
-            </div>
+            </motion.div>
 
             {/* Card Operadoras de Saúde */}
-            <div className="bg-[#FFF9F5] rounded-xl p-6 border border-[#9B6B6B] w-full max-w-xs">
-              <h3 className="text-xl font-bold text-[#E22E5B] mb-6 text-center">Telecom</h3>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="bg-[#FFF9F5] rounded-xl p-6 border border-[#9B6B6B] w-full max-w-xs shadow-md"
+            >
+              <motion.h3
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.7, delay: 0.3 }}
+                className="text-xl font-bold text-[#E22E5B] mb-6 text-center"
+              >Telecom</motion.h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-2">
                   <span className="w-2 h-2 bg-[#A35E57] rounded-full mt-2 flex-shrink-0"></span>
@@ -404,7 +644,7 @@ function Produtos() {
                   <span className="text-[#9B6B6B] text-left">Atribuição de valor, com o diferencial frente à concorrência ao integrar saúde digital com conectividade.</span>
                 </li>
               </ul>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

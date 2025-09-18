@@ -59,15 +59,23 @@ function Servicos() {
           </motion.p>
 
           {/* Botão */}
-          <motion.button
+          <motion.div
             whileHover={{ scale: 1.05, boxShadow: "0px 8px 24px rgba(226,46,91,0.4)" }}
             whileTap={{ scale: 0.95 }}
             animate={{ scale: [1, 1.02, 1] }}
             transition={{ repeat: Infinity, repeatDelay: 5, duration: 1.5 }}
-            className="bg-[#E22E5B] hover:bg-[#db6d89] text-white text-base md:text-xl mb-4 font-bold py-3 px-8 md:px-11 rounded-lg shadow-md transition"
+            className="inline-flex"
           >
-            Quero Contratar
-          </motion.button>
+            <a
+              href="https://wa.me/5581991945061?text=Olá! Gostaria de mais informações sobre os serviços de tecnologia."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#E22E5B] hover:bg-[#db6d89] text-white text-base md:text-xl font-bold py-3 px-8 md:px-11 rounded-lg transition flex items-center justify-center"
+              style={{ textDecoration: 'none', color: '#fff', boxShadow: 'none', marginBottom: 0 }}
+            >
+              <span style={{ color: '#fff', width: '100%' }}>Quero Contratar</span>
+            </a>
+          </motion.div>
         </div>
 
         {/* Imagem */}

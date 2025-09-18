@@ -26,20 +26,18 @@ function Footer() {
         <div className="flex flex-col items-start gap-2 min-w-[200px] md:ml-8">
           <span className="font-bold text-base mb-4">Institucional:</span>
           <a href="/quem-somos" className="text-[#FF6F61] font-normal mb-3 hover:underline hover:text-[#E22E5B] focus:text-[#E22E5B] active:text-[#E22E5B] visited:text-[#E22E5B]">Quem somos</a>
-          <a href="/nossas-solucoes" className="text-[#E22E5B] font-normal mb-3 hover:underline hover:text-[#E22E5B] focus:text-[#E22E5B] active:text-[#E22E5B] visited:text-[#E22E5B]">Nossas soluções</a>
-          <a href="/politica-privacidade" className="text-[#E22E5B] font-normal hover:underline hover:text-[#E22E5B] focus:text-[#E22E5B] active:text-[#E22E5B] visited:text-[#E22E5B]">Política de privacidade</a>
+          <a href="/politica-de-privacidade" className="text-[#E22E5B] font-normal hover:underline hover:text-[#E22E5B] focus:text-[#E22E5B] active:text-[#E22E5B] visited:text-[#E22E5B]">Política de privacidade</a>
         </div>
         {/* Produtos e Serviços */}
         <div className="flex flex-col items-start gap-2 min-w-[250px]">
           <span className="font-bold text-base mb-4">Produtos e Serviços:</span>
-          <a href="/nossas-solucoes/produtos" className="text-[#E22E5B] font-normal mb-3 hover:underline hover:text-[#E22E5B] focus:text-[#E22E5B] active:text-[#E22E5B] visited:text-[#E22E5B]">Plataforma de telessaúde</a>
+          <a href="/plataforma-telessaude" className="text-[#E22E5B] font-normal mb-3 hover:underline hover:text-[#E22E5B] focus:text-[#E22E5B] active:text-[#E22E5B] visited:text-[#E22E5B]">Plataforma de telessaúde</a>
           <a
-            href="/nossas-solucoes/servicos"
+            href="/servicos"
             className="text-[#E22E5B] font-normal mb-3 hover:underline hover:text-[#E22E5B] focus:text-[#E22E5B] active:text-[#E22E5B] visited:text-[#E22E5B]"
           >
             Serviços
           </a>
-          <a href="#" className="text-[#E22E5B] font-normal hover:underline hover:text-[#E22E5B] focus:text-[#E22E5B] active:text-[#E22E5B] visited:text-[#E22E5B]">Suporte</a>
         </div>
       </div>
       {/* Barra inferior */}

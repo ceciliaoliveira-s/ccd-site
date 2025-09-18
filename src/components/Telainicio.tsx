@@ -110,14 +110,15 @@ function Telainicio() {
             }}
             whileTap={{ scale: 0.95 }}
           >
-            <span className="text-center">Quero Contratar</span>
-            <motion.span
-              initial={{ x: -10, opacity: 0 }}
-              whileHover={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.3 }}
+              <a
+              href="https://wa.me/5581991945061?text=Olá! Gostaria de mais informações sobre os serviços e produtos ofertados pelo Centro de Cuidado Digital."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#E22E5B] hover:bg-[#db6d89] text-white text-base md:text-xl font-bold py-0 px-8 md:px-6 rounded-lg transition flex items-center justify-center"
+              style={{ textDecoration: 'none', color: '#fff', boxShadow: 'none', marginBottom: 0 }}
             >
-              ➝
-            </motion.span>
+              <span style={{ color: '#fff', width: '100%' }}>Quero Contratar</span>
+            </a>
           </motion.button>
         </motion.div>
 

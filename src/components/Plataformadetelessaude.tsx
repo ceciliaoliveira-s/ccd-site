@@ -68,23 +68,23 @@ function Produtos() {
           </motion.p>
 
           {/* Botão animado */}
-          <motion.a
-  href={"https://wa.me/5581991945061?text=Olá! Gostaria de mais informações sobre a plataforma  de telessaúde."}
-  target="_blank"
-  rel="noopener noreferrer"
-  initial={{ scale: 0.9, opacity: 0 }}
-  animate={{ scale: 1, opacity: 1 }}
-  transition={{ delay: 0.8, duration: 0.6 }}
-  whileHover={{
-    scale: 1.05,
-    backgroundColor: "#ff4c73",
-    boxShadow: "0px 6px 20px rgba(226,46,91,0.3)",
-  }}
-  className="bg-[#E22E5B] text-white text-base md:text-xl mb-4 font-bold py-3 px-8 md:px-11 rounded-lg shadow-md transition inline-flex items-center justify-center"
->
-  Quero Contratar
-</motion.a>
-         
+          <motion.div
+            whileHover={{ scale: 1.05, boxShadow: "0px 8px 24px rgba(226,46,91,0.4)" }}
+            whileTap={{ scale: 0.95 }}
+            animate={{ scale: [1, 1.02, 1] }}
+            transition={{ repeat: Infinity, repeatDelay: 5, duration: 1.5 }}
+            className="inline-flex"
+          >
+            <a
+              href="https://wa.me/5581991945061?text=Olá! Gostaria de mais informações sobre a plataforma de telessaúde."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#E22E5B] hover:bg-[#db6d89] text-white text-base md:text-xl font-bold py-3 px-8 md:px-11 rounded-lg transition flex items-center justify-center"
+              style={{ textDecoration: 'none', color: '#fff', boxShadow: 'none', marginBottom: 0 }}
+            >
+              <span style={{ color: '#fff', width: '100%' }}>Quero Contratar</span>
+            </a>
+          </motion.div>
         </div>
 
         {/* LADO DIREITO: imagem responsiva com animação */}

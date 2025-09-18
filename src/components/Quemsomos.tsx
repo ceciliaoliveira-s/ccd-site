@@ -33,7 +33,7 @@ function Quemsomos() {
           </motion.p>
           {/* Botão animado */}
           <div className="w-full flex justify-start">
-            <motion.button
+            <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.6 }}
@@ -42,10 +42,19 @@ function Quemsomos() {
                 backgroundColor: "#ff4c73",
                 boxShadow: "0px 6px 20px rgba(226,46,91,0.3)",
               }}
-              className="bg-[#E22E5B] text-white text-base md:text-xl mb-5 font-bold py-3 px-6 md:px-11 rounded-lg shadow-md transition"
+              className="inline-flex"
             >
-              Quero Contratar
-            </motion.button>
+              <a
+                href="https://wa.me/5581991945061?text=Olá! Gostaria de mais informações sobre o Centro de Cuidado Digital."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#E22E5B] hover:bg-[#db6d89] text-white text-base md:text-xl mb-5 font-bold py-3 px-6 md:px-16 rounded-lg shadow-md transition flex items-center justify-center focus:outline-none focus-visible:outline-none"
+                style={{ textDecoration: 'none', color: '#fff', boxShadow: 'none', marginBottom: 0, outline: 'none', border: 'none', opacity: 1 }}
+                onFocus={e => { e.target.style.outline = 'none'; e.target.style.boxShadow = 'none'; e.target.style.border = 'none'; }}
+              >
+                <span style={{ color: '#fff', width: '100%' }}>Saiba mais</span>
+              </a>
+            </motion.div>
           </div>
         </div>
         <motion.div

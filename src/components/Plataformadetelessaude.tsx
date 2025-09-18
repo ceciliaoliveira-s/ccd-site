@@ -68,19 +68,23 @@ function Produtos() {
           </motion.p>
 
           {/* Botão animado */}
-          <motion.button
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ delay: 0.8, duration: 0.6 }}
-            whileHover={{
-              scale: 1.05,
-              backgroundColor: "#ff4c73",
-              boxShadow: "0px 6px 20px rgba(226,46,91,0.3)",
-            }}
-            className="bg-[#E22E5B] text-white text-base md:text-xl mb-4 font-bold py-3 px-8 md:px-11 rounded-lg shadow-md transition"
-          >
-            Quero Contratar
-          </motion.button>
+          <motion.a
+  href={"https://wa.me/5581991945061?text=Olá! Gostaria de mais informações sobre a plataforma  de telessaúde."}
+  target="_blank"
+  rel="noopener noreferrer"
+  initial={{ scale: 0.9, opacity: 0 }}
+  animate={{ scale: 1, opacity: 1 }}
+  transition={{ delay: 0.8, duration: 0.6 }}
+  whileHover={{
+    scale: 1.05,
+    backgroundColor: "#ff4c73",
+    boxShadow: "0px 6px 20px rgba(226,46,91,0.3)",
+  }}
+  className="bg-[#E22E5B] text-white text-base md:text-xl mb-4 font-bold py-3 px-8 md:px-11 rounded-lg shadow-md transition inline-flex items-center justify-center"
+>
+  Quero Contratar
+</motion.a>
+         
         </div>
 
         {/* LADO DIREITO: imagem responsiva com animação */}

@@ -57,7 +57,7 @@ export default function Navbar() {
             >
               &times;
             </button>
-            <ul className="flex flex-col space-y-6 font-semibold text-lg">
+            <ul className="flex flex-col items-center justify-center gap-10 mt-8 font-semibold text-xl">
               <li>
                 <Link to="/tela-inicio" className="text-[#E22E5B] hover:text-[#db6d89]" onClick={() => setMenuOpen(false)}>Início</Link>
               </li>

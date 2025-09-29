@@ -50,7 +50,8 @@ export default function Navbar() {
             style={{ background: '#EEEEEE' }}
             onClick={e => e.stopPropagation()}>
             <button
-              className="self-end mb-8 text-3xl text-[#E22E5B] focus:outline-none"
+              className="self-end mb-8 text-3xl text-[#E22E5B] focus:outline-none rounded-lg"
+              style={{ background: '#EEEEEE', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
               onClick={() => setMenuOpen(false)}
               aria-label="Fechar menu"
             >

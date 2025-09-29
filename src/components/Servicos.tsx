@@ -2,9 +2,10 @@ import Footer from './Footer';
 import devsiteicon from '../assets/devsiteicon.png';
 import infracftvicon from '../assets/infracftvicon.png';
 import infraderedesicon from '../assets/infraderedesicon.png';
-import anlsdadosicon from '../assets/anlsdadosicon.png';
+import anlsdadosicon2 from '../assets/anlsdadosicon2.png';
 import brandingicon from '../assets/brandingicon.png';
 import capaservicos3 from '../assets/capaservicos3.png';
+import imgdados from '../assets/imgdados.png';
 import { motion } from "framer-motion";
 
 const containerVariants = {
@@ -94,222 +95,119 @@ function Servicos() {
         </motion.div>
       </section>
 
-      {/* Nova seção: Soluções por segmentos */}
-      <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-10">
-        <div className="max-w-7xl mx-auto">
+
+      {/* Nova seção: Soluções por segmentos (layout fiel ao protótipo) */}
+      <section className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-[#F8EFEA] py-12">
+        <div className="max-w-6xl mx-auto px-4 md:px-8">
           {/* Header da seção */}
+          <div className="w-full md:w-auto">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-[#E22E5B] mb-8 text-left"  style={{ fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'" }}>
+              Soluções por segmentos
+            </h2>
+            <p className="text-base md:text-lg text-[#A35E57] mb-10 md:mb-14 text-left leading-relaxed w-full" style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif", color: '#A35E57' }}>
+              Oferecemos soluções tecnológicas assertivas e personalizadas, desenvolvidas para impulsionar o crescimento e a eficiência dos negócios dos nossos parceiros. Atuamos em diversos segmentos, com foco em inovação, performance e resultados reais.
+            </p>
+          </div>
+
+          {/* Grid 2x2 + 1 grande (ajustado para o protótipo) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            {/* Card 1: Identidade visual & branding */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.7 }}
+              transition={{ duration: 0.7, delay: 0 }}
+              className="bg-[#F8EFEA] rounded-2xl shadow-lg p-8 flex flex-col items-center min-h-[240px] max-w-full"
+            >
+              <img src={brandingicon} alt="Identidade visual & branding" className="w-14 h-14 mb-4" />
+              <span className="text-lg md:text-xl font-bold text-[#E22E5B] mb-6 text-center" style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}>
+                Identidade visual & branding
+              </span>
+              <p className="text-sm text-[#A35E57] text-center mt-2" style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}>
+                Criamos identidades visuais únicas e estratégicas que fortalecem a presença da sua empresa no mercado. Do logotipo às cores, da tipografia ao tom de escrita, cada detalhe é pensado para transmitir os valores do seu negócio e conectar o seu público.
+              </p>
+            </motion.div>
+
+            {/* Card 2: Desenvolvimento de sites e plataformas */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.7 }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+              className="bg-[#F8EFEA] rounded-2xl shadow-lg p-8 flex flex-col items-center min-h-[240px] max-w-full"
+            >
+              <img src={devsiteicon} alt="Desenvolvimento de sites e plataformas" className="w-14 h-14 mb-4" />
+              <span className="text-lg md:text-xl font-bold text-[#E22E5B] mb-6 text-center" style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}>
+                Desenvolvimento de sites e plataformas
+              </span>
+              <p className="text-sm text-[#A35E57] text-align mt-2" style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}>
+                Criamos sites e plataformas modernas, rápidas e responsivas, que valorizam a identidade da sua marca e oferecem excelente experiência para os seus clientes. Do institucional ao e-commerce, entregamos soluções de qualidade e robustas.
+              </p>
+            </motion.div>
+
+            {/* Card 3: Infraestrutura de câmeras (CFTV) */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.7 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="bg-[#F8EFEA] rounded-2xl shadow-lg p-8 flex flex-col items-center min-h-[240px] max-w-full"
+            >
+              <img src={infracftvicon} alt="Infraestrutura de câmeras (CFTV)" className="w-14 h-14 mb-4" />
+              <span className="text-lg md:text-xl font-bold text-[#E22E5B] mb-2 text-center" style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}>
+                Infraestrutura de câmeras <span className="block md:inline"> <br />(CFTV)</span>
+              </span>
+              <p className="text-sm text-[#A35E57] text-justified mt-2" style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}>
+                Implementamos centrais de monitoramento para ambientes internos e externos, com instalação completa de redes de CFTV e configuração de DVRs. Trabalhamos com sistemas locais e/ou em nuvem, garantindo segurança, confiabilidade e acesso às imagens em tempo real.
+              </p>
+            </motion.div>
+
+            {/* Card 4: Infraestrutura de redes */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.7 }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+              className="bg-[#F8EFEA] rounded-2xl shadow-lg p-8 flex flex-col items-center min-h-[240px] max-w-full"
+            >
+              <img src={infraderedesicon} alt="Infraestrutura de redes" className="w-14 h-14 mb-4" />
+              <span className="text-lg md:text-xl font-bold text-[#E22E5B] mb-7 text-center" style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}>
+                Infraestrutura de redes
+              </span>
+              <p className="text-sm text-[#A35E57] text-justified mt-2" style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}>
+                Planejamento e implantação de projetos de redes de computadores, incluindo cabeamento estruturado, configuração de switches, roteadores e firewalls. Atuamos também na definição e aplicação de protocolos nas camadas de enlace e de rede, garantindo desempenho, segurança e escalabilidade para o seu ambiente.
+              </p>
+            </motion.div>
+          </div>
+
+          {/* Card grande: Análise e inteligência de dados (layout fiel ao protótipo) */}
           <motion.div
-            className="mb-12"
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.7 }}
+            transition={{ duration: 0.7, delay: 0.4 }}
+            className="bg-[#F8EFEA] rounded-2xl shadow-lg px-8 py-12 flex flex-col md:flex-row items-center md:items-stretch gap-0 md:gap-0 max-w-full"
+            style={{boxShadow: '0 8px 32px 0 #E954701A'}}
           >
-            <div className="w-full md:w-2/3 pl-0 md:pl-16">
-              <h2
-                className="text-3xl font-bold text-[#E95470] mb-5 text-left"
-                style={{ fontFamily: "'Open Sans', 'Montserrat','Poppins', 'bold'" }}
-              >
-                Soluções por segmentos
-              </h2>
-              <p
-                className="text-base text-[#A35E57] max-w-3xl text-left"
-                style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
-              >
-                Ofertamos tecnologia assertiva para impulsionar o negócio dos nossos
-                parceiros em diversos segmentos.
+            {/* Bloco texto */}
+            <div className="flex flex-col justify-center md:justify-start flex-1 md:pl-4 md:pr-8 py-2 md:py-0">
+              <div className="flex items-center mb-12">
+                <img src={anlsdadosicon2} alt="Ícone análise de dados" className="w-8 h-8 mr-4" />
+                <span className="text-2xl md:text-2xl font-extrabold text-[#E22E5B] text-left" style={{ fontFamily: "'Montserrat', 'Poppins', 'Open Sans', sans-serif" }}>
+                  Análise e inteligência de dados
+                </span>
+              </div>
+              <p className="text-base text-[#A35E57] mb-12 text-left" style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}>
+                Transforme dados em insights valiosos! Criamos dashboards e relatórios inteligentes que traduzem informações em decisões estratégicas, ajudando sua empresa a agir com mais precisão, agilidade e segurança.
+              </p>
+              <p className="text-base text-[#A35E57] text-left" style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}>
+                Nossa solução em análise de dados permite consolidar informações de diferentes fontes em dashboards interativos e relatórios avançados. Aplicamos metodologias de Business Intelligence (BI) e Data Analytics para transformar dados brutos em insights estratégicos, garantindo maior precisão na tomada de decisões, identificação de oportunidades e mitigação de riscos. Tudo isso com segurança, escalabilidade e tecnologia de ponta.
               </p>
             </div>
-          </motion.div>
-
-          {/* Grid de cards */}
-          <motion.div
-            className="grid grid-cols-1 md:grid-cols-3 gap-y-16 gap-x-4"
-            variants={containerVariants}
-            initial="hidden"
-            animate="show"
-          >
-            {/* Card 1: Outsourcing de TI */}
-            <motion.div
-              variants={cardVariants}
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 12px 30px rgba(226,46,91,0.25)"
-              }}
-              className="bg-[#F8EFEA] rounded-2xl shadow-lg p-5 flex flex-col items-center min-w-[300px] max-w-[340px] mx-auto"
-              style={{ boxShadow: "0 8px 24px 0 #E954701A" }}
-            >
-              <img
-                src={brandingicon}
-                alt="Outsourcing de TI"
-                className="w-10 h-10 mb-6"
-              />
-              <h3
-                className="text-base font-bold text-[#A35E57] text-center mb-4"
-                style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
-              >
-                Outsourcing de TI
-              </h3>
-              <p
-                className="text-xs text-[#A35E57] text-center"
-                style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
-              >
-                Crie uma marca única com design e estratégia alinhados ao propósito
-                de sua empresa.
-              </p>
-            </motion.div>
-
-            {/* Card 2: Identidade visual & branding */}
-            <motion.div
-              variants={cardVariants}
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 12px 30px rgba(226,46,91,0.25)"
-              }}
-              className="bg-[#F8EFEA] rounded-2xl shadow-lg p-5 flex flex-col items-center min-w-[300px] max-w-[340px] mx-auto"
-              style={{ boxShadow: "0 8px 24px 0 #E954701A" }}
-            >
-              <img
-                src={brandingicon}
-                alt="Identidade visual & branding"
-                className="w-10 h-10 mb-6"
-              />
-              <h3
-                className="text-base font-bold text-[#A35E57] text-center mb-4"
-                style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
-              >
-                Identidade visual <br /> & branding
-              </h3>
-              <p
-                className="text-xs text-[#A35E57] text-center"
-                style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
-              >
-                Crie uma marca única com design e estratégia alinhados ao propósito
-                de sua empresa.
-              </p>
-            </motion.div>
-
-            {/* Card 3: Desenvolvimento de Sites e plataformas */}
-            <motion.div
-              variants={cardVariants}
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 12px 30px rgba(226,46,91,0.25)"
-              }}
-              className="bg-[#F8EFEA] rounded-2xl shadow-lg p-5 flex flex-col items-center min-w-[300px] max-w-[340px] mx-auto"
-              style={{ boxShadow: "0 8px 24px 0 #E954701A" }}
-            >
-              <img
-                src={devsiteicon}
-                alt="Desenvolvimento de Sites e plataformas"
-                className="w-10 h-10 mb-5"
-              />
-              <h3
-                className="text-base font-bold text-[#A35E57] text-center mb-4"
-                style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
-              >
-                Desenvolvimento de <br /> sites e plataformas
-              </h3>
-              <p
-                className="text-xs text-[#A35E57] text-center"
-                style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
-              >
-                Sites e plataformas responsivas e seguras alinhados ao seu modelo
-                de negócio e identidade visual.
-              </p>
-            </motion.div>
-
-            {/* Card 4: Infraestrutura de câmeras (CFTV) */}
-            <motion.div
-              variants={cardVariants}
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 12px 30px rgba(226,46,91,0.25)"
-              }}
-              className="bg-[#F8EFEA] rounded-2xl shadow-lg p-5 flex flex-col items-center min-w-[300px] max-w-[340px] mx-auto"
-              style={{ boxShadow: "0 8px 24px 0 #E954701A" }}
-            >
-              <img
-                src={infracftvicon}
-                alt="Infraestrutura de câmeras (CFTV)"
-                className="w-10 h-10 mb-4"
-              />
-              <h3
-                className="text-base font-bold text-[#A35E57] text-center mb-2"
-                style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
-              >
-                Infraestrutura de câmeras <br /> (CFTV)
-              </h3>
-              <p
-                className="text-xs text-[#A35E57] text-center"
-                style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
-              >
-                Centrais de monitoramento de ambientes internos e/ou externos,
-                instalação de redes CFTV e configuração de DVR's utilizando sistemas
-                da intelbras local e/ou em nuvem.
-              </p>
-            </motion.div>
-
-            {/* Card 5: Infraestrutura de redes */}
-            <motion.div
-              variants={cardVariants}
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 12px 30px rgba(226,46,91,0.25)"
-              }}
-              className="bg-[#F8EFEA] rounded-2xl shadow-lg p-5 flex flex-col items-center min-w-[300px] max-w-[340px] mx-auto"
-              style={{ boxShadow: "0 8px 24px 0 #E954701A" }}
-            >
-              <img
-                src={infraderedesicon}
-                alt="Infraestrutura de redes"
-                className="w-10 h-10 mb-4"
-              />
-              <h3
-                className="text-base font-bold text-[#A35E57] text-center mb-2"
-                style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
-              >
-                Infraestrutura de redes
-              </h3>
-              <p
-                className="text-xs text-[#A35E57] text-center"
-                style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
-              >
-                Planejamento e implantação de projetos de redes de computadores,
-                contendo estruturas como: Cabeamento, switches, roteadores, firewalls
-                e protocolos na camada de enlace e de rede.
-              </p>
-            </motion.div>
-
-            {/* Card 6: Análise de dados */}
-            <motion.div
-              variants={cardVariants}
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 12px 30px rgba(226,46,91,0.25)"
-              }}
-              className="bg-[#F8EFEA] rounded-2xl shadow-lg p-5 flex flex-col items-center min-w-[300px] max-w-[340px] mx-auto"
-              style={{ boxShadow: "0 8px 24px 0 #E954701A" }}
-            >
-              <img
-                src={anlsdadosicon}
-                alt="Análise de dados"
-                className="w-10 h-10 mb-4"
-              />
-              <h3
-                className="text-base font-bold text-[#A35E57] text-center mb-2"
-                style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
-              >
-                Análise de dados
-              </h3>
-              <p
-                className="text-xs text-[#A35E57] text-center"
-                style={{ fontFamily: "'Montserrat', 'Poppins', sans-serif" }}
-              >
-                Transforme informações em decisões estratégicas com dashboards e
-                relatórios inteligentes para definições assertivas junto ao seu
-                negócio.
-              </p>
-            </motion.div>
+            {/* Imagem à direita */}
+            <div className="flex-shrink-0 flex items-end md:items-end justify-center md:justify-end w-full md:w-[340px] mt-6 md:mt-0">
+              <img src={imgdados} alt="Ilustração análise de dados" className="w-[260px] md:w-[300px] h-auto object-contain" />
+            </div>
           </motion.div>
         </div>
       </section>

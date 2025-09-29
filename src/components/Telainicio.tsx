@@ -3,7 +3,11 @@ import platsaude from '../assets/Platsaude.png';
 import Footer from '../components/Footer';
 import capatelainicio1 from '../assets/capatelainicio1.png';
 import logomediquo from '../assets/logomediquo.png';  
-import logoparlacom from  '../assets/logoparlacom.png';
+import LogoOPS from  '../assets/LogoOPS.png';
+import LogoIBS from '../assets/LogoIBS.png';
+import LogoUnidentes from '../assets/LogoUnidentes.png';
+import LogoAlgar from '../assets/LogoAlgar.png';
+import LogoDghust from '../assets/LogoDghust.png';
 import locationicon from '../assets/locationicon.png';
 import wppicon from '../assets/wpp.png';
 import instagramicon from '../assets/instagramicon.png';
@@ -11,11 +15,19 @@ import formularioimagem1 from '../assets/formularioimagem1.png';
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 
-const parceirosLogos = [logomediquo, logoparlacom, logomediquo, logomediquo, logoparlacom, logomediquo];
+const parceirosLogos = [logomediquo, LogoOPS, LogoIBS, LogoAlgar, LogoDghust, LogoUnidentes ];
 
 function Telainicio() {
   const [startIndex, setStartIndex] = useState(0);
-  const visibleCount = 4; 
+  const visibleCount = 4;
+
+  // Autoplay do carrossel
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setStartIndex((prev) => (prev + 1) % parceirosLogos.length);
+    }, 1000); // 1 segundo
+    return () => clearInterval(interval);
+  }, []);
 
   const handlePrev = () => {
     setStartIndex((prev) => (prev - 1 + parceirosLogos.length) % parceirosLogos.length);
@@ -28,15 +40,24 @@ function Telainicio() {
   // Gera os logos visíveis com rotação circular
   const visibleLogos = Array.from({ length: visibleCount }).map((_, idx) => {
     const logoIndex = (startIndex + idx) % parceirosLogos.length;
-    return (
-      <motion.img
-        key={logoIndex}
-        src={parceirosLogos[logoIndex]}
-        alt={`Parceiro-${logoIndex}`}
-        className="h-12 md:h-16 object-contain cursor-pointer"
-        whileHover={{ scale: 1.1, boxShadow: "0px 4px 15px rgba(0,0,0,0.15)" }}
-      />
-    );
+      // Ajuste de escala para OPS e IBS
+      const isOPS = parceirosLogos[logoIndex] === LogoOPS;
+      const isIBS = parceirosLogos[logoIndex] === LogoIBS;
+      const imgClass = `h-16 md:h-24 w-auto max-w-full object-contain${(isOPS || isIBS) ? ' scale-75 md:scale-90' : ''}`;
+      return (
+        <motion.div
+          key={logoIndex}
+          className="flex items-center justify-center h-28 md:h-36 w-full max-w-[220px] md:max-w-[260px] mx-auto bg-transparent"
+          style={{ flex: 1 }}
+        >
+          <img
+            src={parceirosLogos[logoIndex]}
+            alt={`Parceiro-${logoIndex}`}
+            className={imgClass}
+            style={{ display: 'block', margin: '0 auto' }}
+          />
+        </motion.div>
+      );
   });
 
   return (
@@ -264,7 +285,7 @@ function Telainicio() {
             </motion.span>
 
             {/* Carrossel controlado */}
-            <div className="flex gap-12 md:gap-16 px-16 transition-all duration-300">
+            <div className="flex gap-6 md:gap-10 px-0 w-full justify-between items-center transition-all duration-300">
               {visibleLogos}
             </div>
 

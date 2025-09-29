@@ -17,6 +17,7 @@ function App() {
       <Navbar />
       <div className="pt-20">
         <Routes>
+          <Route path="/" element={<Telainicio />} />
           <Route path="/tela-inicio" element={<Telainicio />} />
           <Route path="/quem-somos" element={<QuemSomos />} />
           <Route path="/plataforma-telessaude" element={<Plataformadetelessaude />} />

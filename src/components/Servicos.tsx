@@ -8,18 +8,7 @@ import capaservicos3 from '../assets/capaservicos3.png';
 import imgdados from '../assets/imgdados.png';
 import { motion } from "framer-motion";
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: { staggerChildren: 0.2 }
-  }
-};
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 50, scale: 0.9 },
-  show: { opacity: 1, y: 0, scale: 1, transition: { type: "spring", stiffness: 80 } }
-};
 
 function Servicos() {
   return (

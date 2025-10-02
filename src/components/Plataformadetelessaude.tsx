@@ -44,7 +44,7 @@ function Produtos() {
             className="text-base text-left text-[#9B6B6B] mb-4"
           >
             Somos parceiros da <span className="font-bold text-[#E22E5B]">Mediquo</span>, uma empresa com mais de <b>15 anos</b> no
-            mercado <br /> brasileiro e europeu com amplo impacto e democratização do acesso à saúde <br /> através da plataforma de telessaúde.
+            mercado brasileiro e europeu com amplo impacto e democratização do acesso à saúde <br /> através da plataforma de telessaúde.
           </motion.p>
 
           {/* Parágrafo 2 */}
@@ -52,7 +52,8 @@ function Produtos() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="text-base md:text-base text-[#9B6B6B] mb-4"
+            className="text-base md:text-base text-[#9B6B6B] mb-4 text-left !text-left !items-start !justify-start"
+            style={{ textAlign: 'left', width: '100%' }}
           >
             Sua disponibilização ocorre de forma mobile para os sistemas <b> Android e IOS.</b>
           </motion.p>
@@ -62,7 +63,7 @@ function Produtos() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.6 }}
-            className="text-base md:text-lg text-[#E22E5B] font-semibold mt-2 mb-12"
+            className="text-base md:text-lg text-[#E22E5B] font-semibold mt-2 mb-12 text-left justify-start w-full"
           >
             Saiba mais sobre a plataforma de telessaúde abaixo.
           </motion.p>
@@ -73,7 +74,7 @@ function Produtos() {
             whileTap={{ scale: 0.95 }}
             animate={{ scale: [1, 1.02, 1] }}
             transition={{ repeat: Infinity, repeatDelay: 5, duration: 1.5 }}
-            className="inline-flex"
+            className="inline-flex justify-start w-full"
           >
             <a
               href="https://wa.me/5581991945061?text=Olá! Gostaria de mais informações sobre a plataforma de telessaúde."
@@ -92,7 +93,7 @@ function Produtos() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex justify-center mt-10 md:mt-0 w-full md:w-auto"
+          className="hidden md:flex justify-center mt-10 md:mt-0 w-full md:w-auto"
         >
           <img
             src={capaproduto4}

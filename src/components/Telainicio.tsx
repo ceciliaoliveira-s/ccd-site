@@ -14,12 +14,23 @@ import instagramicon from '../assets/instagramicon.png';
 import formularioimagem1 from '../assets/formularioimagem1.png';
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
+import { useEmailJsForm } from '../components/useEmailJsForm';
+
 
 const parceirosLogos = [logomediquo, LogoOPS, LogoIBS, LogoAlgar, LogoDghust, LogoUnidentes ];
 
 function Telainicio() {
   const [startIndex, setStartIndex] = useState(0);
   const visibleCount = 4;
+
+const {
+  formRef,
+  sending,
+  successMsg,
+  errorMsg,
+  handleSubmit,
+} = useEmailJsForm();
+
 
   // Autoplay do carrossel
   React.useEffect(() => {
@@ -145,7 +156,7 @@ function Telainicio() {
 
         {/* LADO DIREITO: imagem responsiva */}
         <motion.div
-          className="flex justify-center mt-10 md:mt-0 w-full md:w-auto"
+          className="hidden md:flex justify-center mt-10 md:mt-0 w-full md:w-auto"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
@@ -333,13 +344,14 @@ function Telainicio() {
             className="bg-[#F5F5F5] rounded-xl shadow-lg p-4 md:p-8 flex flex-col md:flex-row gap-6 md:gap-8"
           >
             {/* Formulário */}
-            <form
+            <form ref={formRef}
+              onSubmit={handleSubmit}
               className="flex-1 flex flex-col gap-4"
               autoComplete="off"
-              onSubmit={(e) => {
-                e.preventDefault();
-              }}
             >
+              {sending && <p className="text-blue-500">Enviando...</p>}
+              {successMsg && <p className="text-green-500">{successMsg}</p>}
+              {errorMsg && <p className="text-red-500">{errorMsg}</p>}
               <input
                 required
                 type="text"

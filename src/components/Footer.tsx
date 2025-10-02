@@ -44,7 +44,8 @@ function Footer() {
       <div className="w-full bg-[#FCFCFC] mt-8">
         <div className="max-w-7xl mx-auto px-4 py-3 flex justify-center items-center text-xs text-[#E22E5B]">
           <span className="font-bold text-center w-full">
-            © Centro de Cuidado Digital – Todos os direitos reservados    |  05.872.814/0001-30  
+            © Centro de Cuidado Digital – Todos os direitos reservados    |   62.236.723/0001-41
+
           </span>
         </div>
       </div>

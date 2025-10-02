@@ -61,7 +61,7 @@ function Quemsomos() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex items-center justify-end w-full md:w-auto"
+          className="hidden md:flex items-center justify-end w-full md:w-auto"
         >
           <img src={capaquemsomos} alt="Produtos e Telessaúde" className="w-111 h-auto object-contain" />
         </motion.div>
